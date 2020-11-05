@@ -9,60 +9,53 @@
   </head>
   <body>
       <header id="header">
-          <a href="#" class="logo">AisaKirtan</a>
+          <img src="D:\Programming\AisaKirtan\Test 2\Images\MalaFlatNegative.jpg" class="logo">
+          <!--the list for pages-->
           <ul>
             <li><a href="#home" class="active" onclick="toggle()">Home</a></li>
             <li><a href="#about" onclick="toggle()">About</a></li>
-            <li><a href="#services" onclick="toggle()">Services</a></li>
-            <li><a href="#portfolio"onclick="toggle()">Portfolio</a></li>
-            <li><a href="#team" onclick="toggle()">Team</a></li>
+            <li><a href="#pictures" onclick="toggle()">Pictures</a></li>
             <li><a href="#contact" onclick="toggle()">Contact</a></li>
           </ul>
           <div class="toggle" onclick="toggle()"></div>
       </header>
+      <!--home section-->
       <section id="home">
           <div>
-            <h2>AisaKirtan</h2>
+            <h2 style="top: 10px; color: #FFF; z-index: 10000;  left: 45%;">AisaKirtan</h2>
             <p>bdhbehbdjhbe</p>
-            <a href="#">Read More</a>
-            </div>
+            <a href="Kirtan/kirtan.html">Kirtan</a>
             <img src="D:\Programming\AisaKirtan\Test 2\Images\JEEVAN1.jpg">
+            </div>
       </section>
+      <!--about section-->
       <section id="about">
           <div>
             <h2>About Us</h2>
             <p>bdhbehbdjhbe</p>
             </div>
       </section>
-      <section id="services">
+      <!--picture section-->
+      <section id="pictures">
           <div>
-            <h2>Our Services</h2>
-            <p>bdhbehbdjhbe</p>
+            <h2>Our Pictures</h2>
             </div>
       </section>
-      <section id="portfolio">
-          <div>
-            <h2>Our Recent Work</h2>
-            <p>bdhbehbdjhbe</p>
-            </div>
-      </section>
-      <section id="team">
-          <div>
-            <h2>Our Expert</h2>
-            <p>bdhbehbdjhbe</p>
-            </div>
-      </section>
+      <!--contact section-->
       <section id="contact">
           <div>
             <h2>Contact Us</h2>
             <p>bdhbehbdjhbe</p>
+            <p>bdhbehbdjhbe</p>
             </div>
       </section>
+      <!--JavaScript for mbile version-->
       <script type="text/javascript">
         function toggle(){
           var header = document.getElementById("header")
           header.classList.toggle('active')
         }
       </script>
+      
   </body>
 </html>

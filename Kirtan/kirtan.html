@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="kirtan.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Kirtan</title>
+</head>
+<body>
+    <header id="header">
+        <img src="D:\Programming\AisaKirtan\Test 2\Images\MalaFlatNegative.jpg" class="logo">
+            <!--the list for pages-->
+            <ul>
+              <li><a href="#sdo" class="active" onclick="toggle()">Bhai Mohinder Singh SDO</a></li>
+              <li><a href="#mehar" onclick="toggle()">Bhai Mehar Singh</a></li>
+              <li><a href="#jeevan" onclick="toggle()">Bhai Jeevan Singh</a></li>
+              <li><a href="#dulla"onclick="toggle()">Bhai Tejinderpal Singh Dulla</a></li>
+            </ul>
+            <div class="toggle" onclick="toggle()"></div>
+        </header>
+        <!--home section-->
+        <section id="sdo">
+            <div>
+              <h2>Bhai Mohinder Singh SDO</h2>
+              <ul>
+                <li><a href="D:\Programming\AisaKirtan\Test 2\KirtanPlayer\KirtanPlayer.html" >Santan Ka Dana Rookha</a></li>
+                <li>Vinny</li>
+              </ul>
+        
+              </div>
+              <img src="D:\Programming\AisaKirtan\Test 2\Images\JEEVAN1.jpg">
+        </section>
+        <!--about section-->
+        <section id="mehar">
+            <div>
+              <h2>Bhai Mehar Singh</h2>
+               <!--where the audio is-->
+        <audio controls>
+            <source src="Audio/bhai-tejinderpal-singh-jee-dulla-veerji-must-listen.mp3" type="audio/mpeg">
+          </audio>
+              </div>
+              <img src="D:\Programming\AisaKirtan\Test 2\Images\JEEVAN1.jpg">
+        </section>
+        <!--picture section-->
+        <section id="jeevan">
+            <div>
+              <h2>Bhai Jeevan Singh</h2>
+               <!--where the audio is-->
+        <audio controls>
+            <source src="Audio/bhai-tejinderpal-singh-jee-dulla-veerji-must-listen.mp3" type="audio/mpeg">
+          </audio>
+              </div>
+              <img src="D:\Programming\AisaKirtan\Test 2\Images\JEEVAN1.jpg">
+        </section>
+        <!--Kirtan section-->
+        <section id="dulla">
+            <div>
+              <h2>Bhai Tejinderpal Singh Dulla</h2>
+         <!--where the audio is-->
+        <audio controls>
+            <source src="Audio/bhai-tejinderpal-singh-jee-dulla-veerji-must-listen.mp3" type="audio/mpeg">
+          </audio>
+              </div>
+              <img src="D:\Programming\AisaKirtan\Test 2\Images\JEEVAN1.jpg">
+        </section>
+        <!--JavaScript for mbile version-->
+        <script type="text/javascript">
+          function toggle(){
+            var header = document.getElementById("header")
+            header.classList.toggle('active')
+          }
+        </script>
+
+
+</body>
+</html>
