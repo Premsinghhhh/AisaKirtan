@@ -114,6 +114,7 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+
 /*settings for mobile compatibilty*/
 @media (max-width: 992px) {
   section{
@@ -145,6 +146,8 @@ body::-webkit-scrollbar {
     top: 6%;
     max-width: 50%;
   }
+
+
   header ul
   {
     position: absolute;
