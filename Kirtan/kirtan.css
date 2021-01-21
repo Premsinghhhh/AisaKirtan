@@ -70,7 +70,7 @@
   /*settings for image*/
   section img{
     position: absolute;
-    top: 80px;
+    top: 70px;
     left: 85%;
     max-height: 300px;
   }
@@ -85,11 +85,6 @@
     padding: 0 0 20px;
   }
   
-  /*settings for text under title*/
-  section p{
-    font-size: 18px;
-  }
-  
   /*settings for oppostive colour pages*/
   section:nth-child(odd){
     position: relative;
@@ -102,16 +97,9 @@
   body::-webkit-scrollbar {
     display: none;
   }
-  
-
-/*settings for audio*/
-section audio{
+  section table tr td{
     position: relative;
-    top: -275px;
-    max-width: 300px;
-    max-height: 40px;
   }
-  
 
   /*settings for mobile compatibilty*/
   @media (max-width: 992px) {
@@ -127,17 +115,22 @@ section audio{
       max-height: 40px;
     }
     section h2{
+      white-space: nowrap;
       position: absolute;
       top: 80px;
-      left: 40%;
+      left: 20%;
       font-size: 1em;
       text-transform: uppercase;
       padding: 0 0 20px;
     }
     section img{
-      left: 30%;
-      top: 10%;
+      left: 25%;
+      top: 13%;
       max-width: 50%;
+    }
+    section table tr td{
+      position: relative;
+      top: 200px;
     }
     header ul
     {
@@ -209,4 +202,5 @@ section audio{
         bottom: 14px;
         transform: rotate(-45deg);
       }
+      
   }

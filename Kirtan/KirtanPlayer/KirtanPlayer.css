@@ -71,7 +71,7 @@
   section img{
     position: absolute;
     top: 200px;
-    left: 45%;
+    left: 43%;
     max-height: 300px;
   }
   
@@ -79,17 +79,17 @@
   section h2{
     position: absolute;
     top: 80px;
-    left: 40%;
+    left: 35%;
     font-size: 2.5em;
     text-transform: uppercase;
     padding: 0 0 20px;
   }
   
   /*settings for text under title*/
-  section p{
+  section h3{
       position: relative;
       top: 100px;
-      left: 133%;
+      left: 130%;
       font-size: 18px;
   }
   
@@ -126,12 +126,13 @@ section audio{
     }
     section audio{
       position: absolute;
-      max-width: 300px;
+      max-width: 150px;
       max-height: 40px;
       top: 500px;
-      left: 10%;
+      left: 1%;
     }
     section h2{
+      white-space: nowrap;
       position: absolute;
       top: 80px;
       left: 55%;
@@ -144,7 +145,8 @@ section audio{
       top: 150px;
       max-width: 60%;
     }
-    section p{
+    section h3{
+        white-space: nowrap;
         position: absolute;
         top: 400px;
         left: 50%;
