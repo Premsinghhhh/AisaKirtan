@@ -1,221 +1,40 @@
-*{  
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-  font-family: 'poppins', sans-serif; 
+.navbar{background-color: #000;}
+#home{position: relative; min-height: 720px;}
+.margin_top{padding-top: 15%;}
+.navbar-dark .navbar-nav .nav-link{color: #fff; font-size: 20px;}
+.navbar .container h2{ color: #fff;}
+.container .text-decoration-none:hover{text-decoration: none;}
+.row1{ height: auto; padding-bottom: 80px;}
+.row2{top: 60%; position: absolute;}
+.mt-4{margin-top: 11rem !important; }
+.background-dark{background: #000; color: #fff; position: relative; height: 720px;}
+.background-dark h1{font-weight: bold;}
+.pt-5{padding-top: 6rem !important;}
+.carousel-inner{padding-left: 20%;}
+.carousel-control-next-icon:after { content: '>'; font-size: 55px; color: #373131;}
+.carousel-control-prev-icon:after { content: '<'; font-size: 55px; color: #373131;}
+.home_kirtan p{font-size: 26px;}
+.home_kirtan .btn{font-size: 22px;}
+.background-white{background: #fff; color: #000; position: relative; min-height: 720px;}
+.background-white h1{font-weight: bold;}
+.contact-sec{position: relative; min-height: 750px;}
+.input-group label{font-size: 20px; margin-right: 8px;}
+.py{font-size: 20px; margin: 0px; padding-top: 20px;}
+.pz{font-size: 20px; margin: 0px; padding-bottom: 60px;}
+
+@media (max-width: 767px){
+  .row1{margin-top: 30%;}
+  .mt-4{margin-top: 7rem !important;}
+  .background-dark h1{font-size: 34px;}
+  .background-white h1{font-size: 34px;}
 }
-
-/*Main banner settings*/
-header{
-  position: fixed;
-  width: 100%;
-  height: 80px;
-  padding: 0 100px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #000000;
-  z-index: 1000;
+@media (max-width: 575px){
+  .row1{margin-top: 10%;}
+  .carousel-inner{padding-left: 10%;}
+  .mt-4{margin-top: 0% !important; padding-bottom: 80px;}
 }
-
-/*where the logo is*/
-header .logo{
-  margin: 0 -90px 0;
-  max-height: 70px;
-}
-
-/*how banner menus are displayed*/
-header ul{
-  position: relative;
-  display: flex;
-}
-
-/*how banner menus are displayed*/
-header ul li{
-  position: relative;
-  list-style: none;
-}
-
-/*how banner menu is shown settings*/
-header ul li a{
-  position: relative;
-  padding: 5px 10px;
-  color: #fff;
-  display: inline-block;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-/*when hovering over the menu in banner*/
-header ul li a:hover{
-  background: #111;
-}
-
-/*makes menu go to right*/
-.toggle{
-  display: none;
-}
-
-/*every section setting*/
-section{
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  min-height: 100vh;
-  padding: 150px 100px 100px;
-}
-
-/*settings for image*/
-section img{
-  position: absolute;
-  top: 80px;
-  left: 45%;
-  max-height: 300px;
-}
-
-/*settings for page title*/
-section h2{
-  position: absolute;
-  top: 80px;
-  left: 45%;
-  font-size: 2.5em;
-  text-transform: uppercase;
-  padding: 0 0 20px;
-}
-
-/*settings for text under title*/
-section p{
-  font-size: 18px;
-}
-
-/*settings for button*/
-section a{
-  display: inline-block;
-  padding: 8px 10px;
-  text-decoration: none;
-  font-size: 18px;
-  background-color: #000000;
-  color: #fff;
-  margin-top: 20px;
-}
-
-/*settings for oppostive colour pages*/
-section:nth-child(odd){
-  position: relative;
-  align-items: center;
-  background: #000000;
-  color: #fff;
-}
-
-/*hides scrollbar*/
-body::-webkit-scrollbar {
-  display: none;
-}
-
-
-/*settings for mobile compatibilty*/
-@media (max-width: 992px) {
-  section{
-    padding: 100px 50px 50px;
-    flex-direction: column;
-    align-items: center;
-    display: flex;
-  }
-
-  section p{
-    margin-top: 200%;
-    margin-left: -150%;
-    font-size: 30px;
-  }
-
-  section a{
-    display: inline-block;
-    padding: 8px 10px;
-    text-decoration: none;
-    font-size: 18px;
-    background-color: #000000;
-    color: #fff;
-    margin-top: 20%;
-    margin-left: -150%;
-  }
-
-  section img{
-    left: 35%;
-    top: 6%;
-    max-width: 50%;
-  }
-
-
-  header ul
-  {
-    position: absolute;
-    top: -100%;
-    left: 0;
-    width: 100%;
-    height: calc(100vh - 80px);
-    padding: 50px 100px;
-    text-align: center;
-    overflow: auto;
-    transition:0.5s;
-    background: #000;
-    flex-direction: column;
-    opacity: 0;
-    transform: translateY(-100%);
-  }
-  header.active ul
-  {
-    opacity: 1;
-    top: 80px;
-    transform:translateY(0);
-  }
-  header ul li a
-  {
-    margin: 5px 0;
-    font-size: 24px;
-  }
-  .toggle
-  {
-    display: block;
-    position: relative;
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
-    right: -80px;
-  }
-  .toggle:before
-  {
-    content: '';
-    position: absolute;
-    top: 4px;
-    width: 100%;
-    height: 2px;
-    background: #fff;
-    z-index: 1;
-    box-shadow: 0 10px 0 #fff;
-    transition: 0.5s;
-  }
-  .toggle:after
-  {
-    content: '';
-    position: absolute;
-    bottom: 4px;
-    width: 100%;
-    height: 2px;
-    background: #fff;
-    z-index: 1;
-    transition: 0.5s;
-  }
-    header.active .toggle:before
-    {
-      top: 14px;
-      transform: rotate(45deg);
-      box-shadow: 0 0 0 #fff;
-    }
-    header.active .toggle:after
-    {
-      bottom: 14px;
-      transform: rotate(-45deg);
-    }
+@media (max-width: 413px){
+  .row1{margin-top: 15%;}
+  .carousel-inner{padding-left: 0%;}
+  .mt-4{margin-top: 0% !important; padding-bottom: 80px;}
 }
