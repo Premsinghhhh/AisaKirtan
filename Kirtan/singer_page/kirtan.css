@@ -1,0 +1,48 @@
+.navbar{background-color: #000;}
+.navbar-dark .navbar-nav .nav-link{color: #fff; font-size: 17px;}
+.navbar .container h2{ color: #fff;}
+.container .text-decoration-none:hover{text-decoration: none;}
+.row1{margin-top: 10%; height: auto; padding-bottom: 80px;}
+.table li, .table th{border-top: none; display: inline-block;}
+.row1 h1{color: #000; padding-bottom: 60px; font-size: 28px; padding-top: 30px;}
+.player audio{background: #333;}
+
+@media (max-width: 413px){
+  .row{}
+  .align-self-center{padding-top: 50px;}
+}
+@media (max-width: 767px){
+  .row{}
+  .row1{margin-top: 30%;}
+  .align-self-center{padding-top: 50px;}
+}
+@media (min-width: 768px) and (max-width: 991px){
+  .row1{margin-top: 20% !important;}
+}
+@media (min-width: 992px) and (max-width: 1200px){
+  .row1{margin-top: 13% !important;}
+
+}
+
+@media (max-width: 767px){
+  #playlist{text-align: center;}
+  .player{display: table-header-group; text-align: center;}
+  .align-self-center{display: table-footer-group;}
+  .row{display: table;}
+  #audioPlayer{width: 275px; margin-top: -10px; margin-bottom: 30px;}
+}
+
+/* For plauer */
+
+#playlist{
+    list-style: none;
+}
+#playlist li a{
+    color:black;
+    text-decoration: none;
+    font-size: 18px;
+}
+#playlist .current-song a{
+    color:blue;
+}
+.text-justify{width: 215px;}

@@ -1,26 +1,27 @@
+body{margin-top: 85px;}
+#mehar{position: relative; min-height: 720px;}
+#jeevan{position: relative; min-height: 720px;}
+#dulla{position: relative; min-height: 720px;}
 .navbar{background-color: #000;}
 .navbar-dark .navbar-nav .nav-link{color: #fff; font-size: 17px;}
 .navbar .container h2{ color: #fff;}
 .container .text-decoration-none:hover{text-decoration: none;}
-.row1{margin-top: 10%; height: auto; padding-bottom: 80px;}
+.row1{height: auto; padding-bottom: 80px;}
+.row1 h1{padding-top: 80px;}
 .table td, .table th{border-top: none;}
-.row1 h1{color: #000; padding-bottom: 40px;}
+ h1{color: #000; padding-bottom: 40px;}
 .background-dark{background: #000; color: #fff; }
-.background-dark h1{font-weight: bold; color: #fff; padding-top: 50px;}
+.background-dark h1{font-weight: bold; color: #fff; padding-top: 80px;}
+#jeevan h1{padding-top: 80px;}
+#dulla h1{padding-top: 80px;}
 .background-dark a{color:#fff; }
+.btn a{text-decoration: none; font-size: 20px; }
 
 @media (max-width: 413px){
-  .row{padding-left: 10%;}
   .align-self-center{padding-top: 50px;}
 }
 @media (max-width: 767px){
-  .row{padding-left: 15%;}
-  .row1{margin-top: 30%;}
   .align-self-center{padding-top: 50px;}
-}
-@media (min-width: 768px) and (max-width: 991px){
-  .row1{margin-top: 20% !important;}
-}
-@media (min-width: 992px) and (max-width: 1200px){
-  .row1{margin-top: 13% !important;}
+  .row img {width: 300px !important; height: 300px !important;}
+  h1{font-size: 38px;}
 }
