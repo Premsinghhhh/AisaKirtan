@@ -8,11 +8,11 @@
 .player audio{background: #333;}
 
 @media (max-width: 413px){
-  .row{}
+  .row
   .align-self-center{padding-top: 50px;}
 }
 @media (max-width: 767px){
-  .row{}
+  .row
   .row1{margin-top: 30%;}
   .align-self-center{padding-top: 50px;}
 }
