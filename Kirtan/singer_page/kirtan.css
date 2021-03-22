@@ -1,5 +1,5 @@
 .navbar{background-color: #000;}
-.navbar-dark .navbar-nav .nav-link{color: #fff; font-size: 17px;}
+.navbar-dark .navbar-nav .nav-link{color: #fff; font-size: 25px;}
 .navbar .container h2{ color: #fff;}
 .container .text-decoration-none:hover{text-decoration: none;}
 .row1{margin-top: 10%; height: auto; padding-bottom: 80px;}
@@ -8,11 +8,11 @@
 .player audio{background: #333;}
 
 @media (max-width: 413px){
-  .row
+  .row{}
   .align-self-center{padding-top: 50px;}
 }
 @media (max-width: 767px){
-  .row
+  .row{}
   .row1{margin-top: 30%;}
   .align-self-center{padding-top: 50px;}
 }
