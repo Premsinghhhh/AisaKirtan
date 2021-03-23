@@ -1,11 +1,12 @@
-.navbar{background-color: #000;}
+.navbar{background-color: #000; opacity: 80%;}
 .navbar-dark .navbar-nav .nav-link{color: #fff; font-size: 25px;}
 .navbar .container h2{ color: #fff;}
 .container .text-decoration-none:hover{text-decoration: none;}
 .row1{margin-top: 5%; height: auto; padding-bottom: 80px;}
 .table li, .table th{border-top: none; display: inline-block;}
 .row1 h1{color: #000; padding-bottom: 60px; font-size: 28px; padding-top: 30px;}
-.player audio{background: #333;}
+.player audio{background: #fff;}
+#audioPlayer{width: 450px; margin-bottom: 480px; margin-top: -15%; margin-left: -121%;}
 
 @media (max-width: 413px){
   .row{}
@@ -29,7 +30,6 @@
   .player{display: table-header-group; text-align: center;}
   .align-self-center{display: table-footer-group;}
   .row{display: table;}
-  #audioPlayer{width: 275px; margin-top: -10px; margin-bottom: 30px;}
 }
 
 /* For player */
