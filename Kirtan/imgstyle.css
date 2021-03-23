@@ -45,6 +45,7 @@ body {
   transform: scale(0.9);
 }
 
+
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
   .column {
@@ -119,3 +120,4 @@ h2 {
   margin-right: 0;
   font-weight: bold;
 }
+

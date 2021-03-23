@@ -2,7 +2,7 @@
 .navbar-dark .navbar-nav .nav-link{color: #fff; font-size: 25px;}
 .navbar .container h2{ color: #fff;}
 .container .text-decoration-none:hover{text-decoration: none;}
-.row1{margin-top: 10%; height: auto; padding-bottom: 80px;}
+.row1{margin-top: 5%; height: auto; padding-bottom: 80px;}
 .table li, .table th{border-top: none; display: inline-block;}
 .row1 h1{color: #000; padding-bottom: 60px; font-size: 28px; padding-top: 30px;}
 .player audio{background: #333;}
@@ -45,4 +45,4 @@
 #playlist .current-song a{
     color:blue;
 }
-.text-justify{width: 215px;}
+.text-justify{width: 2000px;}
