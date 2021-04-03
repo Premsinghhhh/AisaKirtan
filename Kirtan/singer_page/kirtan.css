@@ -6,7 +6,7 @@
 .table li, .table th{border-top: none; display: inline-block;}
 .row1 h1{color: #000; padding-bottom: 60px; font-size: 28px; padding-top: 30px;}
 .player audio{background: #fff;}
-#audioPlayer{width: 450px; margin-bottom: 480px; margin-top: -15%; margin-left: -121%;}
+#audioPlayer{width: 450px; margin-bottom: 480px; margin-top: -15%; margin-left: -73%;} /*-121% for desktop*/
 
 @media (max-width: 413px){
   .row{}
