@@ -20,6 +20,12 @@ body {
   padding: 0 4px;
 }
 
+.logo{
+  height: 80px;
+  height: 80px;
+}
+
+
 /* Create 3 equal columns that sits next to each other */
 .column {
   -ms-flex: 33.3%; /* IE10 */
@@ -59,21 +65,12 @@ body {
     max-width: 60%;
     max-height: 100vw;
   }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    -ms-flex: 50%;
-    flex: 60%;
-    max-width: 60%;
+  .navbar{
+    height: 6%;
   }
-  .header {
-    padding-top: 30px;
-    -ms-flex: 50%;
-    flex: 50%;
-    max-width: 50%;
-    max-height: 100vw;
+  .logo{
+    height: 12%;
+    width: 12%;
   }
 }
 

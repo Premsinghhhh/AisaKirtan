@@ -15,9 +15,14 @@
 }
 @media (max-width: 767px){
   .row{}
-  .row1{margin-top: 30%;}
-  .align-self-center{padding-top: 50px;}
-  #audioPlayer{width: 450px; margin-bottom: 480px; margin-top: -15%; margin-left: -55%;} 
+  audio {
+    /* margin-bottom: 80px; */
+    width:100%
+   }
+   .rev{
+     display: flex;
+     flex-direction: column-reverse
+   }
 }
 @media (min-width: 768px) and (max-width: 991px){
   .row1{margin-top: 20% !important;}
