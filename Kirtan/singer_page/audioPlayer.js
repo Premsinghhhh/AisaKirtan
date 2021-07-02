@@ -20,4 +20,6 @@
                 $("#audioPlayer")[0].src = $("#playlist li a")[currentSong].href;
                 $("#audioPlayer")[0].play();
             });
+            const audio = document.querySelector('#audioPlayer');
+            audio.controls = true;
         }
