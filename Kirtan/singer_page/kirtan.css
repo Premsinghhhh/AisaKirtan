@@ -6,12 +6,12 @@
 .table li, .table th{border-top: none; display: inline-block;}
 .row1 h1{color: #000; padding-bottom: 60px; font-size: 28px; padding-top: 30px;}
 .player audio{background: #fff;}
-#audioPlayer{width: 500px; margin-bottom: 480px; margin-top: -15%; margin-left: -108%;}
+#audioPlayer{width: 500px; margin-bottom: 480px; margin-top: -15%; margin-left: -127%;}
 
 @media (max-width: 413px){
   .row{}
   .align-self-center{padding-top: 50px;}
-  #audioPlayer{width: 450px; margin-bottom: 480px; margin-top: -15%; margin-left: -55%;} 
+  #audioPlayer{width: 450px; margin-bottom: 480px; margin-top: -15%; margin-left: -71%;} 
 }
 @media (max-width: 767px){
   .row{}
@@ -26,11 +26,11 @@
 }
 @media (min-width: 768px) and (max-width: 991px){
   .row1{margin-top: 20% !important;}
-  #audioPlayer{width: 450px; margin-bottom: 480px; margin-top: -15%; margin-left: -55%;} 
+  #audioPlayer{width: 450px; margin-bottom: 480px; margin-top: -15%; margin-left: -71%;} 
 }
 @media (min-width: 992px) and (max-width: 1200px){
   .row1{margin-top: 13% !important;}
-  #audioPlayer{width: 450px; margin-bottom: 480px; margin-top: -15%; margin-left: -110%;} 
+  #audioPlayer{width: 450px; margin-bottom: 480px; margin-top: -15%; margin-left: -135%;} 
 
 }
 
