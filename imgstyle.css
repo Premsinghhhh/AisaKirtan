@@ -66,13 +66,17 @@ body {
     max-height: 100vw;
   }
   .navbar{
-    height: 6%;
+    height: 43px;
   }
   .logo{
-    height: 12%;
-    width: 12%;
+    height: 35px;
+    width: 35px;
   }
 }
+
+
+  
+
 
 .header {
   min-width: 100vw;
