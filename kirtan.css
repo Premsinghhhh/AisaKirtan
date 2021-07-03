@@ -4,7 +4,7 @@
 .container .text-decoration-none:hover{text-decoration: none;}
 .row1{margin-top: 5%; height: auto; padding-bottom: 80px;}
 .table li, .table th{border-top: none; display: inline-block;}
-.player audio{background: #fff;}
+.player audio{background: rgb(0, 0, 0);}
 
 /* heading style */
 
@@ -65,7 +65,7 @@ h1 em {
 .kirtan-list ul a {
     position: relative;
     display: block;
-    padding: .4em .4em .4em 2em;
+    padding: .4em .4em .4em .4em;
     margin: .5em 0;
     background: #DAD2CA;
     color: #444;
@@ -75,24 +75,7 @@ h1 em {
 }
 
 .kirtan-list ul a:hover { background: #E9E4E0; }
-.kirtan-list ul a:hover:before { transform: rotate(360deg); }
-.kirtan-list ul a:before {
-    content: counter(li);
-    counter-increment: li;
-    position: absolute;
-    left: -1.3em;
-    top: 50%;
-    margin-top: -1.3em;
-    background: #f9dd94;
-    height: 2em;
-    width: 2em;
-    line-height: 2em;
-    border: .3em solid #fff;
-    text-align: center;
-    font-weight: bold;
-    border-radius: 2em;
-    transition: all .3s ease-out;
-}
+
 
 
 /* Image style */
