@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <link rel="icon" href="images/logo.jpg">
+    <meta charset="utf-8">
+    <meta name="viewpoint:" content="width=device-width, initial-scale=1.0">
+    <title>AisaKirtan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/bootstrap.min.css">
+    <link rel="stylesheet" href="kirtan.css">
+    <script src="src/jquery.min.js"></script>
+    <script src="src/audioPlayer.js"></script>
+  </head>
+
+  <body>
+    <!--Nav bar start-->
+      <nav class="navbar navbar-dark navbar-expand-lg fixed-top">
+        <div class="container">
+          <a href="#"><img src="images/logo.jpg" alt="" width="70px" height="70px"></a>
+          <div class="" id="navbarnav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item"><a class="nav-link" href="index.html" class="active">Back</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <section id="talwara" class="text-center">
+        <div class="container justify-content-center">
+   
+          <div class="main-image-wrapper" id="box">
+            <!--main image-->
+            <img src="images/talwara.jpg" class="main-image" width="400px" height="400px">
+          </div>
+          <div class="main-title m-5">
+            <h1>BHAI JOGINDER SINGH TALWARA</h1>
+          </div>
+
+          <!--audio player start-->
+          <div class="row">
+            <div class="col">
+              <div class="m-3">
+                <audio src="" preload="none" controls="" id="audioPlayer" controlsList="">
+                  Sorry, your browser doesn't support html5!
+                </audio>
+              </div>
+            </div>
+          </div>
+          <!-- Audio player end -->
+
+          <!-- Main body start -->
+        <div class="row">
+          <div class="col">
+            <div class="kirtan-list">
+              <!-- Kirtan list start -->
+                    <ul class="table ml-auto " id="playlist">
+                        <li class="m-3"><a href="audio/talwara/Aape Chaatsaal Aap Hai Padha.mp3" ><h4>Aape Chaatsaal Aap Hai Padha</h4> </a></li>
+                        <li class="m-3"><a href="audio/talwara/Gaaeiou Ree Mai Gun Nidh Mangal Gaaeiou.mp3" ><h4>Gaaeiou Ree Mai Gun Nidh Mangal Gaaeiou</h4></a></li>
+                        <li class="m-3"><a href="audio/talwara/Harhat Bhee Thoo Thoo Harai.mp3" > <h4>Harhat Bhee Thoo Thoo Harai</h4></a></li>
+                        <li class="m-3"><a href="audio/talwara/Hasandia Khelandia Painandia Khavandia.mp3" ><h4>Hasandia Khelandia Painandia Khavandia</h4></a></li>
+                        <li class="m-3"><a href="audio/talwara/Kaljug Audharia Gurdev.mp3" ><h4>Kaljug Audharia Gurdev</h4></a></li>
+                        <li class="m-3"><a href="audio/talwara/Naad Samailo Re Satgur Bhetle Deva.mp3" ><h4>Naad Samailo Re Satgur Bhetle Deva</h4></a></li>
+                        <li class="m-3"><a href="audio/talwara/Sach Vananj Khep Lai Chalai.mp3" ><h4>Sach Vananj Khep Lai Chalai</h4></a></li>
+                    </ul>
+                    <!--kirtan list end-->
+                </div>
+            </div>
+          </div>
+          <!--main body end-->
+        </div>
+      </section>
+
+
+<!-- Footer scripts-->
+<script> audioPlayer(); </script>
+    
+
+  </body>
+</html>
