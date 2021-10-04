@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <link rel="icon" href="images/logo.jpg">
+    <meta charset="utf-8">
+    <meta name="viewpoint:" content="width=device-width, initial-scale=1.0">
+    <title>AisaKirtan</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/bootstrap.min.css">
+    <link rel="stylesheet" href="kirtan.css">
+    <script src="src/jquery.min.js"></script>
+    <script src="src/audioPlayer.js"></script>
+  </head>
+
+  <body>
+    <!--Nav bar start-->
+      <nav class="navbar navbar-dark navbar-expand-lg fixed-top">
+        <div class="container">
+          <a href="#"><img src="images/logo.jpg" alt="" width="70px" height="70px"></a>
+          <div class="" id="navbarnav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item"><a class="nav-link" href="index.html" class="active">Back</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <section id="jasbir" class="text-center">
+        <div class="container justify-content-center">
+   
+          <div class="main-image-wrapper" id="box">
+            <!--main image-->
+            <img src="images/smagam.jpg" class="main-image" width="400px" height="400px">
+          </div>
+          <div class="main-title m-5">
+            <!--Main Title-->
+            <h1>BIRMINGHAM SMAGAM 1996</h1>
+          </div>
+          <!-- Audio player start -->
+          <div class="row">
+            <div class="col">
+              <div class="m-3">
+                <audio src="" preload="none" controls="" id="audioPlayer" controlsList="">
+                  Sorry, your browser doesn't support html5!
+                </audio>
+              </div>
+            </div>
+          </div>
+          <!-- Audio player end -->
+
+          <!-- Main body start -->
+          <div class="row">
+            <div class="col">
+              <div class="kirtan-list">
+                <!-- Kirtan list start -->
+                    <ul class="table ml-auto " id="playlist"> <h3>Asa Ki Vaar:</h3>
+                      <li class="m-3"><a href="https://docs.google.com/uc?export=download&id=13iU_6nUufJeEhV2GAOvj8SvJrZ1Qyqdw"><h4> Asa Ki Vaar Bimringham Smagam 1996 </h4> </a></li> 
+                    </ul>
+                    <!--Kirtan list end-->
+                    <!-- Kirtan list start -->
+                    <ul class="table ml-auto " id="playlist"> <h3>Reinsbhai:</h3>
+                      <li class="m-3"><a href="https://docs.google.com/uc?export=download&id=1lAi6EV35rIRD39eKQxyM4cgHmPdEzTI-"><h4> Bhai Harpreet Singh Ji </h4> </a></li>
+                      <li class="m-3"><a href="https://docs.google.com/uc?export=download&id=1_jFFqpQ19rAyfR_LEBVU-jFZLEKrlByD"><h4> Bhai Jeevan Singh Ji </h4> </a></li>
+                      <li class="m-3"><a href="https://docs.google.com/uc?export=download&id=1Nb6Ox3Ub0V-wyGR5dktByjnhFaAzzo7o"><h4> Bhai Malkiat Singh Ji </h4> </a></li>
+                      <li class="m-3"><a href="https://docs.google.com/uc?export=download&id=1EgjHQgOC08OY1mlPPfr3FEPMlTvO1XsB"><h4> Bhai Manjit Singh Ji </h4> </a></li>
+                      <li class="m-3"><a href="https://docs.google.com/uc?export=download&id=1Cis-kOIQqm6FBIl-1DWdXYZ5w2lB4MWn"><h4> Bhai Mehar Singh Ji </h4> </a></li>
+                      <li class="m-3"><a href="https://docs.google.com/uc?export=download&id=1n7_ri-O51wGBBEH6TJ6RYjVpTDW8rAHX"><h4> Bhai Pritam Singh Chani Ji </h4> </a></li>
+                    </ul>
+                    <!--Kirtan list end-->
+                </div>
+              </div>
+            </div>
+            <!--main body end-->
+
+        </div>
+        </section>
+
+ <!-- Footer scripts-->
+ <script> audioPlayer(); </script>
+
+  </body>
+</html>
