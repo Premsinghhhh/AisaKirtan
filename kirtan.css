@@ -11,10 +11,14 @@
     position: relative;
     max-width: 500px;
     margin: 0px auto;
-    margin-bottom: 70px;
+    margin-bottom: 45px;
 
 }
-
+/*for the one row listing*/
+.m-3 {
+    margin: 1rem!important;
+    width: 100%;
+}
 /* heading style */
 
 h1 {
