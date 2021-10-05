@@ -5,6 +5,15 @@
 .row1{margin-top: 5%; height: auto; padding-bottom: 80px;}
 .table li, .table th{border-top: none; display: inline-block;}
 .player audio{background: rgb(0, 0, 0);}
+#audioPlayer{
+    width: 100%;
+    display: block;
+    position: relative;
+    max-width: 500px;
+    margin: 0px auto;
+    margin-bottom: 45px;
+
+}
 
 /* heading style */
 
