@@ -4,6 +4,7 @@
 .container .text-decoration-none:hover{text-decoration: none;}
 .row1{margin-top: 5%; height: auto; padding-bottom: 80px;}
 .table li, .table th{border-top: none; display: inline-block;}
+/*.player audio{background: rgb(0, 0, 0);}*/
 #audioPlayer{
     width: 100%;
     display: block;
