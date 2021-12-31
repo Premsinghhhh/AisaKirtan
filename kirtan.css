@@ -88,6 +88,7 @@ h1 em {
 }
 
 .kirtan-list ul a:hover { background: #E9E4E0; }
+.kirtan-list ul a:focus {background:#c4aa96; }
 
 
 
