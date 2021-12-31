@@ -85,6 +85,7 @@ h1 em {
     text-decoration: none;
     border-radius: .3em;
     transition: .3s ease-out;
+
 }
 
 .kirtan-list ul a:hover { background: #E9E4E0; }
