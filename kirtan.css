@@ -73,7 +73,7 @@ h1 em {
 .kirtan-list ul {
     counter-reset: li;
     list-style: none;
-    padding: 5cm;
+    padding: 1cm 2cm;
     text-shadow: 0 1px 0 rgba(255,255,255,.5);
 }
 
