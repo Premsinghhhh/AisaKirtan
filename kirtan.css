@@ -6,14 +6,6 @@
 .table li, .table th{border-top: none; display: inline-block;}
 /*.player audio{background: rgb(0, 0, 0);}*/
 
-#playlist{
-  background-color: #000; 
-  opacity: 60%;
-  border-radius:1em;
-  height:50em;
-  overflow-x: hidden;
-}
-
 #audioPlayer{
     width: 100%;
     display: block;
@@ -83,6 +75,13 @@ h1 em {
     list-style: none;
     padding: 1cm;
     text-shadow: 0 1px 0 rgba(255,255,255,.5);
+
+    overflow-x: hidden;
+    background-color: #000; 
+    opacity: 60%;
+    border-radius:1em;
+    height:55em;
+    margin-top:25px; /* for some reason, on iphone, the ul overlaps the player */
 }
 
 
