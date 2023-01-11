@@ -81,7 +81,7 @@ h1 em {
     opacity: 60%;
     border-radius:1em;
     height:55em;
-    margin-top:25px; /* for some reason, on iphone, the ul overlaps the player */
+    margin-top:50px; /* for some reason, on iphone, the ul overlaps the player */
 }
 
 
