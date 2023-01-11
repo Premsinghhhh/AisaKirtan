@@ -6,6 +6,14 @@
 .table li, .table th{border-top: none; display: inline-block;}
 /*.player audio{background: rgb(0, 0, 0);}*/
 
+#playlist{
+  background-color: #000; 
+  opacity: 60%;
+  border-radius:1em;
+  height:50em;
+  overflow-x: hidden;
+}
+
 #audioPlayer{
     width: 100%;
     display: block;
