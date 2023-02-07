@@ -1,38 +1,77 @@
+let currentSong = 0;
+
 function audioPlayer() {
-  var currentSong = 0;
-  $("#audioPlayer")[0].src = $("#playlist li a")[0];
-  $("#audioPlayer")[0].play();
+  showTitleOfTrack();
+
+  playcurrentSong();
   $("#playlist li a").click(function(e) {
     e.preventDefault();
-    $("#audioPlayer")[0].src = this;
-    $("#audioPlayer")[0].play();
-    $("#playlist li").removeClass("current-song");
     currentSong = $(this).parent().index();
-    $(this).parent().addClass("current-song");
-    /* console.log(currentSong) */
-    const ulElement = document.getElementById("playlist")
-    const theTrackPlaying = ulElement.getElementsByTagName("li")[currentSong].innerText
-    
-    const header = document.getElementsByClassName("main-title m-5")[0]
-    const h2 = header.getElementsByTagName('h2') //there should only be 1 h2 in Header. No More //there should only be 1 h2 in Header. No More
-    if(h2.length === 0){
-      const h2ForTrackName = document.createElement('h2');
-      h2ForTrackName.innerText = theTrackPlaying
-      header.appendChild(h2ForTrackName)
-    }else{
-      h2[0].innerText = theTrackPlaying
-    }
+    playcurrentSong();
   });
 
-  $("#audioPlayer")[0].addEventListener("ended", function() {
-    currentSong++;
-    if (currentSong == $("#playlist li a").length)
-      currentSong = 0;
-    $("#playlist li").removeClass("current-song");
-    $("#playlist li:eq(" + currentSong + ")").addClass("current-song");
-    $("#audioPlayer")[0].src = $("#playlist li a")[currentSong].href;
-    $("#audioPlayer")[0].play();
-  });
+  $("#audioPlayer")[0].addEventListener("ended", playNextTrack);
   const audio = document.querySelector('#audioPlayer');
   audio.controls = true;
+}
+
+function getTitleOfTrack(trackNum){
+  const ulElement = document.getElementById("playlist")
+  return ulElement.getElementsByTagName("li")[trackNum].innerText;
+}
+
+function showTitleOfTrack(){
+  const theTrackPlaying = getTitleOfTrack(currentSong);
+  const header = document.getElementsByClassName("main-title m-5")[0]
+  const h2 = header.getElementsByTagName('h2') //there should only be 1 h2 in Header. No More //there should only be 1 h2 in Header. No More
+  if(h2.length === 0){
+    const h2ForTrackName = document.createElement('h2');
+    h2ForTrackName.innerText = theTrackPlaying
+    header.appendChild(h2ForTrackName)
+  }else{
+    h2[0].innerText = theTrackPlaying
+  }
+}
+
+function playNextTrack(){
+  currentSong++;
+  if (currentSong == $("#playlist li a").length){
+    currentSong = 0;
+  }
+  playcurrentSong();
+}
+
+function playPreviousTrack(){
+  currentSong--;
+  if (currentSong === -1){
+    currentSong = $("#playlist li a").length;
+  }
+  playcurrentSong()
+}
+
+function playcurrentSong(){
+  $("#playlist li").removeClass("current-song");
+  $("#playlist li:eq(" + currentSong + ")").addClass("current-song");
+  $("#audioPlayer")[0].src = $("#playlist li a")[currentSong];
+  $("#audioPlayer")[0].play();
+  showTitleOfTrack();
+  changeNavigator();
+}
+
+function changeNavigator(){
+  console.log('Initalized Navigator');
+  if ('mediaSession' in navigator) {
+    navigator.mediaSession.metadata = new MediaMetadata({
+      title: getTitleOfTrack(currentSong),
+      artist: document.getElementsByTagName('h1')[0].innertext,
+      album: 'vaheguru jio',
+      artwork: [{src:document.getElementsByClassName('main-image')[0].src}]
+    })
+    navigator.mediaSession.setActionHandler('previoustrack', () => playPreviousTrack())
+    navigator.mediaSession.setActionHandler('nexttrack', () => playNextTrack())
+    navigator.mediaSession.setActionHandler('play', () => $("#audioPlayer")[0].play())
+    navigator.mediaSession.setActionHandler('pause', () => $("#audioPlayer")[0].pause())
+  }else{
+    console.log('mediaSession Not Found')
+  }
 }
