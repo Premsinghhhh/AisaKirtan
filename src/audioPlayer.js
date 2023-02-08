@@ -1,8 +1,6 @@
 let currentSong = 0;
 
 function audioPlayer() {
-  showTitleOfTrack();
-
   playcurrentSong();
   $("#playlist li a").click(function(e) {
     e.preventDefault();
@@ -15,41 +13,41 @@ function audioPlayer() {
   audio.controls = true;
 }
 
-function getTitleOfTrack(trackNum){
+function getTitleOfTrack(trackNum) {
   const ulElement = document.getElementById("playlist")
   return ulElement.getElementsByTagName("li")[trackNum].innerText;
 }
 
-function showTitleOfTrack(){
+function showTitleOfTrack() {
   const theTrackPlaying = getTitleOfTrack(currentSong);
   const header = document.getElementsByClassName("main-title m-5")[0]
   const h2 = header.getElementsByTagName('h2') //there should only be 1 h2 in Header. No More //there should only be 1 h2 in Header. No More
-  if(h2.length === 0){
+  if (h2.length === 0) {
     const h2ForTrackName = document.createElement('h2');
     h2ForTrackName.innerText = theTrackPlaying
     header.appendChild(h2ForTrackName)
-  }else{
+  } else {
     h2[0].innerText = theTrackPlaying
   }
 }
 
-function playNextTrack(){
+function playNextTrack() {
   currentSong++;
-  if (currentSong == $("#playlist li a").length){
+  if (currentSong == $("#playlist li a").length) {
     currentSong = 0;
   }
   playcurrentSong();
 }
 
-function playPreviousTrack(){
+function playPreviousTrack() {
   currentSong--;
-  if (currentSong === -1){
-    currentSong = $("#playlist li a").length;
+  if (currentSong === -1) {
+    currentSong = $("#playlist li a").length - 1;
   }
   playcurrentSong()
 }
 
-function playcurrentSong(){
+function playcurrentSong() {
   $("#playlist li").removeClass("current-song");
   $("#playlist li:eq(" + currentSong + ")").addClass("current-song");
   $("#audioPlayer")[0].src = $("#playlist li a")[currentSong];
@@ -58,20 +56,28 @@ function playcurrentSong(){
   changeNavigator();
 }
 
-function changeNavigator(){
+function changeNavigator() {
   console.log('Initalized Navigator');
   if ('mediaSession' in navigator) {
     navigator.mediaSession.metadata = new MediaMetadata({
       title: getTitleOfTrack(currentSong),
       artist: document.getElementsByTagName('h1')[0].innertext,
       album: 'vaheguru jio',
-      artwork: [{src:document.getElementsByClassName('main-image')[0].src}]
+      /* artwork: [{src: document.getElementsByClassName('main-image')[0].src}] */
+      artwork: [
+        { src: document.getElementsByClassName('main-image')[0].src , sizes: '96x96', type: 'image/jpg' },
+        { src: document.getElementsByClassName('main-image')[0].src , sizes: '128x128', type: 'image/jpg' },
+        { src: document.getElementsByClassName('main-image')[0].src , sizes: '192x192', type: 'image/jpg' },
+        { src: document.getElementsByClassName('main-image')[0].src , sizes: '256x256', type: 'image/jpg' },
+        { src: document.getElementsByClassName('main-image')[0].src , sizes: '384x384', type: 'image/jpg' },
+        { src: document.getElementsByClassName('main-image')[0].src , sizes: '512x512', type: 'image/jpg' },
+      ]
     })
     navigator.mediaSession.setActionHandler('previoustrack', () => playPreviousTrack())
     navigator.mediaSession.setActionHandler('nexttrack', () => playNextTrack())
     navigator.mediaSession.setActionHandler('play', () => $("#audioPlayer")[0].play())
     navigator.mediaSession.setActionHandler('pause', () => $("#audioPlayer")[0].pause())
-  }else{
+  } else {
     console.log('mediaSession Not Found')
   }
 }
