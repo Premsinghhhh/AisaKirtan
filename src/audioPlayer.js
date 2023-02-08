@@ -1,11 +1,11 @@
-let currentSong = 0;
+let currentTrackInd = 0;
 
 function audioPlayer() {
-  playcurrentSong();
+  playCurrentTrack();
   $("#playlist li a").click(function(e) {
     e.preventDefault();
-    currentSong = $(this).parent().index();
-    playcurrentSong();
+    currentTrackInd = $(this).parent().index();
+    playCurrentTrack();
   });
 
   $("#audioPlayer")[0].addEventListener("ended", playNextTrack);
@@ -19,7 +19,7 @@ function getTitleOfTrack(trackNum) {
 }
 
 function showTitleOfTrack() {
-  const theTrackPlaying = getTitleOfTrack(currentSong);
+  const theTrackPlaying = getTitleOfTrack(currentTrackInd);
   const header = document.getElementsByClassName("main-title m-5")[0]
   const h2 = header.getElementsByTagName('h2') //there should only be 1 h2 in Header. No More //there should only be 1 h2 in Header. No More
   if (h2.length === 0) {
@@ -32,35 +32,35 @@ function showTitleOfTrack() {
 }
 
 function playNextTrack() {
-  currentSong++;
-  if (currentSong == $("#playlist li a").length) {
-    currentSong = 0;
+  currentTrackInd++;
+  if (currentTrackInd == $("#playlist li a").length) {
+    currentTrackInd = 0;
   }
-  playcurrentSong();
+  playCurrentTrack();
 }
 
 function playPreviousTrack() {
-  currentSong--;
-  if (currentSong === -1) {
-    currentSong = $("#playlist li a").length - 1;
+  currentTrackInd--;
+  if (currentTrackInd === -1) {
+    currentTrackInd = $("#playlist li a").length - 1;
   }
-  playcurrentSong()
+  playCurrentTrack()
 }
 
-function playcurrentSong() {
+function playCurrentTrack() {
   $("#playlist li").removeClass("current-song");
-  $("#playlist li:eq(" + currentSong + ")").addClass("current-song");
-  $("#audioPlayer")[0].src = $("#playlist li a")[currentSong];
+  $("#playlist li:eq(" + currentTrackInd + ")").addClass("current-song");
+  $("#audioPlayer")[0].src = $("#playlist li a")[currentTrackInd];
   $("#audioPlayer")[0].play();
   showTitleOfTrack();
   changeNavigator();
 }
 
 function changeNavigator() {
-  console.log('Initalized Navigator');
+  console.log('Changed Navigator');
   if ('mediaSession' in navigator) {
     navigator.mediaSession.metadata = new MediaMetadata({
-      title: getTitleOfTrack(currentSong),
+      title: getTitleOfTrack(currentTrackInd),
       artist: document.getElementsByTagName('h1')[0].innertext,
       album: 'vaheguru jio',
       /* artwork: [{src: document.getElementsByClassName('main-image')[0].src}] */
