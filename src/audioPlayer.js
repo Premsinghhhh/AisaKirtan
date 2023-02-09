@@ -82,3 +82,9 @@ function changeNavigator() {
   }
 }  
 
+
+// Load the first track when the page loads
+window.onload = function() {
+  audioPlayer.src = playlist.firstElementChild.firstElementChild.getAttribute("href");
+  audioPlayer.load();
+}
