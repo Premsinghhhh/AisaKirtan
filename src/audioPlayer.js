@@ -1,4 +1,4 @@
-let currentTrackInd = 0;
+/* let currentTrackInd = 0;
 
 function audioPlayer() {
   playCurrentTrack();
@@ -64,7 +64,7 @@ function changeNavigator() {
       artist: document.getElementsByTagName('h1')[0].innertext,
       album: 'vaheguru jio',
       /* artwork: [{src: document.getElementsByClassName('main-image')[0].src}] */
-      artwork: [
+   /*   artwork: [
         { src: document.getElementsByClassName('main-image')[0].src , sizes: '96x96', type: 'image/jpg' },
         { src: document.getElementsByClassName('main-image')[0].src , sizes: '128x128', type: 'image/jpg' },
         { src: document.getElementsByClassName('main-image')[0].src , sizes: '192x192', type: 'image/jpg' },
@@ -80,5 +80,36 @@ function changeNavigator() {
   } else {
     console.log('mediaSession Not Found')
   }
-}  
+}  */
+*/
 
+
+// Get references to the audio player and playlist
+var audioPlayer = document.getElementById("audioPlayer");
+var playlist = document.getElementById("playlist");
+
+// Load the first track when the page loads
+window.onload = function() {
+  audioPlayer.src = playlist.firstElementChild.firstElementChild.getAttribute("href");
+  audioPlayer.load();
+}
+
+// Play the previous track
+function playPreviousTrack() {
+  var currentTrack = playlist.querySelector("li a[href='" + audioPlayer.src + "']");
+  var previousTrack = currentTrack.parentElement.previousElementSibling;
+
+  if (previousTrack === null) {
+    previousTrack = playlist.lastElementChild;
+  }
+
+  audioPlayer.src = previousTrack.firstElementChild.getAttribute("href");
+  audioPlayer.load();
+  audioPlayer.play();
+}
+
+// Play the next track
+function playNextTrack() {
+  var currentTrack = playlist.querySelector("li a[href='" + audioPlayer.src + "']");
+  var nextTrack = currentTrack.parentElement.nextElementSibling;
+}
