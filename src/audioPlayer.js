@@ -50,7 +50,7 @@ function playPreviousTrack() {
 function playCurrentTrack() {
   $("#playlist li").removeClass("current-song");
   $("#playlist li:eq(" + currentTrackInd + ")").addClass("current-song");
-  $("#audioPlayer")[0].src = $("#playlist li a")[currentTrackInd].href;
+  $("#audioPlayer")[0].src = $("#playlist li a")[currentTrackInd];
   $("#audioPlayer")[0].play();
   showTitleOfTrack();
   changeNavigator();
