@@ -1,4 +1,4 @@
-let currentTrackInd = 0;
+ let currentTrackInd = 0;
 
 function audioPlayer() {
   playCurrentTrack();
@@ -80,4 +80,5 @@ function changeNavigator() {
   } else {
     console.log('mediaSession Not Found')
   }
-}
+}  
+
