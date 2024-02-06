@@ -1,105 +1,180 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" dir="ltr">
   <head>
-    <link rel="icon" href="images/logo.jpg">
-    <meta charset="utf-8">
-    <meta name="viewpoint:" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo.jpg" />
+    <meta charset="utf-8" />
+    <meta name="viewpoint:" content="width=device-width, initial-scale=1.0" />
     <title>AisaKirtan</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="src/bootstrap.min.css">
-    <link rel="stylesheet" href="kirtan.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/bootstrap.min.css" />
+    <link rel="stylesheet" href="kirtan.css" />
     <script src="src/jquery.min.js"></script>
     <script src="src/audioPlayer.js"></script>
   </head>
 
   <body>
     <!-- Nav bar start -->
-      <nav class="navbar navbar-dark navbar-expand-lg fixed-top">
-        <div class="container">
-          <a href="#"><img src="images/logo.jpg" alt="" width="70px" height="70px"></a>
-          <div class="" id="navbarnav">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item"><a class="nav-link" href="index.html" class="active">Back</a></li>
-            </ul>
-          </div>
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top">
+      <div class="container">
+        <a href="/"
+          ><img src="images/logo.jpg" alt="" width="70px" height="70px"
+        /></a>
+        <div class="" id="navbarnav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html" class="active">Back</a>
+            </li>
+          </ul>
         </div>
-      </nav>
+      </div>
+    </nav>
 
+    <section id="amolak" class="text-center">
+      <div class="container justify-content-center">
+        <div class="main-image-wrapper" id="box">
+          <!-- Main image -->
+          <img
+            src="images/AMOLAK_W2.jpg"
+            class="main-image"
+            width="400px"
+            height="400px"
+          />
+        </div>
+        <div class="main-title m-5">
+          <!--Main title-->
+          <h1>GIANI AMOLAK SINGH</h1>
+        </div>
 
-   <section id="amolak" class="text-center">
-        <div class="container justify-content-center">
-
-          <div class="main-image-wrapper" id="box">
-            <!-- Main image -->
-            <img src="images/AMOLAK_W2.jpg" class="main-image" width="400px" height="400px">
-          </div>
-          <div class="main-title m-5">
-            <!--Main title-->
-            <h1>GIANI AMOLAK SINGH</h1>
-          </div>
-
-          <!-- Audio player start -->
+        <!-- Audio player start -->
         <div class="row">
           <div class="col">
             <div class="m-3">
-              <audio src="" preload="none" controls="" id="audioPlayer" controlsList="">
+              <audio
+                src=""
+                preload="none"
+                controls=""
+                id="audioPlayer"
+                controlsList=""
+              >
                 Sorry, your browser doesn't support html5!
               </audio>
             </div>
           </div>
         </div>
         <!-- Audio player end -->
-          
-          <button onclick="playPreviousTrack()">Previous</button>
+
+        <button onclick="playPreviousTrack()">Previous</button>
         <button onclick="playNextTrack()">Next</button>
 
         <!-- Main body start -->
         <div class="row">
           <div class="col">
             <div class="kirtan-list">
-
               <!--kirtan list start-->
-              <ul class="table ml-auto " id="playlist">
-                <li class="m-3"><a href="https://docs.google.com/uc?export=download&id=1eXV_nhZjILZD8CyqX5n1Qjv38IrbmaNC"><h4> ਆਸਾ ਕੀ ਵਾਰ<br>Asa Ki Vaar 1970's </h4> </a></li>
-                <li class="m-3"><a href="https://docs.google.com/uc?export=download&id=19kZPdii658ZJRhjlFHlF2H6yMS1bqRYy"><h4> ਅੰਮ੍ਰਿਤਬਾਣੀਹਰਿਹਰਿਤੇਰੀ॥Amrit Baani Har Har </h4> </a></li>
-                <li class="m-3"><a href="https://docs.google.com/uc?export=download&id=1vvDMaLWlxwceRyWF-ZDmfsaLXBndM2O9"><h4> ਆਰਤੀ<br>Aarti </h4> </a></li>
-                <li class="m-3"><a href="https://docs.google.com/uc?export=download&id=1rC28uznThAiXSpjoV3qWehH5FpRiZihm"><h4> ਆਵਹੁਸੰਤਮੈਗਲਿਮੇਲਾਈਐ॥<br>Avo Sant Mai Gal Melayiyaa </h4> </a></li>
-                <li class="m-3"><a href="https://docs.google.com/uc?export=download&id=1X__f4dP2iwWyiS-oK5fSx0U6dIbIAiS8"><h4> ਗੁਰੁਬੈਠਾਅਮਰੁਸਰੂਪਹੋਇਗੁਰਮੁਖਿਪਾਈਦਾਤਿਇਲਾਹੀ।<br>Gur Beta Amar Saroop Hoe </h4> </a></li>
-                <li class="m-3"><a href="https://docs.google.com/uc?export=download&id=1mYy2QXeepFuiDIevTy8X01RUJx5qs0Ko"><h4> ਜੇਤੂਮਿਤ੍ਰੁਅਸਾਡੜਾਹਿਕਭੋਰੀਨਾਵੇਛੋੜਿ॥<br>Hik Bhoree Na Vichhor </h4> </a></li>
-                <li class="m-3"><a href="https://docs.google.com/uc?export=download&id=1Uefma37mGeNRcgz-o4oa4Zk_9VRtJDiU"><h4> ਮਨੁਤਨੁਤੇਰਾਧਨੁਭੀਤੇਰਾ॥<br>Man Tan Tera </h4> </a></li>
-                <li class="m-3"><a href="https://docs.google.com/uc?export=download&id=1rCeig8V9CyliWMlfsxssQAztfw2ZRgdW"><h4> ਰਾਮਰਾਇਹੋਹਿਬੈਦਬਨਵਾਰੀ॥<br>Raam Rai hohi Baid </h4> </a></li>
-                <li class="m-3"><a href="https://docs.google.com/uc?export=download&id=1IYQNVxBj6-sKvGChIkb6wXYOzcqjpM86"><h4> ਮੁਲਾਂਕਹਹੁਨਿਆਉਖੁਦਾਈ॥<br>Mulah Kaho Niaao Khudaee </h4> </a></li>
-                <li class="m-3"><a href="https://docs.google.com/uc?export=download&id=1QCKyzYBo6kLsTE5gFiBnQS_A6OVimbBB"><h4> ਨੈਣਮਹਿੰਜੇਤਰਸਦੇਕਦਿਪਸੀਦੀਦਾਰੁ॥੧॥<br>Nain Mahinjai Tarsdai </h4> </a></li>
-                <li class="m-3"><a href="https://docs.google.com/uc?export=download&id=15ACd7eq0d642ipLrSnp3epJVg4Iw6X6T"><h4> ਪ੍ਰੇਮਕੀਸਾਰਸੋਈਜਾਣੈਜਿਸਨੋਨਦਰਿਤੁਮਾਰੀਜੀਉ॥੧॥ਰਹਾਉ॥<br>Prem Kee Saar Soee Koi Janea </h4> </a></li>
-                <li class="m-3"><a href="https://docs.google.com/uc?export=download&id=1b4ixMbOlvXSnf1xYuyemqAcDqna__xhL"><h4> ਗੁਰਮੁਖਿਜਿਨੀਨਾਮੁਨਪਾਇਆ॥<br>Gurmukh Jinee Naam N Paaiaa </h4> </a></li>
-                <li class="m-3"><a href="https://docs.google.com/uc?export=download&id=1U7bwHQcboDqFl9dNYihgZJBMrr4ziYRR"><h4> ਸਤਿਨਾਮੁ ਵਾਹਿਗੁਰੂ<br>Satnaam Vaheguroo </h4> </a></li>
-                <li class="m-3"><a href="https://docs.google.com/uc?export=download&id=1Ic6gwdNlbmhA3Ab4rKkePoYjrRVy2aVr"><h4> ਸੁਖੀਬਸੈਮਸਕੀਨੀਆਆਪੁਨਿਵਾਰਿਤਲੇ॥<br>Sukhee Basai Maskeeniyaa </h4> </a></li>
-                <li class="m-3"><a href="https://docs.google.com/uc?export=download&id=1qwgAmmoBw8dSeXi2b3LYQN3afiLHe33f"><h4> ਸੁਣਿਸੁਣਿਨਾਮੁਤੁਮਾਰਾਪ੍ਰੀਤਮਪ੍ਰਭੁਪੇਖਨਕਾਚਾਉ॥<br>Sun Sun Naam Tumara Preetam </h4> </a></li>
-                <li class="m-3"><a href="https://docs.google.com/uc?export=download&id=1VB3UowONvvZ7DG7jni7MXvBwlVdrB5gU"><h4> ਸੁਨੀਐਬਾਜੈਬਾਜਸੁਹਾਵੀ॥<br>Suneeai Bajai Baaj Suhavee </h4> </a></li>
-                <li class="m-3"><a href="https://docs.google.com/uc?export=download&id=1HhoXvpIB_l3QUIwO7k2UuYiW0ZtmFePh"><h4> ਹਉਆਇਆਦੂਰਹੁਚਲਿਕੈਮੈਤਕੀਤਉਸਰਣਾਇਜੀਉ॥<br>Ho Aaiaa Dooro Chal Kai </h4> </a></li>
-                <li class="m-3"><a href="https://docs.google.com/uc?export=download&id=19MU3RB3oQWQv0U0yv8zhArjuSDo1vWyV"><h4> ਮਿਲੁਮੇਰੇਪ੍ਰੀਤਮਾਜੀਉਤੁਧੁਬਿਨੁਖਰੀਨਿਮਾਣੀ॥<br>Mil Mere Preetma Jeeo </h4> </a></li>
-                <li class="m-3"><a href="https://docs.google.com/uc?export=download&id=1RmoBa9YFrpxH4Ml9PyRXg2MIKyOR6MY3"><h4> ਮੋਹਨਘਰਿਆਵਹੁਕਰਉਜੋਦਰੀਆ॥<br>Mohan Ghar Aavo </h4> </a></li>
-                <li class="m-3"><a href="https://docs.google.com/uc?export=download&id=11dyzFIb1shjiJ2qFWEmi8Dd1fwy3Ajs2"><h4> ਨੈਣਮਹਿੰਜੇਤਰਸਦੇਕਦਿਪਸੀਦੀਦਾਰੁ॥੧॥<br>Nain Mahanjai Tarsdai </h4> </a></li>
-                <li class="m-3"><a href="https://docs.google.com/uc?export=download&id=1bPhGyqdyTV92BMJPaLUEjGdvYxizxIei"><h4> ਸੁਖੀਬਸੈਮਸਕੀਨੀਆਆਪੁਨਿਵਾਰਿਤਲੇ॥<br>Sakhai Basai Maskeeniya </h4> </a></li>
-                <li class="m-3"><a href="https://docs.google.com/uc?export=download&id=13Fi1BNphjKkv-3TQ1O8chAqQIh7yuqdv"><h4> ਗੁਰੁਸੁੰਦਰੁਮੋਹਨੁਪਾਇਕਰੇਹਰਿਪ੍ਰੇਮਬਾਣੀਮਨੁਮਾਰਿਆ॥<br>Gur Sundar Mohan </h4> </a></li>
-                <li class="m-3"><a href="https://docs.google.com/uc?export=download&id=1lCmOaGvqSu7O9At1U2Xx0BDYwKffO8zB"><h4> ਜਾਕੇਸੰਗਤੇਬੀਛੁਰਾਤਾਹੀਕੇਸੰਗਿਲਾਗੁ॥੧੨੯॥<br>Jaa Kai Sang Te Beechraa</h4> </a></li>
-                <li class="m-3"><a href="https://docs.google.com/uc?export=download&id=1A9BbIqQ8kPcV0g_bA1DoijfQtohkqI2S"><h4> ਮਾਈਮੋਰੋਪ੍ਰੀਤਮੁਰਾਮੁਬਤਾਵਹੁਰੀਮਾਈ॥<br>Mayee Mero Preetam Batavo </h4> </a></li>
-                <li class="m-3"><a href="https://docs.google.com/uc?export=download&id=1IHxO9DQ1x2r1UuOuL_d5sTnatwcgpptb"><h4> ਮੇਰੋਸੁੰਦਰੁਕਹਹੁਮਿਲੈਕਿਤੁਗਲੀ॥<br>Mero Sundar Kaho Milai Kit Galee</h4> </a></li>
-                <li class="m-3"><a href="https://docs.google.com/uc?export=download&id=1YE5z1GBdDj143YRsR2b3CITLG0OYnaeS"><h4> ਸੇਵੀਸਤਿਗੁਰੁਆਪਣਾਹਰਿਸਿਮਰੀਦਿਨਸਭਿਰੈਣ॥<br>Sevi Satgur Apna Har Simri Din Sabh Rain </h4> </a></li>
-                <li class="m-3"><a href="https://docs.google.com/uc?export=download&id=1glMXKXka3ZFf0yeANV9p_kGBrs0hGxnR"><h4> ਸ੍ਵਾਮੀਸਰਨਿਪਰਿਓਦਰਬਾਰੇ॥<br>Svami Sharan Pario Darbaare</h4> </a></li>
-              </ul>
+              <ul class="table ml-auto" id="playlist"></ul>
               <!--Kirtan list end-->
-           </div>                
+            </div>
           </div>
         </div>
-
       </div>
-      </section>
+    </section>
 
+    <script>
+      const trackLinks = [
+        'https://docs.google.com/uc?export=download&id=1eXV_nhZjILZD8CyqX5n1Qjv38IrbmaNC',
+        'https://docs.google.com/uc?export=download&id=19kZPdii658ZJRhjlFHlF2H6yMS1bqRYy',
+        'https://docs.google.com/uc?export=download&id=1vvDMaLWlxwceRyWF-ZDmfsaLXBndM2O9',
+        'https://docs.google.com/uc?export=download&id=1rC28uznThAiXSpjoV3qWehH5FpRiZihm',
+        'https://docs.google.com/uc?export=download&id=1X__f4dP2iwWyiS-oK5fSx0U6dIbIAiS8',
+        'https://docs.google.com/uc?export=download&id=1mYy2QXeepFuiDIevTy8X01RUJx5qs0Ko',
+        'https://docs.google.com/uc?export=download&id=1Uefma37mGeNRcgz-o4oa4Zk_9VRtJDiU',
+        'https://docs.google.com/uc?export=download&id=1rCeig8V9CyliWMlfsxssQAztfw2ZRgdW',
+        'https://docs.google.com/uc?export=download&id=1IYQNVxBj6-sKvGChIkb6wXYOzcqjpM86',
+        'https://docs.google.com/uc?export=download&id=1QCKyzYBo6kLsTE5gFiBnQS_A6OVimbBB',
+        'https://docs.google.com/uc?export=download&id=15ACd7eq0d642ipLrSnp3epJVg4Iw6X6T',
+        'https://docs.google.com/uc?export=download&id=1b4ixMbOlvXSnf1xYuyemqAcDqna__xhL',
+        'https://docs.google.com/uc?export=download&id=1U7bwHQcboDqFl9dNYihgZJBMrr4ziYRR',
+        'https://docs.google.com/uc?export=download&id=1Ic6gwdNlbmhA3Ab4rKkePoYjrRVy2aVr',
+        'https://docs.google.com/uc?export=download&id=1qwgAmmoBw8dSeXi2b3LYQN3afiLHe33f',
+        'https://docs.google.com/uc?export=download&id=1VB3UowONvvZ7DG7jni7MXvBwlVdrB5gU',
+        'https://docs.google.com/uc?export=download&id=1HhoXvpIB_l3QUIwO7k2UuYiW0ZtmFePh',
+        'https://docs.google.com/uc?export=download&id=19MU3RB3oQWQv0U0yv8zhArjuSDo1vWyV',
+        'https://docs.google.com/uc?export=download&id=1RmoBa9YFrpxH4Ml9PyRXg2MIKyOR6MY3',
+        'https://docs.google.com/uc?export=download&id=11dyzFIb1shjiJ2qFWEmi8Dd1fwy3Ajs2',
+        'https://docs.google.com/uc?export=download&id=1bPhGyqdyTV92BMJPaLUEjGdvYxizxIei',
+        'https://docs.google.com/uc?export=download&id=13Fi1BNphjKkv-3TQ1O8chAqQIh7yuqdv',
+        'https://docs.google.com/uc?export=download&id=1lCmOaGvqSu7O9At1U2Xx0BDYwKffO8zB',
+        'https://docs.google.com/uc?export=download&id=1A9BbIqQ8kPcV0g_bA1DoijfQtohkqI2S',
+        'https://docs.google.com/uc?export=download&id=1IHxO9DQ1x2r1UuOuL_d5sTnatwcgpptb',
+        'https://docs.google.com/uc?export=download&id=1YE5z1GBdDj143YRsR2b3CITLG0OYnaeS',
+        'https://docs.google.com/uc?export=download&id=1glMXKXka3ZFf0yeANV9p_kGBrs0hGxnR',
+      ]
 
+      const gurmukhiTitle = [
+        'ਆਸਾ ਕੀ ਵਾਰ',
+        'ਅੰਮ੍ਰਿਤਬਾਣੀਹਰਿਹਰਿਤੇਰੀ॥',
+        'ਆਰਤੀ',
+        'ਆਵਹੁਸੰਤਮੈਗਲਿਮੇਲਾਈਐ॥',
+        'ਗੁਰੁਬੈਠਾਅਮਰੁਸਰੂਪਹੋਇਗੁਰਮੁਖਿਪਾਈਦਾਤਿਇਲਾਹੀ।',
+        'ਜੇਤੂਮਿਤ੍ਰੁਅਸਾਡੜਾਹਿਕਭੋਰੀਨਾਵੇਛੋੜਿ॥',
+        'ਮਨੁਤਨੁਤੇਰਾਧਨੁਭੀਤੇਰਾ॥',
+        'ਰਾਮਰਾਇਹੋਹਿਬੈਦਬਨਵਾਰੀ॥',
+        'ਮੁਲਾਂਕਹਹੁਨਿਆਉਖੁਦਾਈ॥',
+        'ਨੈਣਮਹਿੰਜੇਤਰਸਦੇਕਦਿਪਸੀਦੀਦਾਰੁ॥੧॥',
+        'ਪ੍ਰੇਮਕੀਸਾਰਸੋਈਜਾਣੈਜਿਸਨੋਨਦਰਿਤੁਮਾਰੀਜੀਉ॥੧॥ਰਹਾਉ॥',
+        'ਗੁਰਮੁਖਿਜਿਨੀਨਾਮੁਨਪਾਇਆ॥',
+        'ਸਤਿਨਾਮੁ ਵਾਹਿਗੁਰੂ',
+        'ਸੁਖੀਬਸੈਮਸਕੀਨੀਆਆਪੁਨਿਵਾਰਿਤਲੇ॥',
+        'ਸੁਣਿਸੁਣਿਨਾਮੁਤੁਮਾਰਾਪ੍ਰੀਤਮਪ੍ਰਭੁਪੇਖਨਕਾਚਾਉ॥',
+        'ਸੁਨੀਐਬਾਜੈਬਾਜਸੁਹਾਵੀ॥',
+        'ਹਉਆਇਆਦੂਰਹੁਚਲਿਕੈਮੈਤਕੀਤਉਸਰਣਾਇਜੀਉ॥',
+        'ਮਿਲੁਮੇਰੇਪ੍ਰੀਤਮਾਜੀਉਤੁਧੁਬਿਨੁਖਰੀਨਿਮਾਣੀ॥',
+        'ਮੋਹਨਘਰਿਆਵਹੁਕਰਉਜੋਦਰੀਆ॥',
+        'ਨੈਣਮਹਿੰਜੇਤਰਸਦੇਕਦਿਪਸੀਦੀਦਾਰੁ॥੧॥',
+        'ਸੁਖੀਬਸੈਮਸਕੀਨੀਆਆਪੁਨਿਵਾਰਿਤਲੇ॥',
+        'ਗੁਰੁਸੁੰਦਰੁਮੋਹਨੁਪਾਇਕਰੇਹਰਿਪ੍ਰੇਮਬਾਣੀਮਨੁਮਾਰਿਆ॥',
+        'ਜਾਕੇਸੰਗਤੇਬੀਛੁਰਾਤਾਹੀਕੇਸੰਗਿਲਾਗੁ॥੧੨੯॥',
+        'ਮਾਈਮੋਰੋਪ੍ਰੀਤਮੁਰਾਮੁਬਤਾਵਹੁਰੀਮਾਈ॥',
+        'ਮੇਰੋਸੁੰਦਰੁਕਹਹੁਮਿਲੈਕਿਤੁਗਲੀ॥',
+        'ਸੇਵੀਸਤਿਗੁਰੁਆਪਣਾਹਰਿਸਿਮਰੀਦਿਨਸਭਿਰੈਣ॥',
+        'ਸ੍ਵਾਮੀਸਰਨਿਪਰਿਓਦਰਬਾਰੇ॥',
+      ]
 
-      <!--footer scripts-->
-      <script> audioPlayer(); </script>
+      const englishTitle = [
+        "Asa Ki Vaar 1970's",
+        'Amrit Baani Har Har',
+        'Aarti',
+        'Avo Sant Mai Gal Melayiyaa',
+        'Gur Beta Amar Saroop Hoe',
+        'Hik Bhoree Na Vichhor',
+        'Man Tan Tera',
+        'Raam Rai hohi Baid',
+        'Mulah Kaho Niaao Khudaee',
+        'Nain Mahinjai Tarsdai',
+        'Prem Kee Saar Soee Koi Janea',
+        'Gurmukh Jinee Naam N Paaiaa',
+        'Satnaam Vaheguroo',
+        'Sukhee Basai Maskeeniyaa',
+        'Sun Sun Naam Tumara Preetam',
+        'Suneeai Bajai Baaj Suhavee',
+        'Ho Aaiaa Dooro Chal Kai',
+        'Mil Mere Preetma Jeeo',
+        'Mohan Ghar Aavo',
+        'Nain Mahanjai Tarsdai',
+        'Sakhai Basai Maskeeniya',
+        'Gur Sundar Mohan',
+        'Jaa Kai Sang Te Beechraa',
+        'Mayee Mero Preetam Batavo',
+        'Mero Sundar Kaho Milai Kit Galee',
+        'Sevi Satgur Apna Har Simri Din Sabh Rain',
+        'Svami Sharan Pario Darbaare',
+      ]
 
+      add_links_to_screen(trackLinks, gurmukhiTitle, englishTitle) // coming from ./src/audioPlayer.js
+      audioPlayer()
+    </script>
   </body>
 </html>

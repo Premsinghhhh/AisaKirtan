@@ -1,114 +1,186 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" dir="ltr">
-
   <head>
-    <link rel="icon" href="images/logo.jpg">
-    <meta charset="utf-8">
-    <meta name="viewpoint:" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo.jpg" />
+    <meta charset="utf-8" />
+    <meta name="viewpoint:" content="width=device-width, initial-scale=1.0" />
     <title>AisaKirtan</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="src/bootstrap.min.css">
-    <link rel="stylesheet" href="kirtan.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/bootstrap.min.css" />
+    <link rel="stylesheet" href="kirtan.css" />
     <script src="src/jquery.min.js"></script>
     <script src="src/audioPlayer.js"></script>
   </head>
 
   <body>
-    <!--Nav bar start-->
-      <nav class="navbar navbar-dark navbar-expand-lg fixed-top">
-        <div class="container">
-          <a href="#"><img src="images/logo.jpg" alt="" width="70px" height="70px"></a>
-          <div class="" id="navbarnav">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item"><a class="nav-link" href="index.html" class="active">Back</a></li>
-            </ul>
-          </div>
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top">
+      <div class="container">
+        <a href="/"
+          ><img src="images/logo.jpg" alt="" width="70px" height="70px"
+        /></a>
+        <div class="" id="navbarnav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html" class="active">Back</a>
+            </li>
+          </ul>
         </div>
-      </nav>
+      </div>
+    </nav>
 
-      <section id="jasbir" class="text-center">
-        <div class="container justify-content-center">
-   
-          <div class="main-image-wrapper" id="box">
-            <!--main image-->
-            <img src="images/smagamm.jpg" class="main-image" width="400px" height="400px">
-          </div>
-          <div class="main-title m-5">
-            <!--Main Title-->
-            <h1>SLOUGH SMAGAM 1995</h1>
-          </div>
-          <!-- Audio player start -->
-          <div class="row">
-            <div class="col">
-              <div class="m-3">
-                <audio src="" preload="none" controls="" id="audioPlayer" controlsList="">
-                  Sorry, your browser doesn't support html5!
-                </audio>
-              </div>
+    <section id="jasbir" class="text-center">
+      <div class="container justify-content-center">
+        <div class="main-image-wrapper" id="box">
+          <!--main image-->
+          <img
+            src="images/smagamm.jpg"
+            class="main-image"
+            width="400px"
+            height="400px"
+          />
+        </div>
+        <div class="main-title m-5">
+          <!--Main Title-->
+          <h1>SLOUGH SMAGAM 1995</h1>
+        </div>
+        <!-- Audio player start -->
+        <div class="row">
+          <div class="col">
+            <div class="m-3">
+              <audio
+                src=""
+                preload="none"
+                controls=""
+                id="audioPlayer"
+                controlsList=""
+              >
+                Sorry, your browser doesn't support html5!
+              </audio>
             </div>
           </div>
-          <!-- Audio player end -->
-          
-          <button onclick="playPreviousTrack()">Previous</button>
-           <button onclick="playNextTrack()">Next</button>
-
-          <!-- Main body start -->
-          <div class="row">
-            <div class="col">
-              <div class="kirtan-list">
-                <!-- Kirtan list start -->
-                <ul class="table ml-auto " id="playlist"> <h3>Akhand Kirtan:</h3>
-                  <li class="m-3"><a href="https://docs.google.com/uc?export=download&id=1etTDTvQtifLGVeBV0pWfImtxzBwtC_4P"><h4> Bhai Dapinder Singh Ji </h4> </a></li> 
-                  <li class="m-3"><a href="https://docs.google.com/uc?export=download&id=1dyaR7EMSfEWYO8GCD0N5EWHyX5HOKUs0"><h4> Bhai Harpreet Singh Ji </h4> </a></li> 
-                  <li class="m-3"><a href="https://docs.google.com/uc?export=download&id=1iS5SK1T5v5A9pdrXBq4kWYl5zLeE8rmj"><h4> Bhai Harpreet Singh Ji </h4> </a></li> 
-                  <li class="m-3"><a href="https://docs.google.com/uc?export=download&id=11-ShPic_83xlLqV18O9nfk-C5ay-EEYE"><h4> Bhai Jeevan Singh Ji </h4> </a></li> 
-                  <li class="m-3"><a href="https://docs.google.com/uc?export=download&id=1VvDrpx3gbXT6NJuLZOjSbb8CuwfCOq0-"><h4> Bhai Jeevan Singh Ji </h4> </a></li> 
-                  <li class="m-3"><a href="https://docs.google.com/uc?export=download&id=1wM41rvVYpf8WE72m8xGaD3gTn3ZSlzC_"><h4> Bhai Jeevan Singh Ji </h4> </a></li> 
-                  <li class="m-3"><a href="https://docs.google.com/uc?export=download&id=12qemddgRGL5f6CJUDqTRyODYYjp8O9tu"><h4> Bhai Manjit Singh Ji </h4> </a></li>
-                  <li class="m-3"><a href="https://docs.google.com/uc?export=download&id=1zacBeNB2f6o2hEbs8-emxa7JJ5vd1cSu"><h4> Bhai Mehar Singh Ji </h4> </a></li>
-                  <li class="m-3"><a href="https://docs.google.com/uc?export=download&id=1afxY0xOaRHzH7hlBpPfYKyNbUj8hnm8U"><h4> Bhai Mehar Singh Ji </h4> </a></li>
-                  <li class="m-3"><a href="https://docs.google.com/uc?export=download&id=1ZWWILmh7IWZZb29xEmc8bpz3hHPRVHWR"><h4> Bhai Mehar Singh Ji </h4> </a></li>
-                  <li class="m-3"><a href="https://docs.google.com/uc?export=download&id=1BAvxP4K-SZOz_zeZ8hjgqmJUY8k7FbjC"><h4> Bhai Tarlochen Singh Ji </h4> </a></li>
-                  <li class="m-3"><a href="https://docs.google.com/uc?export=download&id=16Ke-XlwBQCsXyLHfMQoZBGKymrK3N995"><h4> Bibi Gurvindar Kaur Ji </h4> </a></li>
-                  <li class="m-3"><a href="https://docs.google.com/uc?export=download&id=16Ke-XlwBQCsXyLHfMQoZBGKymrK3N995"><h4> Bibi Gurvindar Kaur Ji </h4> </a></li>
-                  <li class="m-3"><a href="https://docs.google.com/uc?export=download&id=1NlZrVjTSMS9KUebpcuxDaqpLLEYey9A1"><h4> Bibi Surinder Kaur Ji </h4> </a></li>
-                  <li class="m-3"><a href="https://docs.google.com/uc?export=download&id=1XeDJDn02Ty5V90OhDVVuy_H4KC5JkPD0"><h4> Bibi Talwinder Kaur Ji </h4> </a></li>
-                  <li class="m-3"><a href="https://docs.google.com/uc?export=download&id=1aKZcNtEOGe8CAoLCeM4SdmJZPBKPbCrj"><h4> Bibi Talwinder Kaur Ji </h4> </a></li>
-                  <li class="m-3"><a href="https://docs.google.com/uc?export=download&id=1vvMcUCNpMa75fP-GyFZvEKDWWGjgZLOF"><h4> Giani Amolak Singh Ji </h4> </a></li>
-                </ul>
-                <!--Kirtan list end-->
-                <!-- Kirtan list start -->
-                    <ul class="table ml-auto " id="playlist"> <h3>Asa Ki Vaar:</h3>
-                      <li class="m-3"><a href="https://docs.google.com/uc?export=download&id=1mJNIJn9xLx0MpY4qm7Maisdfu-O8wWk8"><h4> Asa Ki Vaar <br> Day 1 </h4> </a></li>
-                      <li class="m-3"><a href="https://docs.google.com/uc?export=download&id=1iaNBOtLnoejmyeScputFs-2sznIEhvkE"><h4> Asa Ki Vaar <br> Day 2 </h4> </a></li>
-                      <li class="m-3"><a href="https://docs.google.com/uc?export=download&id=1X9os2VofH6OlMVODYiyPL4G-WuUq8ynw"><h4> Asa Ki Vaar <br> Day 3 </h4> </a></li>
-                      <li class="m-3"><a href="https://docs.google.com/uc?export=download&id=1-gkNAFNUSwjYGkmXSVsVLhOEnzBb3p1-"><h4> Asa Ki Vaar <br> Day 4 </h4> </a></li>
-                      <li class="m-3"><a href="https://docs.google.com/uc?export=download&id=1F1Q-ZfBj3Ar4EciYPAf-P_QGuLOAL0d8"><h4> Asa Ki Vaar <br> Day 5 </h4> </a></li>
-                    </ul>
-                    <!--Kirtan list end-->
-                    <!-- Kirtan list start -->
-                    <ul class="table ml-auto " id="playlist"> <h3>Reinsbhai:</h3>
-                      <li class="m-3"><a href="https://docs.google.com/uc?export=download&id=1VJRcYXT_WxF_ozSVwemqaaqQ5KJWEAS4"><h4> Bhai Harsevak Singh Ji </h4> </a></li>
-                      <li class="m-3"><a href="https://docs.google.com/uc?export=download&id=1vRInQ-s5BnzQWn77aZVwEeZiO5sasXbG"><h4> Bhai Harpreet Singh Ji </h4> </a></li>
-                      <li class="m-3"><a href="https://docs.google.com/uc?export=download&id=1fSejLYWYO0KWAOAFHJqKXIv9Vvkfx5Z7"><h4> Bhai Jeevan Singh Ji </h4> </a></li>
-                      <li class="m-3"><a href="https://docs.google.com/uc?export=download&id=1z52wjjCsYFD024eyn8UNPaWMExQc0_cy"><h4> Bhai Kuldeep Singh Ji </h4> </a></li>
-                      <li class="m-3"><a href="https://docs.google.com/uc?export=download&id=1j-quJfbVQMDjsnCS60s269aE6iNANOPC"><h4> Bhai Manjit Singh Ji </h4> </a></li>
-                      <li class="m-3"><a href="https://docs.google.com/uc?export=download&id=1apRwN_zYxhhLIbJ1XOFQgqDKvlfQJRsh"><h4> Bhai Mehar Singh Ji </h4> </a></li>
-                      <li class="m-3"><a href="https://docs.google.com/uc?export=download&id=1NfwLBeVfq_0MxdUy_ND3ca1K0XumpcO7"><h4> Bhai Mehar Singh Ji </h4> </a></li>
-                      <li class="m-3"><a href="https://docs.google.com/uc?export=download&id=12ey6DpnIB9-L7RQnaVhMXpwaq0n0P714"><h4> Bibi Talvinder Kaur Ji </h4> </a></li>
-                    </ul>
-                    <!--Kirtan list end-->
-                </div>
-              </div>
-            </div>
-            <!--main body end-->
-
         </div>
-        </section>
+        <!-- Audio player end -->
 
- <!-- Footer scripts-->
- <script> audioPlayer(); </script>
+        <button onclick="playPreviousTrack()">Previous</button>
+        <button onclick="playNextTrack()">Next</button>
 
+        <!-- Main body start -->
+        <div class="row">
+          <div class="col">
+            <div class="kirtan-list">
+              <!-- Kirtan list start -->
+              <h3>Akhand Kirtan:</h3>
+              <ul class="table ml-auto" id="playlist1"></ul>
+
+              <h3>Asa Ki Vaar:</h3>
+              <ul class="table ml-auto" id="playlist2"></ul>
+
+              <h3>Reinsbhai:</h3>
+              <ul class="table ml-auto" id="playlist3"></ul>
+              <!--Kirtan list end-->
+            </div>
+          </div>
+        </div>
+        <!--main body end-->
+      </div>
+    </section>
+
+    <script>
+      const akLinks = [
+        'https://docs.google.com/uc?export=download&id=1etTDTvQtifLGVeBV0pWfImtxzBwtC_4P',
+        'https://docs.google.com/uc?export=download&id=1dyaR7EMSfEWYO8GCD0N5EWHyX5HOKUs0',
+        'https://docs.google.com/uc?export=download&id=1iS5SK1T5v5A9pdrXBq4kWYl5zLeE8rmj',
+        'https://docs.google.com/uc?export=download&id=11-ShPic_83xlLqV18O9nfk-C5ay-EEYE',
+        'https://docs.google.com/uc?export=download&id=1VvDrpx3gbXT6NJuLZOjSbb8CuwfCOq0-',
+        'https://docs.google.com/uc?export=download&id=1wM41rvVYpf8WE72m8xGaD3gTn3ZSlzC_',
+        'https://docs.google.com/uc?export=download&id=12qemddgRGL5f6CJUDqTRyODYYjp8O9tu',
+        'https://docs.google.com/uc?export=download&id=1zacBeNB2f6o2hEbs8-emxa7JJ5vd1cSu',
+        'https://docs.google.com/uc?export=download&id=1afxY0xOaRHzH7hlBpPfYKyNbUj8hnm8U',
+        'https://docs.google.com/uc?export=download&id=1ZWWILmh7IWZZb29xEmc8bpz3hHPRVHWR',
+        'https://docs.google.com/uc?export=download&id=1BAvxP4K-SZOz_zeZ8hjgqmJUY8k7FbjC',
+        'https://docs.google.com/uc?export=download&id=16Ke-XlwBQCsXyLHfMQoZBGKymrK3N995',
+        'https://docs.google.com/uc?export=download&id=16Ke-XlwBQCsXyLHfMQoZBGKymrK3N995',
+        'https://docs.google.com/uc?export=download&id=1NlZrVjTSMS9KUebpcuxDaqpLLEYey9A1',
+        'https://docs.google.com/uc?export=download&id=1XeDJDn02Ty5V90OhDVVuy_H4KC5JkPD0',
+        'https://docs.google.com/uc?export=download&id=1aKZcNtEOGe8CAoLCeM4SdmJZPBKPbCrj',
+        'https://docs.google.com/uc?export=download&id=1vvMcUCNpMa75fP-GyFZvEKDWWGjgZLOF',
+      ]
+      const akKeertanis = [
+        'Bhai Dapinder Singh Ji',
+        'Bhai Harpreet Singh Ji',
+        'Bhai Harpreet Singh Ji',
+        'Bhai Jeevan Singh Ji',
+        'Bhai Jeevan Singh Ji',
+        'Bhai Jeevan Singh Ji',
+        'Bhai Manjit Singh Ji',
+        'Bhai Mehar Singh Ji',
+        'Bhai Mehar Singh Ji',
+        'Bhai Mehar Singh Ji',
+        'Bhai Tarlochen Singh Ji',
+        'Bibi Gurvindar Kaur Ji',
+        'Bibi Gurvindar Kaur Ji',
+        'Bibi Surinder Kaur Ji',
+        'Bibi Talwinder Kaur Ji',
+        'Bibi Talwinder Kaur Ji',
+        'Giani Amolak Singh Ji',
+      ]
+
+      const akvLinks = [
+        'https://docs.google.com/uc?export=download&id=1mJNIJn9xLx0MpY4qm7Maisdfu-O8wWk8',
+        'https://docs.google.com/uc?export=download&id=1iaNBOtLnoejmyeScputFs-2sznIEhvkE',
+        'https://docs.google.com/uc?export=download&id=1X9os2VofH6OlMVODYiyPL4G-WuUq8ynw',
+        'https://docs.google.com/uc?export=download&id=1-gkNAFNUSwjYGkmXSVsVLhOEnzBb3p1-',
+        'https://docs.google.com/uc?export=download&id=1F1Q-ZfBj3Ar4EciYPAf-P_QGuLOAL0d8',
+      ]
+      const akvKeertanis = [
+        'Asa Ki Vaar Day 1',
+        'Asa Ki Vaar Day 2',
+        'Asa Ki Vaar Day 3',
+        'Asa Ki Vaar Day 4',
+        'Asa Ki Vaar Day 5',
+      ]
+
+      const rskLinks = [
+        'https://docs.google.com/uc?export=download&id=1VJRcYXT_WxF_ozSVwemqaaqQ5KJWEAS4',
+        'https://docs.google.com/uc?export=download&id=1vRInQ-s5BnzQWn77aZVwEeZiO5sasXbG',
+        'https://docs.google.com/uc?export=download&id=1fSejLYWYO0KWAOAFHJqKXIv9Vvkfx5Z7',
+        'https://docs.google.com/uc?export=download&id=1z52wjjCsYFD024eyn8UNPaWMExQc0_cy',
+        'https://docs.google.com/uc?export=download&id=1j-quJfbVQMDjsnCS60s269aE6iNANOPC',
+        'https://docs.google.com/uc?export=download&id=1apRwN_zYxhhLIbJ1XOFQgqDKvlfQJRsh',
+        'https://docs.google.com/uc?export=download&id=1NfwLBeVfq_0MxdUy_ND3ca1K0XumpcO7',
+        'https://docs.google.com/uc?export=download&id=12ey6DpnIB9-L7RQnaVhMXpwaq0n0P714',
+      ]
+      const rskKeertanis = [
+        'Bhai Harsevak Singh Ji',
+        'Bhai Harpreet Singh Ji',
+        'Bhai Jeevan Singh Ji',
+        'Bhai Kuldeep Singh Ji',
+        'Bhai Manjit Singh Ji',
+        'Bhai Mehar Singh Ji',
+        'Bhai Mehar Singh Ji',
+        'Bibi Talvinder Kaur Ji',
+      ]
+
+      const tracks = [
+        {
+          links: akLinks,
+          keertanis: akKeertanis,
+        },
+        {
+          links: akvLinks,
+          keertanis: akvKeertanis,
+        },
+        {
+          links: rskLinks,
+          keertanis: rskKeertanis,
+        },
+      ]
+      add_links_to_screen_for_smgs(tracks) // coming from ./src/audioPlayer.js
+      audioPlayer()
+    </script>
   </body>
 </html>

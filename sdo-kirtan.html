@@ -1,50 +1,65 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" dir="ltr">
-
   <head>
-    <link rel="icon" href="images/logo.jpg">
-    <meta charset="utf-8">
-    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo.jpg" />
+    <meta charset="utf-8" />
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0" />
     <title>AisaKirtan</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="src/bootstrap.min.css">
-    <link rel="stylesheet" href="kirtan.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/bootstrap.min.css" />
+    <link rel="stylesheet" href="kirtan.css" />
     <script src="src/jquery.min.js"></script>
     <script src="src/audioPlayer.js"></script>
   </head>
 
   <body>
     <!--nav bar start-->
-      <nav class="navbar navbar-dark navbar-expand-lg fixed-top">
-        <div class="container">
-          <a href="#"><img src="images/logo.jpg" alt="" width="70px" height="70px"></a>
-          <div class="" id="navbarnav">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item"><a class="nav-link" href="index.html" class="active">Back</a></li>
-            </ul>
-          </div>
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top">
+      <div class="container">
+        <a href="/"
+          ><img src="images/logo.jpg" alt="" width="70px" height="70px"
+        /></a>
+        <div class="" id="navbarnav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html" class="active">Back</a>
+            </li>
+          </ul>
         </div>
-      </nav>
+      </div>
+    </nav>
 
-      <section id="sdo" class="text-center">
-        <div class="container justify-content-center">
-   
-          <div class="main-image-wrapper" id="box">
-            <!--main image-->
-            <img src="images/SDO_W1.jpg" class="main-image" width="400px" height="400px">
-          </div>
-          <div class="main-title m-5">
-            <!--main title-->
-            <h1>BHAI MOHINDER SINGH SDO</h1>
-          </div>
+    <section id="sdo" class="text-center">
+      <div class="container justify-content-center">
+        <div class="main-image-wrapper" id="box">
+          <!--main image-->
+          <img
+            src="images/SDO_W1.jpg"
+            class="main-image"
+            width="400px"
+            height="400px"
+          />
+        </div>
+        <div class="main-title m-5">
+          <!--main title-->
+          <h1>BHAI MOHINDER SINGH SDO</h1>
+        </div>
 
-
-          <!-- Audio player start -->
+        <!-- Audio player start -->
         <div class="row">
           <div class="col">
             <div class="m-3">
-              <audio src="" preload="none" controls="" id="audioPlayer" controlsList="">
+              <audio
+                src=""
+                preload="none"
+                controls=""
+                id="audioPlayer"
+                controlsList=""
+              >
                 Sorry, your browser doesn't support html5!
               </audio>
             </div>
@@ -60,234 +75,614 @@
           <div class="col">
             <div class="kirtan-list">
               <!-- Kirtan list start -->
-              <ul class="table ml-auto " id="playlist">
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Aae Sant Paraahonai.mp3" ><h4> ਆਏਸੰਤਪਰਾਹੁਣੇਕੀਰਤਨੁਹੋਆਰੈਣਿਸਬਾਈ ॥ <br> Aae Sant Paraahunai </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Aaisee Kirpa Mohi Kirpa.mp3" ><h4> ਐਸੀਕਿਰਪਾਮੋਹਿਕਰਹੁ ॥ <br> Aaisee Kirpa Mohi Kirpa </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Aavo Sant Milahu Mere Bhaiee.mp3" ><h4> ਆਵਹੁਸੰਤਮਿਲਹੁਮੇਰੇਭਾਈਮਿਲਿਹਰਿਹਰਿਕਥਾਕਰਹੁ ॥ <br> Aavo Sant Milahu Mere Bhaiee </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Aaye Mil Gursikh.mp3" ><h4> ਆਇਮਿਲੁਗੁਰਸਿਖਆਇਮਿਲੁਤੂਮੇਰੇਗੁਰੂਕੇਪਿਆਰੇ ॥ ਰਹਾਉ ॥ <br> Aaye Mil Gursikh Aaye Mil</h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Aisa Jag Dekhia Jooaree.mp3" ><h4> ਐਸਾਜਗੁਦੇਖਿਆਜੂਆਰੀ ॥ <br> Aisa Jag Dekhia Jooaree</h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Aisaa Giaan Beecharai Koee.mp3" ><h4> ਐਸਾਗਿਆਨੁਬੀਚਾਰੈਕੋਈ ॥ <br> Aisaa Giaan Beecharai Koee </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Aise Gur Ko Bal Bal Jaeeai.mp3" ><h4> ਐਸੇਗੁਰਕਉਬਲਿਬਲਿਜਾਈਐਆਪਿਮੁਕਤੁਮੋਹਿਤਾਰੈ ॥੧॥ ਰਹਾਉ ॥ <br> Aise Gur Ko Bal Bal Jaeeai </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Asa Ki Vaar.mp3" ><h4> ਆਸਾ ਦੀ ਵਾਰ <br> Asa Di Vaar </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Bhai Mohinder Singh Ji SDO 80s Aasa Ki Vaar.mp3" ><h4> ਆਸਾ ਦੀ ਵਾਰ <br> Aasa Di Vaar 80's </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Akv SDO Ji, Chaani Ji, Bh Jiwan S.mp3" ><h4> ਆਸਾ ਦੀ ਵਾਰ <br> Asa Di Vaar SDO Ji, Chaani Ji, Bh Jiwan Singh Ji </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Amrit Bachan Satgur Kee Baani.mp3" ><h4> ਅੰਮ੍ਰਿਤਬਚਨਸਤਿਗੁਰਕੀਬਾਣੀਜੋਬੋਲੈਸੋਮੁਖਿਅੰਮ੍ਰਿਤੁਪਾਵੈ ॥੨॥ <br> Amrit Bachan Satgur Kee Baani </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Amrit Har Kaa Naam Tinee Janee Jap Leiaa.mp3" ><h4> ਅੰਮ੍ਰਿਤੁਹਰਿਕਾਨਾਮੁਤਿਨੑੀਜਨੀਜਪਿਲਇਆ ॥੬॥ <br> Amrit Har Kaa Naam Tinee Janee Jap Leiaa </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Amrit Naam Swami Tera.mp3" ><h4> ਅੰਮ੍ਰਿਤਨਾਮੁਸੁਆਮੀਤੇਰਾਜੋਪੀਵੈਤਿਸਹੀਤ੍ਰਿਪਤਾਸ ॥ <br> Amrit Naam Swami Tera </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Amrit Naam.mp3" ><h4> ਅੰਮ੍ਰਿਤਨਾਮੁਸੁਆਮੀਤੇਰਾਜੋਪੀਵੈਤਿਸਹੀਤ੍ਰਿਪਤਾਸ ॥ <br> Amrit Naam Swami Tera </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Amrit Ras Peea Gurshabadee.mp3" ><h4> ਅੰਮ੍ਰਿਤੁਰਸੁਪੀਆਗੁਰਸਬਦੀਹਮਨਾਮਵਿਟਹੁਕੁਰਬਾਨ ॥੧॥ <br> Amrit Ras Peea Gurshabadee </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Anand Anand Sabh Ko Kahai 2.mp3" ><h4> ਆਨੰਦੁਆਨੰਦੁਸਭੁਕੋਕਹੈਆਨੰਦੁਗੁਰੂਤੇਜਾਣਿਆ ॥ <br> Anand Anand Sabh Ko Kahai </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Anand Anand Sabh Ko Kahai.mp3" ><h4> ਆਨੰਦੁਆਨੰਦੁਸਭੁਕੋਕਹੈਆਨੰਦੁਗੁਰੂਤੇਜਾਣਿਆ ॥ <br> Anand Anand Sabh Ko Kahai </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Apne Kaaj Ko Kio Alkaieeai.mp3" ><h4> ਅਪਨੇਕਾਜਕਉਕਿਉਅਲਕਾਈਐ ॥ <br> Apne Kaaj Ko Kio Alkaieeai </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Apne Prabh Sio Hoh Saavdhaan.mp3" ><h4> ਅਪਨੇਪ੍ਰਭਸਿਉਹੋਹੁਸਾਵਧਾਨੁ ॥ <br> Apne Prabh Sio Hoh Saavdhaan </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Apne Prabh Sio Hoho Saavdhaan.mp3" ><h4> ਅਪਨੇਪ੍ਰਭਸਿਉਹੋਹੁਸਾਵਧਾਨੁ ॥ <br> Apne Prabh Sio Hoh Saavdhaan </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Apne Satgur Ki Vadaee.mp3" ><h4> ਅਪਨੇਸਤਿਗੁਰਕੀਵਡਿਆਈ ॥ <br> Apne Satgur Ki Vadaee </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Bhagta Kaa Sahaee Jug Jug Jaania.mp3" ><h4> ਭਗਤਾਕਾਸਹਾਈਜੁਗਿਜੁਗਿਜਾਣਿਆ॥੩॥ <br> Bhagta Kaa Sahaee Jug Jug Jaania </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Bhaj Man Mere Eko Naam.mp3" ><h4> ਭਜੁਮਨਮੇਰੇਏਕੋਨਾਮ ॥ <br> Bhaj Man Mere Eko Naam </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Bhinee Rainareeai Chaamkantaare.mp3" ><h4> ਭਿੰਨੀਰੈਨੜੀਐਚਾਮਕਨਿਤਾਰੇ ॥ <br> Bhinee Rainarheeai Chaamkan Taarai </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Bhinee Rainarheeai Chaamkan Taarai.mp3" ><h4> ਭਿੰਨੀਰੈਨੜੀਐਚਾਮਕਨਿਤਾਰੇ ॥ <br> Bhinee Rainarheeai Chaamkan Taarai </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Bhinee Rainarheeai Chaamkan Taarey.mp3" ><h4> ਭਿੰਨੀਰੈਨੜੀਐਚਾਮਕਨਿਤਾਰੇ ॥ <br> Bhinee Rainarheeai Chaamkan Taarai </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Bhinee Reinareeai Chaamkantare.mp3" ><h4> ਭਿੰਨੀਰੈਨੜੀਐਚਾਮਕਨਿਤਾਰੇ ॥ <br> Bhinee Rainarheeai Chaamkan Taarai </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Bhinni Rainareeai.mp3" ><h4> ਭਿੰਨੀਰੈਨੜੀਐਚਾਮਕਨਿਤਾਰੇ ॥ <br> Bhinee Rainarheeai Chaamkan Taarai </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Bikh Te Amrit Hoio Naam Satgur Mukh Bhanio.mp3" ><h4> ਬਿਖੁਤੇਅੰਮ੍ਰਿਤੁਹੁਯਉਨਾਮੁਸਤਿਗੁਰਮੁਖਿਭਣਿਅਉ ॥ <br> Bikh Te Amrit Hoio Naam Satgur Mukh Bhanio </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Bikhmo Bikham Akhaaraa.mp3" ><h4> ਬਿਖਮੋਬਿਖਮੁਅਖਾੜਾਮੈਗੁਰਮਿਲਿਜੀਤਾਰਾਮ ॥ <br> Bikhmo Bikham Akhaaraa </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Bin Ek Naam Ik Chit Leen.mp3" ><h4> ਬਿਨੁਏਕਨਾਮੁਇਕਚਿੱਤਲੀਨ ॥ <br> Bin Ek Naam Ik Chit Leen </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Charan Kamal.mp3" ><h4> ਚਰਨਕਮਲਜਾਕੈਰਿਦੈਬਸਹਿਸੋਜਨੁਕਿਉਡੋਲੈਦੇਵ ॥ <br> Charan Kamal Ja Kai Ridai Basai </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Chaupai Sahib.mp3" ><h4> ਚੌਪਈ ॥ <br> Chaupai Sahib </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Chiri Chauki.mp3" ><h4> ਚਿੜੀਚੁਹਕੀਪਹੁਫੁਟੀਵਗਨਿਬਹੁਤੁਤਰੰਗ ॥ <br> Chiri Chauki </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Deh Asees Kahai Jagdees.mp3" ><h4> ਦੇਹਿਅਸੀਸਕਹੈਂਜਗਦੀਸਇਹਜੋਰੀਜਿਯੋਜੁਗਚਾਰਿਤਿਹਾਰੀ ॥੧੧॥ <br> Deh Asees Kahai Jagdeesh </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Deho Sajan Aaseesaria.mp3" ><h4> ਦੇਹੁਸਜਣਅਸੀਸੜੀਆਜਿਉਹੋਵੈਸਾਹਿਬਸਿਉਮੇਲੁ ॥੩॥ <br> Deho Sajan Aaseesaria </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Dhan So Vela Jit Mai Satgur Miliaa.mp3" ><h4> ਧੰਨੁਸੁਵੇਲਾਜਿਤੁਮੈਸਤਿਗੁਰੁਮਿਲਿਆ ॥ <br> Dhan So Vela Jit Mai Satgur Miliaa </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Dhukhee Dhunee SaheReeaai Jai Ta Lageh Dhukh.mp3" ><h4> ਦੁਖੀਦੁਨੀਸਹੇੜੀਐਜਾਇਤਲਗਹਿਦੁਖ ॥ <br> Dhukhee Dhunee SaheReeaai Jai Ta Lageh Dhukh </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Dukhi Duni Sahereeai.mp3" ><h4> ਦੂਜੀਕਾਰੈਲਗਿਜਨਮੁਗਵਾਈਐ ॥ <br> Doojee Kare Lag Janam Gavaeeai </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Doojee Kare Lag Janam Gavaeeai.mp3" ><h4> ਦੂਜੀਕਾਰੈਲਗਿਜਨਮੁਗਵਾਈਐ ॥ <br> Doojee Kare Lag Janam Gavaeeai </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Eh Man Meria Thoo Samajh.mp3" ><h4> ਏਮਨਮੇਰਿਆਤੂਸਮਝੁਅਚੇਤਇਆਣਿਆਰਾਮ ॥ <br> Eh Man Meria Thoo Samajh </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Eh Teri Baria.mp3" ><h4> ਗੋਬਿੰਦਮਿਲਣਕੀਇਹਤੇਰੀਬਰੀਆ ॥ <br> Gobind Miln Kee Eh Teri Baria </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Eih Man Har Ke Naam Audhaarnaa.mp3" ><h4> ਇਹੁਮਨੁਹਰਿਕੈਨਾਮਿਉਧਾਰਨਾ ॥੧॥ ਰਹਾਉ ॥ <br> Eih Man Har Ke Naam Audhaarnaa </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Eiu Ut Bhabhke Balbir Singh.mp3" ><h4> ਇਉਂਉਠਭਬਕੇਬਲਬੀਰਸਿੰਘਸ਼ਸਤਰਝਮਕਾਏ ॥ <br> Eiu Ut Bhabhke Balbir Singh </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Eka Ekankaar Likh Dekhalia.mp3" ><h4> ਏਕਾਏਕੰਕਾਰੁਲਿਖਿਦੇਖਾਲਿਆ । <br> Eka Ekankaar Likh Dekhalia </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Eka Ekankaar Likh Dekhaliaa.mp3" ><h4> ਏਕਾਏਕੰਕਾਰੁਲਿਖਿਦੇਖਾਲਿਆ । <br> Eka Ekankaar Likh Dekhalia </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Eka Ekankar.mp3" ><h4> ਏਕਾਏਕੰਕਾਰੁਲਿਖਿਦੇਖਾਲਿਆ । <br> Eka Ekankaar Likh Dekhalia </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Gobind Jeeo Mere Man Tan Naam.mp3" ><h4> ਗੋਬਿੰਦਜੀਉਮੇਰੇਮਨਤਨਨਾਮਹਰਿਬੀਧੇ ॥ <br> Gobind Jeeo Mere Man Tan Naam </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Govind Gun Gaavan Laagey.mp3" ><h4> ਗੋਬਿੰਦਗੁਣਗਾਵਣਲਾਗੇ ॥ <br> Govind Gun Gaavan Laagey </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Gur Manthr Driraaey.mp3" ><h4> ਗੁਰੁਮੰਤ੍ਰੁਦ੍ਰਿੜਾਏਹਰਿਰਸਕਿਰਸਾਏਹਰਿਅੰਮ੍ਰਿਤੁਹਰਿਮੁਖਿਚੋਇਜੀਉ ॥ <br> Gur Manthr Driraaey </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Gur Satgur Ka Jo Sikh Akhaai.mp3" ><h4> ਗੁਰਸਤਿਗੁਰਕਾਜੋਸਿਖੁਅਖਾਏਸੁਭਲਕੇਉਠਿਹਰਿਨਾਮੁਧਿਆਵੈ ॥ <br> Gur Satgur Ka Jo Sikh Akhaai </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Gur Satgur Kaa Jo Sikh Akhae.mp3" ><h4> ਗੁਰਸਤਿਗੁਰਕਾਜੋਸਿਖੁਅਖਾਏਸੁਭਲਕੇਉਠਿਹਰਿਨਾਮੁਧਿਆਵੈ ॥ <br> Gur Satgur Kaa Jo Sikh Akhaai </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Gur Satgur Vich.mp3" ><h4> ਗੁਰਸਤਿਗੁਰਵਿਚਿਨਾਵੈਕੀਵਡੀਵਡਿਆਈਹਰਿਕਰਤੈਆਪਿਵਧਾਈ ॥ <br> Gur Satgur Vich </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Gurbani Sun Mael Gavaaey.mp3" ><h4> ਗੁਰਬਾਣੀਸੁਣਿਮੈਲੁਗਵਾਏ ॥ <br> Gurbani Sun Mael Gavaae </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Gurbani Sun Mail Gavaae.mp3" ><h4> ਗੁਰਬਾਣੀਸੁਣਿਮੈਲੁਗਵਾਏ ॥ <br> Gurbani Sun Mael Gavaae </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Gurbani Sun Mail Gavaie.mp3" ><h4> ਗੁਰਬਾਣੀਸੁਣਿਮੈਲੁਗਵਾਏ ॥ <br> Gurbani Sun Mael Gavaae </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Gurdev Mata Gurdev Pita.mp3" ><h4> ਗੁਰਦੇਵਮਾਤਾਗੁਰਦੇਵਪਿਤਾਗੁਰਦੇਵਸੁਆਮੀਪਰਮੇਸੁਰਾ ॥ <br> Gurdev Mata Gurdev Pita </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Gurmukh Chaal Chale.mp3" ><h4> ਗੁਰਮੁਖਿਚਾਲਚਲਾਇਹਾਲਪੁਜਾਇਆ । <br> Gurmukh Chaal Chale </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Gurmukh Naam Japo Meri Bhena.mp3" ><h4> ਗੁਰਮੁਖਿਨਾਮੁਸੁਨਹੁਮੇਰੀਭੈਨਾ ॥  <br> Gurmukh Naam Suno Meri Bhena </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Gursikhi Bareekh Hai.mp3" ><h4> ਗੁਰਸਿਖੀਬਾਰੀਕਹੈਖੰਡੇਧਾਰਗਲੀਅਤਿਭੀੜੀ । <br> Gursikhi Bareekh Hai </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Valo Niki Akhiya.mp3" ><h4> ਗੁਰਸਿਖੀਬਾਰੀਕਹੈਸਿਲਚਟਣੁਫਿਕੀ । <br> Gursikhi Baareekh Hai </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Hai Koiee Raam Pyaro Gaavai.mp3" ><h4> ਹੈਕੋਈਰਾਮਪਿਆਰੋਗਾਵੈ ॥ <br> Hai Koiee Raam Pyaro Gaavai </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Ham Dhanvant Bhaagat Sach Nahi.mp3" ><h4> ਹਮਧਨਵੰਤਭਾਗਠਸਚਨਾਇ ॥ <br> Ham Dhanvant Bhaagat Sach Nahi </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Ham Dhanvant Bhaagat.mp3" ><h4> ਹਮਧਨਵੰਤਭਾਗਠਸਚਨਾਇ ॥ <br> Ham Dhanvant Bhaagat Sach Nahi </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Ham Eh Kaaj Jagat Mo Aae.mp3" ><h4> ਹਮਇਹਕਾਜਜਗਤਮੋਆਏ ॥ <br> Ham Eh Kaaj Jagat Mo Aae </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Har Har Naam Antar Urdhaar.mp3" ><h4> ਹਰਿਹਰਿਨਾਮੁਅੰਤਰਿਉਰਿਧਾਰਿ ॥ <br> Har Har Naam Antar Urdhaar </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Har Har Naam Nidhaan Hai Gurmukh Paiaa Jai.mp3" ><h4> ਹਰਿਹਰਿਨਾਮੁਨਿਧਾਨੁਹੈਗੁਰਮੁਖਿਪਾਇਆਜਾਇ ॥ <br> Har Har Naam Nidhaan Hai Gurmukh Paiaa Jai </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Har Jan Dekho.mp3" ><h4> ਹਰਿਜਨਦੇਖਹੁਸਤਿਗੁਰੁਨੈਨੀ ॥ <br> Har Jan Dekho </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Har Jan Ko Ehee Suhaavai.mp3" ><h4> ਹਰਿਜਨਕਉਇਹੀਸੁਹਾਵੈ ॥ <br> Har Jan Ko Ehee Suhaavai </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Har Ke Naam Bin Jhoote Sagal Pasaare.mp3" ><h4> ਹਰਿਕੇਨਾਮਬਿਨੁਝੂਠੇਸਗਲਪਾਸਾਰੇ ॥੧॥ ਰਹਾਉ ॥ <br> Har Ke Naam Bin Jhoote Sagal Pasaare </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Har Ke Naam Ki Vadiyaaee 2.mp3" ><h4> ਹਰਿਕੇਨਾਮਕੀਵਡਿਆਈ ॥ <br> Har Ke Naam Ki Vadiyaaee </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Har Ke Naam Ki Vadiyaaee.mp3" ><h4> ਹਰਿਕੇਨਾਮਕੀਵਡਿਆਈ ॥ <br> Har Ke Naam Ki Vadiyaaee </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Har Keertan Gaavo Din Ratee.mp3" ><h4> ਹਰਿਕੀਰਤਨੁਗਾਵਹੁਦਿਨੁਰਾਤੀਸਫਲਏਹਾਹੈਕਾਰੀਜੀਉ ॥੩॥ <br> Har Keertan Gaavo Din Ratee </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Har Labdo Mithr Sumitho.mp3" ><h4> ਹਰਿਲਬਧੋਮਿਤ੍ਰਸੁਮਿਤੋ ॥ <br> Har Labdo Mithr Sumitho </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Har Meree Preet Reet Hai Har Meree.mp3" ><h4> ਹਰਿਮੇਰੀਪ੍ਰੀਤਿਰੀਤਿਹੈਹਰਿਮੇਰੀਹਰਿਮੇਰੀਕਥਾਕਹਾਨੀਜੀ ॥ <br> Har Meree Preet Reet Hai Har Meree </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Har Meree Preeth.mp3" ><h4> ਹਰਿਮੇਰੀਪ੍ਰੀਤਿਰੀਤਿਹੈਹਰਿਮੇਰੀਹਰਿਮੇਰੀਕਥਾਕਹਾਨੀਜੀ ॥ <br> Har Meree Preet Reet Hai Har Meree </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Har Raam Naam Jap Laha 2.mp3" ><h4> ਹਰਿਰਾਮਨਾਮੁਜਪਿਲਾਹਾ ॥ <br> Har Raam Naam Jap Laha </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Har Raam Naam Jap Laha.mp3" ><h4> ਹਰਿਰਾਮਨਾਮੁਜਪਿਲਾਹਾ ॥ <br> Har Raam Naam Jap Laha </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Har Ram Nam Jap Laha.mp3" ><h4> ਹਰਿਰਾਮਨਾਮੁਜਪਿਲਾਹਾ ॥ <br> Har Raam Naam Jap Laha </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Har Rasak Rasaye.mp3" ><h4> ਕਿਉਰਹੀਐਥਿਰੁਜਗਿਕੋਕਢਹੁਉਪਾਇਆ ॥ <br> Kio Rahiai Thhir Jag </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Har Simri Din Sabh Raen 2.mp3" ><h4> ਸੇਵੀਸਤਿਗੁਰੁਆਪਣਾਹਰਿਸਿਮਰੀਦਿਨਸਭਿਰੈਣ ॥ <br> Har Simri Din Sabh Raen </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Har Simri Din Sabh Raen.mp3" ><h4> ਸੇਵੀਸਤਿਗੁਰੁਆਪਣਾਹਰਿਸਿਮਰੀਦਿਨਸਭਿਰੈਣ ॥ <br> Har Simri Din Sabh Raen </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Harhaa Mastak Hovai Bhaag.mp3" ><h4> ਹਰਿਹਾਂਮਸਤਕਿਹੋਵੈਭਾਗੁਤਸਾਜਨੁਪਾਈਐ ॥੨॥ <br> Harhaa Mastak Hovai Bhaag </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Ho Bhaal Vikuni Hoee.mp3" ><h4> ਹਉਭਾਲਿਵਿਕੁੰਨੀਹੋਈ ॥ <br> Ho Bhaal Vikuni Hoee </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Ho Bhaiee Oodenee Kanth ko Amaali.mp3" ><h4> ਹਉਭਈਉਡੀਣੀਕੰਤਕਉਅੰਮਾਲੀਸੋਪਿਰੁਕਦਿਨੈਣੀਦੇਖਾ ॥ <br> Ho Bhaiee Oodenee Kanth ko Amaali </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Ik Khare Kare Teree Chakree.mp3" ><h4> ਇਕਿਖੜੇਕਰਹਿਤੇਰੀਚਾਕਰੀਵਿਣੁਨਾਵੈਹੋਰੁਨਭਾਇਆ ॥ <br> Ik KhaRe Kareh Teree Chakree </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Eik KhaRe Kareh Teree Chakree.mp3" ><h4> ਇਕਿਖੜੇਕਰਹਿਤੇਰੀਚਾਕਰੀਵਿਣੁਨਾਵੈਹੋਰੁਨਭਾਇਆ ॥ <br> Ik KhaRe Kareh Teree Chakree </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Ik Nach Nach Poore Taal.mp3" ><h4> ਇਕਿਨਚਿਨਚਿਪੂਰਹਿਤਾਲਭਗਤਿਨਕੀਜਈ ॥ <br> Ik Nach Nach Poore Taal </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Jaa Kai Keeaai Sram Karai.mp3" ><h4> ਜਾਕੈਕੀਐਸ੍ਰਮੁਕਰੈਤੇਬੈਰਬਿਰੋਧੀ ॥ <br> Jaa Kai Keeaai Sram Karai </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Jaharpir Jagat Gur Baba-Half.mp3" ><h4> ਜਾਹਰਪੀਰਜਗਤੁਗੁਰੁਬਾਬਾ ॥੩॥ <br> Jaharpir Jagat Gur Baba </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Japo Ta Eko Nama.mp3" ><h4> ਜਪਹੁਤਏਕੋਨਾਮਾ ॥ <br> Japo Ta Eko Nama </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Jinee Gurmukh Khoj.mp3" ><h4> ਜਿਨਗੁਰਮੁਖਿਖੋਜਿਢੰਢੋਲਿਆਤਿਨਅੰਦਰਹੁਹੀਸਚੁਲਾਧਿਆ ॥ <br> Jinee Gurmukh Khoj </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Jo Aap Japaa Avraa Naam Japavaa SDO.mp3" ><h4> ਜਨੁਨਾਨਕੁਧੂੜਿਮੰਗੈਤਿਸੁਗੁਰਸਿਖਕੀਜੋਆਪਿਜਪੈਅਵਰਹਨਾਮੁਜਪਾਵੈ ॥੨॥ <br> Jo Aap Japai Avraa Naam Japavai </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Jo Jo Deesai So So Rogee.mp3" ><h4> ਜੋਜੋਦੀਸੈਸੋਸੋਰੋਗੀ ॥ <br> Jo Jo Deesai So So Rogee </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Jo Jo Deesai So So Rogi.mp3" ><h4> ਜੋਜੋਦੀਸੈਸੋਸੋਰੋਗੀ ॥ <br> Jo Jo Deesai So So Rogee </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Kabeer Soota Kiaa Kare.mp3" ><h4> ਕਬੀਰਸੂਤਾਕਿਆਕਰਹਿਉਠਿਕਿਨਜਪਹਿਮੁਰਾਰਿ ॥ <br> Kabeer Soota Kiaa Kare </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Kaha Chalo Man Raho Ghare.mp3" ><h4> ਕਹਾਚਲਹੁਮਨਰਹਹੁਘਰੇ ॥ <br> Kaha Chalo Man Raho Ghare </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Kaho Benanti Ape Satgur Pahe.mp3" ><h4> ਕਹੁਬੇਨੰਤੀਅਪੁਨੇਸਤਿਗੁਰਪਾਹਿ ॥ <br> Kaho Benanti Apne Satgur Pahe </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Kantaa Too So Sejree.mp3" ><h4> ਕੰਤਾਤੂਸਉਸੇਜੜੀਮੈਡਾਹਭੋਦੁਖੁਉਲਾਹਿ ॥੨॥ <br> Kantaa Too So Sejree </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Kanthaa.mp3" ><h4> ਕੰਤਾਤੂਸਉਸੇਜੜੀਮੈਡਾਹਭੋਦੁਖੁਉਲਾਹਿ ॥੨॥ <br> Kantaa Too So Sejree </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Khin Mai Thhaap Authaapnharaa.mp3" ><h4> ਖਿਨਮਹਿਥਾਪਿਉਥਾਪਨਹਾਰਾ ॥ <br> Khin Mai Thhaap Authaapnharaa </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Kia Thud Karam Kamayiaa.mp3" ><h4> ਏਸਰੀਰਾਮੇਰਿਆਇਸੁਜਗਮਹਿਆਇਕੈਕਿਆਤੁਧੁਕਰਮਕਮਾਇਆ ॥ <br> Kia Thud Karam Kamayiaa </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Kio Raheeaai Thir Jag Ko Kaddahu Aupaiaa.mp3" ><h4> ਕਿਉਰਹੀਐਥਿਰੁਜਗਿਕੋਕਢਹੁਉਪਾਇਆ ॥ <br> Kio Raheeaai Thir Jag Ko Kaddahu Aupaiaa </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Kirpa Kirpa Kar Guru Malaaey.mp3" ><h4> ਕ੍ਰਿਪਾਕ੍ਰਿਪਾਕਰਿਗੁਰੂਮਿਲਾਏਹਮਪਾਹਨਸਬਦਿਗੁਰਤਾਰੇ ॥੧॥ ਰਹਾਉ ॥ <br> Kirpa Kirpa Kar Guru Malaaey </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Kirtan+Rehras.mp3" ><h4> Kirtan + Rehras </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Koee Aavai Santho.mp3" ><h4> ਕੋਈਆਵੈਸੰਤੋਹਰਿਕਾਜਨੁਸੰਤੋਮੇਰਾਪ੍ਰੀਤਮਜਨੁਸੰਤੋਮੋਹਿਮਾਰਗੁਦਿਖਲਾਵੈ ॥ <br> Koee Aavai Santho </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Kou Jagai Har Jan.mp3" ><h4> ਕੋਊਜਾਗੈਹਰਿਜਨੁ ॥੧॥ <br> Kou Jagai Har Jan </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Kouoo Jaagai Har Jan.mp3" ><h4> ਕੋਊਜਾਗੈਹਰਿਜਨੁ ॥੧॥ <br> Kou Jagai Har Jan </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Maaee Man Mero Bas Naeh.mp3" ><h4> ਮਾਈਮਨੁਮੇਰੋਬਸਿਨਾਹਿ ॥ <br> Maaee Man Mero Bas Naeh </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Maaee Man Mero Bas Nahi.mp3" ><h4> ਮਾਈਮਨੁਮੇਰੋਬਸਿਨਾਹਿ ॥ <br> Maaee Man Mero Bas Naeh </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Maaee Man Mero Matvaro.mp3" ><h4> ਮਾਈਰੀਮਨੁਮੇਰੋਮਤਵਾਰੋ ॥ <br> Maaee Ree Man Mero Matvaro </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Mai Man Tan Khoj Khojendia.mp3" ><h4> ਮੈਮਨੁਤਨੁਖੋਜਿਖੋਜੇਦਿਆਸੋਪ੍ਰਭੁਲਧਾਲੋੜਿ ॥ <br> Mai Man Tan Khoj Khojendia </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Man Mil Sant Jana Jas Gayio.mp3" ><h4> ਮਨਮਿਲਿਸੰਤਜਨਾਜਸੁਗਾਇਓ ॥ <br> Man Mil Sant Jana Jas Gayio </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Man Re Thir Rahu.mp3" ><h4> ਮਨਰੇਥਿਰੁਰਹੁਮਤੁਕਤਜਾਹੀਜੀਉ ॥ <br> Man Re Thir Rahu </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Me Keeai Karam Aneka.mp3" ><h4> ਪਿਆਰੇਇਨਬਿਧਿਮਿਲਣੁਨਜਾਈਮੈਕੀਏਕਰਮਅਨੇਕਾ ॥ <br> Me Keeai Karam Aneka </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Meetee Pireh Kahani.mp3" ><h4> ਮੀਠੀਪਿਰਹਿਕਹਾਨੀ ॥ <br> Meetee Pireh Kahani </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Meetee Pirhai Kahani.mp3" ><h4> ਮੀਠੀਪਿਰਹਿਕਹਾਨੀ ॥ <br> Meetee Pireh Kahani </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Mera Man Laga Hai Raam Piaare 2.mp3" ><h4> ਮੇਰਾਮਨੁਲਾਗਾਹੈਰਾਮਪਿਆਰੇ ॥ <br> Mera Man Laga Hai Raam Piaare </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Mera Man Laga Hai Raam Piaare.mp3" ><h4> ਮੇਰਾਮਨੁਲਾਗਾਹੈਰਾਮਪਿਆਰੇ ॥ <br> Mera Man Laga Hai Raam Piaare </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Mere Man Sadh Sharan.mp3" ><h4> ਮੇਰੇਮਨਸਾਧਸਰਣਿਛੁਟਕਾਰਾ ॥ <br> Mere Man Sadh Sharan Chhutkara </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Mere Raam Ham Paapi.mp3" ><h4> ਮੇਰੇਰਾਮਹਮਪਾਪੀਸਰਣਿਪਰੇਹਰਿਦੁਆਰਿ ॥ <br> Mere Ram Ham Papee Sharan Pare Har Duaar </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Mere Ram Ham Papee Sharan Pare Har Duaar.mp3" ><h4> ਮੇਰੇਰਾਮਹਮਪਾਪੀਸਰਣਿਪਰੇਹਰਿਦੁਆਰਿ ॥ <br> Mere Ram Ham Papee Sharan Pare Har Duaar </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Mere Satgura.mp3" ><h4> ਮੇਰੇਪ੍ਰੀਤਮਾਹਉਜੀਵਾਨਾਮੁਧਿਆਇ ॥ <br> Mere Preetma Ho Jeeva Naam Dhiaae </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Mere Tthakur Poorai Takhat Adol.mp3" ><h4> ਮੇਰੇਠਾਕੁਰਪੂਰੈਤਖਤਿਅਡੋਲੁ ॥ <br> Mere Tthakur Poorai Takhat Adol </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Meri Jindareeai Mukh Har Har.mp3" ><h4> ਵਣੁਤ੍ਰਿਣੁਸਭੁਆਕਾਰੁਹੈਮੇਰੀਜਿੰਦੁੜੀਏਮੁਖਿਹਰਿਹਰਿਨਾਮੁਧਿਆਵੈਰਾਮ ॥ <br> Mukh Har Har Naam Dhiaave Raam </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Mil Har Keertan Suneeai Raam.mp3" ><h4> ਮਿਲਿਰਹੀਐਪ੍ਰਭਸਾਧਜਨਾਮਿਲਿਹਰਿਕੀਰਤਨੁਸੁਨੀਐਰਾਮ ॥ <br> Mil Har Keertan Suneeai Raam </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Mil Mere Preetma Jeeo 2.mp3" ><h4> ਮਿਲੁਮੇਰੇਪ੍ਰੀਤਮਾਜੀਉਤੁਧੁਬਿਨੁਖਰੀਨਿਮਾਣੀ ॥ <br> Mil Mere Preetma Jeeo </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Mil Mere Preetma Jeeo.mp3" ><h4> ਮਿਲੁਮੇਰੇਪ੍ਰੀਤਮਾਜੀਉਤੁਧੁਬਿਨੁਖਰੀਨਿਮਾਣੀ ॥ <br> Mil Mere Preetma Jeeo </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Mil Mere Preetma Jio.mp3" ><h4> ਮਿਲੁਮੇਰੇਪ੍ਰੀਤਮਾਜੀਉਤੁਧੁਬਿਨੁਖਰੀਨਿਮਾਣੀ ॥ <br> Mil Mere Preetma Jeeo </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Mil Raheeai Prabh Saadh Jana.mp3" ><h4> ਮਿਲਿਰਹੀਐਪ੍ਰਭਸਾਧਜਨਾਮਿਲਿਹਰਿਕੀਰਤਨੁਸੁਨੀਐਰਾਮ ॥ <br> Mil Raheeai Prabh Saadh Jana </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Mil Raheeai Prabh Saadh Janaa.mp3" ><h4> ਮਿਲਿਰਹੀਐਪ੍ਰਭਸਾਧਜਨਾਮਿਲਿਹਰਿਕੀਰਤਨੁਸੁਨੀਐਰਾਮ ॥ <br> Mil Raheeai Prabh Saadh Jana </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Milahu Pyare Jeeaa.mp3" ><h4> ਮਿਲਹੁਪਿਆਰੇਜੀਆ ॥ <br> Milahu Pyare Jeeaa </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Mit Gey Bhaal.mp3" ><h4> ਮਿਟਿਗਈਭਾਲਮਨੁਸਹਜਿਸਮਾਨਾ ॥ <br> Mit Gey Bhaal </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Na Ko Dushman.mp3" ><h4> ਨਾਕੋਦੁਸਮਨੁਦੋਖੀਆਨਾਹੀਕੋਮੰਦਾ ॥ <br> Na Ko Dushman </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Naam Kahet Govind Ka.mp3" ><h4> ਨਾਮੁਕਹਤਗੋਵਿੰਦਕਾਸੂਚੀਭਈਰਸਨਾ ॥ <br> Naam Kahet Govind Ka </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Naam Niranjan Alaakh Hai.mp3" ><h4> ਨਾਮੁਨਿਰੰਜਨਅਲਖੁਹੈਕਿਉਲਖਿਆਜਾਈ ॥ <br> Naam Niranjan Alaakh Hai </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Nain Rehe Rang Laaey.mp3" ><h4> ਨੈਨਰਹੇਰੰਗੁਲਾਈ ॥ <br> Nain Rehe Rang Laaey </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Ooang Pria Preet Cheet Pehlariaa.mp3" ><h4> ਓਅੰਪ੍ਰਿਅਪ੍ਰੀਤਿਚੀਤਿਪਹਿਲਰੀਆ ॥ <br> Ooang Pria Preet Cheet Pehlariaa </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Ootath Betath Sovath Dhiaaeeai.mp3" ><h4> ਊਠਤਬੈਠਤਸੋਵਤਧਿਆਈਐ ॥ <br> Ootath Betath Sovath Dhiaaeeai </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Paarbrahm Tin Ko Santusht Bheaa.mp3" ><h4> ਪਾਰਬ੍ਰਹਮੁਤਿਨਕੰਉਸੰਤੁਸਟੁਭਇਆਜੋਗੁਰਚਰਨੀਜਨਪਾਹਿ ॥ <br> Paarbrahm Tin Ko Santusht Bheaa </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Panth Khalsa Khethi Meri.mp3" ><h4> Panth Khalsa Khethi Meri </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Pardes Jhaag Saudhe Ko Aaiaa.mp3" ><h4> ਪਰਦੇਸੁਝਾਗਿਸਉਦੇਕਉਆਇਆ ॥ <br> Pardes Jhaag Saudhe Ko Aaiaa </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Pardes Jhaag Sode Ko Aiaa.mp3" ><h4> ਪਰਦੇਸੁਝਾਗਿਸਉਦੇਕਉਆਇਆ ॥ <br> Pardes Jhaag Saudhe Ko Aaiaa </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Piare Har Bin Prem Na Khelsa 2.mp3" ><h4> ਪਿਆਰੇਹਰਿਬਿਨੁਪ੍ਰੇਮੁਨਖੇਲਸਾ ॥ <br> Piare Har Bin Prem Na Khelsa </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Piare Har Bin Prem Na Khelsa 2.mp3" ><h4> ਪਿਆਰੇਹਰਿਬਿਨੁਪ੍ਰੇਮੁਨਖੇਲਸਾ ॥ <br> Piare Har Bin Prem Na Khelsa </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Pyaare Har Bin Prem Na Khelsa 2.mp3" ><h4> ਪਿਆਰੇਹਰਿਬਿਨੁਪ੍ਰੇਮੁਨਖੇਲਸਾ ॥ <br> Piare Har Bin Prem Na Khelsa </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Pyaare Har Bin Prem Na Khelsa.mp3" ><h4> ਪਿਆਰੇਹਰਿਬਿਨੁਪ੍ਰੇਮੁਨਖੇਲਸਾ ॥ <br> Piare Har Bin Prem Na Khelsa </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Pyaare Har Bin Prem Na Khelsaa.mp3" ><h4> ਪਿਆਰੇਹਰਿਬਿਨੁਪ੍ਰੇਮੁਨਖੇਲਸਾ ॥ <br> Piare Har Bin Prem Na Khelsa </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Piare Har Bin Prem Na Khelsa.mp3" ><h4> ਪਿਆਰੇਹਰਿਬਿਨੁਪ੍ਰੇਮੁਨਖੇਲਸਾ ॥ <br> Piare Har Bin Prem Na Khelsa </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Pishle Gunha Bakshae Jio.mp3" ><h4> ਪਿਛਲੇਗੁਨਹਬਖਸਾਇਜੀਉਅਬਤੂਮਾਰਗਿਪਾਇ ॥ <br> Pishle Gunha Bakshae Jio </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Pootha Matha Ki Asees.mp3" ><h4> ਪੂਤਾਮਾਤਾਕੀਆਸੀਸ ॥ <br> Pootha Matha Ki Asees </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Pothi Parmeshar Ka Thhaan.mp3" ><h4> ਪੋਥੀਪਰਮੇਸਰਕਾਥਾਨੁ ॥ <br> Pothi Parmeshar Ka Thhaan </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Prabh Milne Ki Eh Nishani.mp3" ><h4> ਪ੍ਰਭਮਿਲਣੈਕੀਏਹਨੀਸਾਣੀ ॥ <br> Prabh Milne Ki Eh Nishani </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Pria Rang Dekhe.mp3" ><h4> ਪ੍ਰਿਅਰੰਗਦੇਖੈਜਪਤੀਨਾਮੁਨਿਧਾਨੀ ॥ ਰਹਾਉ ॥ <br> Pria Rang Dekhe </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Raam Naam Jap Ekankaar.mp3" ><h4> ਰਾਮਨਾਮਜਪਿਏਕੰਕਾਰੁ ॥ <br> Raam Naam Jap Ekankaar </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Raam Ras Pia Re.mp3" ><h4> ਰਾਮਰਸੁਪੀਆਰੇ ॥ <br> Raam Ras Pia Re </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Re Man Mere Too Har Sio Jor.mp3" ><h4> ਰੇਮਨਮੇਰੇਤੂੰਹਰਿਸਿਉਜੋਰੁ ॥ <br> Re Man Mere Too Har Sio Jor </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Re Man Moor Simar Sukh Data.mp3" ><h4> ਰੇਮਨਮੂੜਸਿਮਰਿਸੁਖਦਾਤਾਨਾਨਕਦਾਸਤੁਝਹਿਸਮਝਾਵਤ ॥੭॥ <br> Re Man Moor Simar Sukh Data </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Rehraas Sahib.mp3" ><h4> Rehraas Sahib </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/SDO Rehras.mp3" ><h4> Rehraas Sahib </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Saad Sangat Kai Aasrai.mp3" ><h4> ਸਾਧਸੰਗਤਿਕੈਆਸਰੈਪ੍ਰਭਸਿਉਰੰਗੁਲਾਏ ॥ <br> Saad Sangat Kai Aasrai </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Saange Andar Saabta Jis Guroo Sahai.mp3" ><h4> ਸਾਂਗੈਅੰਦਰਿਸਾਬਤਾਜਿਸੁਗੁਰੂਸਹਾਏ ॥ <br> Saange Andar Saabta Jis Guroo Sahai </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Sab Ko Tere Vas.mp3" ><h4> ਸਭੁਕੋਤੇਰੈਵਸਿਅਗਮਅਗੋਚਰਾ ॥ <br> Sab Ko Tere Vas </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Sabh Aakho Satgur Vaho Vaho 2.mp3" ><h4> ਸਭਿਆਖਹੁਸਤਿਗੁਰੁਵਾਹੁਵਾਹੁਜਿਨਿਦਾਨੁਹਰਿਨਾਮੁਮੁਖਿਦੀਆ ॥੧॥ <br> Sabh Aakho Satgur Vaho Vaho </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Sabh Aakho Satgur Vaho Vaho.mp3" ><h4> ਸਭਿਆਖਹੁਸਤਿਗੁਰੁਵਾਹੁਵਾਹੁਜਿਨਿਦਾਨੁਹਰਿਨਾਮੁਮੁਖਿਦੀਆ ॥੧॥ <br> Sabh Aakho Satgur Vaho Vaho </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Sabh Akho Satgur Vaho Vaho.mp3" ><h4> ਸਭਿਆਖਹੁਸਤਿਗੁਰੁਵਾਹੁਵਾਹੁਜਿਨਿਦਾਨੁਹਰਿਨਾਮੁਮੁਖਿਦੀਆ ॥੧॥ <br> Sabh Aakho Satgur Vaho Vaho </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Sabh Dhiavo Aad Sate Jugaad Sate.mp3" ><h4> ਸਭਿਧਿਆਵਹੁਆਦਿਸਤੇਜੁਗਾਦਿਸਤੇਪਰਤਖਿਸਤੇਸਦਾਸਦਾਸਤੇਜਨੁਨਾਨਕੁਦਾਸੁਦਸੋਨਾ ॥੫॥ <br> Sabh Dhiavo Aad Sate Jugaad Sate </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Sabh Kich Poora Hirdai Naam.mp3" ><h4> ਸਭੁਕਿਛੁਪੂਰਾਹਿਰਦੈਨਾਮੁ ॥੧॥ <br> Sabh Kich Poora Hirdai Naam </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Sabna Upava Sir Upao Hai.mp3" ><h4> ਸਭਨਾਉਪਾਵਾਸਿਰਿਉਪਾਉਹੈਹਰਿਨਾਮੁਪਰਾਪਤਿਹੋਇ ॥ <br> Sabna Upava Sir Upao Hai </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Sada Rang Rathey.mp3" ><h4> ਸਦਾਰੰਗਿਰਾਤੇਤੇਰਚਾਏ ॥ <br> Sada Rang Raate </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Sadhsangat Asthaan Jagmag.mp3" ><h4> ਸਾਧਸੰਗਤਿਅਸਥਾਨੁਜਗਮਗਨੂਰਹੈ । <br> Sadhsangat Asthaan Jagmag Noor Hai </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Saee Naam Amol.mp3" ><h4> ਸਾਈਨਾਮੁਅਮੋਲੁਕੀਮਨਕੋਈਜਾਣਦੋ ॥ <br> Saee Naam Amol </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Sahib Nithania Ka Thaan.mp3" ><h4> ਸਾਹਿਬੁਨਿਤਾਣਿਆਕਾਤਾਣੁ ॥ <br> Sahib Nithania Ka Thaan </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Sajan Mere Preetmo.mp3" ><h4> ਸਾਜਨਮੇਰੇਪ੍ਰੀਤਮਹੁਤੁਮਸਹਕੀਭਗਤਿਕਰੇਹੋ ॥ <br> Saajan Mere Preetmo </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Sakhe Sahelee Bhe Ananda.mp3" ><h4> ਸਖੀਸਹੇਲੀਭਏਅਨੰਦਾਗੁਰਿਕਾਰਜਹਮਰੇਪੂਰੇ ॥ <br> Sakhe Sahelee Bhe Ananda </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Santhan Kai Suneeath Prabh Ki Baat.mp3" ><h4> ਸੰਤਨਕੈਸੁਨੀਅਤਪ੍ਰਭਕੀਬਾਤ ॥ <br> Santhan Kai Suneeath Prabh Ki Baat </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Satgur Aagai Sees Bhet Deho.mp3" ><h4> ਸਤਿਗੁਰਆਗੈਸੀਸੁਭੇਟਦੇਉਜੇਸਤਿਗੁਰਸਾਚੇਭਾਵੈ ॥ <br> Satgur Aagai Sees Bhet Deho </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Satgur Mere Sada Sada Na Aavai Na Jaaey.mp3" ><h4> ਸਤਿਗੁਰੁਮੇਰਾਸਦਾਸਦਾਨਾਆਵੈਨਜਾਇ ॥ <br> Satgur Mere Sada Sada Na Aavai Na Jaaey </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Satgur Purakh Milaaey.mp3" ><h4> ਸਤਿਗੁਰੁਪੁਰਖੁਮਿਲਾਇਅਵਗਣਵਿਕਣਾਗੁਣਰਵਾਬਲਿਰਾਮਜੀਉ ॥ <br> Satgur Purakh Milaaey </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Satigur Ki Seva Gakri.mp3" ><h4> ਸਤਿਗੁਰਕੀਸੇਵਾਗਾਖੜੀਸਿਰੁਦੀਜੈਆਪੁਗਵਾਇ ॥ <br> Satigur Ki Seva Gakri </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Satsangat Satgur Dhan Dhan Dhano.mp3" ><h4> ਸਤਸੰਗਤਿਸਤਿਗੁਰਧੰਨੁਧਨੋੁਧੰਨਧੰਨਧਨੋਜਿਤੁਮਿਲਿਹਰਿਬੁਲਗਬੁਲੋਗੀਆ ॥ <br> Satsangat Satgur Dhan Dhan Dhano </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Se Sanjog Karo Mere Pyaare.mp3" ><h4> ਸੇਸੰਜੋਗਕਰਹੁਮੇਰੇਪਿਆਰੇ ॥ <br> Se Sanjog Karo Mere Pyaare </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Sees Deeaa Par See Na Ucharee.mp3" ><h4> ਸੀਸੁਦੀਆਪਰੁਸੀਨਉਚਰੀ ॥੧੩॥ <br> Sees Deeaa Par See Na Ucharee </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/So Guru Gobind Har Ka Roopna.mp3" ><h4> So Guru Gobind Har Ka Roopna </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/So Kichh Kar Jit.mp3" ><h4> ਸੋਕਿਛੁਕਰਿਜਿਤੁਛੁਟਹਿਪਰਾਨੀ ॥ <br> So Kichh Kar Jith Chhutai Pranee </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/So Kichh Kar Jith Chhutai Pranee.mp3" ><h4> ਸੋਕਿਛੁਕਰਿਜਿਤੁਛੁਟਹਿਪਰਾਨੀ ॥ <br> So Kichh Kar Jith Chhutai Pranee </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/So Sahu Chit Aaiya.mp3" ><h4> ਧੰਨੁਸੁਵੇਲਾਜਿਤੁਮੈਸਤਿਗੁਰੁਮਿਲਿਆਸੋਸਹੁਚਿਤਿਆਇਆ ॥ <br> So Shahu Chit Aaiya </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Sun Yaar Hamaare Sajan Ik Karo Benanteeaa.mp3" ><h4> ਸੁਣਿਯਾਰਹਮਾਰੇਸਜਣਇਕਕਰਉਬੇਨੰਤੀਆ ॥ <br> Sun Yaar Hamaare Sajan Ik Karo Benanteeaa </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Suniye Baaje Baaj Suhaavi.mp3" ><h4> ਸੁਨੀਐਬਾਜੈਬਾਜਸੁਹਾਵੀ ॥ <br> Suniye Baaje Baaj Suhaavi </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Tesra Karee Giaan Ve Laalo.mp3" ><h4> ਸੁਨੀਐਬਾਜੈਬਾਜਸੁਹਾਵੀ ॥ <br> Suniye Baaje Baaj Suhaavi </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Tegh Bahadar Sat Saroopna.mp3" ><h4> Tegh Bahadar Sat Saroopna </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Thoo Sada Sach Samaley.mp3" ><h4> ਏਮਨਪਿਆਰਿਆਤੂਸਦਾਸਚੁਸਮਾਲੇ ॥ <br> Thoo Sada Sach Samaley </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Tum Takhur Ham Sangi.mp3" ><h4> ਸੰਤਜਨਾਕੀਜਾਤਿਹਰਿਸੁਆਮੀਤੁਮੑਠਾਕੁਰਹਮਸਾਂਗੀ ॥ <br> Tum Takhur Ham Sangi </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Vah Vah Gobind Singh Aape Gur Chelaa.mp3" ><h4> ਵਾਹਵਾਹਗੋਬਿੰਦਸਿੰਘਆਪੇਗੁਰੁਚੇਲਾ ॥੧॥ <br> Vah Vah Gobind Singh Aape Gur Chelaa </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Vaho Khasam Thoo Vaho.mp3" ><h4> ਵਾਹੁਖਸਮਤੂਵਾਹੁਜਿਨਿਰਚਿਰਚਨਾਹਮਕੀਏ ॥ <br> Vaho Khasam Thoo Vaho </h4> </a></li>
-                <li class="m-3"><a href="https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Virle Hee Sanmukh.mp3" ><h4> ਵਿਰਲੇਹੀਸਨਮੁਖਭਾਣਾਭਾਇਆ ॥੮॥ <br> Virle Hee Sanmukh </h4> </a></li>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-              </ul>
-         
-              </div>
+              <ul class="table ml-auto" id="playlist"></ul>
             </div>
           </div>
-          <!--main body end-->
+        </div>
+        <!--main body end-->
+      </div>
+    </section>
 
-          </div>
-      </section>
+    <script>
+      const trackLinks = [
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Aae Sant Paraahonai.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Aaisee Kirpa Mohi Kirpa.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Aavo Sant Milahu Mere Bhaiee.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Aaye Mil Gursikh.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Aisa Jag Dekhia Jooaree.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Aisaa Giaan Beecharai Koee.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Aise Gur Ko Bal Bal Jaeeai.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Asa Ki Vaar.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Bhai Mohinder Singh Ji SDO 80s Aasa Ki Vaar.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Akv SDO Ji, Chaani Ji, Bh Jiwan S.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Amrit Bachan Satgur Kee Baani.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Amrit Har Kaa Naam Tinee Janee Jap Leiaa.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Amrit Naam Swami Tera.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Amrit Naam.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Amrit Ras Peea Gurshabadee.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Anand Anand Sabh Ko Kahai 2.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Anand Anand Sabh Ko Kahai.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Apne Kaaj Ko Kio Alkaieeai.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Apne Prabh Sio Hoh Saavdhaan.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Apne Prabh Sio Hoho Saavdhaan.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Apne Satgur Ki Vadaee.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Bhagta Kaa Sahaee Jug Jug Jaania.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Bhaj Man Mere Eko Naam.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Bhinee Rainareeai Chaamkantaare.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Bhinee Rainarheeai Chaamkan Taarai.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Bhinee Rainarheeai Chaamkan Taarey.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Bhinee Reinareeai Chaamkantare.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Bhinni Rainareeai.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Bikh Te Amrit Hoio Naam Satgur Mukh Bhanio.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Bikhmo Bikham Akhaaraa.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Bin Ek Naam Ik Chit Leen.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Charan Kamal.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Chaupai Sahib.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Chiri Chauki.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Deh Asees Kahai Jagdees.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Deho Sajan Aaseesaria.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Dhan So Vela Jit Mai Satgur Miliaa.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Dhukhee Dhunee SaheReeaai Jai Ta Lageh Dhukh.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Dukhi Duni Sahereeai.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Doojee Kare Lag Janam Gavaeeai.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Eh Man Meria Thoo Samajh.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Eh Teri Baria.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Eih Man Har Ke Naam Audhaarnaa.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Eiu Ut Bhabhke Balbir Singh.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Eka Ekankaar Likh Dekhalia.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Eka Ekankaar Likh Dekhaliaa.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Eka Ekankar.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Gobind Jeeo Mere Man Tan Naam.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Govind Gun Gaavan Laagey.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Gur Manthr Driraaey.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Gur Satgur Ka Jo Sikh Akhaai.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Gur Satgur Kaa Jo Sikh Akhae.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Gur Satgur Vich.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Gurbani Sun Mael Gavaaey.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Gurbani Sun Mail Gavaae.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Gurbani Sun Mail Gavaie.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Gurdev Mata Gurdev Pita.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Gurmukh Chaal Chale.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Gurmukh Naam Japo Meri Bhena.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Gursikhi Bareekh Hai.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Valo Niki Akhiya.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Hai Koiee Raam Pyaro Gaavai.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Ham Dhanvant Bhaagat Sach Nahi.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Ham Dhanvant Bhaagat.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Ham Eh Kaaj Jagat Mo Aae.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Har Har Naam Antar Urdhaar.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Har Har Naam Nidhaan Hai Gurmukh Paiaa Jai.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Har Jan Dekho.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Har Jan Ko Ehee Suhaavai.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Har Ke Naam Bin Jhoote Sagal Pasaare.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Har Ke Naam Ki Vadiyaaee 2.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Har Ke Naam Ki Vadiyaaee.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Har Keertan Gaavo Din Ratee.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Har Labdo Mithr Sumitho.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Har Meree Preet Reet Hai Har Meree.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Har Meree Preeth.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Har Raam Naam Jap Laha 2.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Har Raam Naam Jap Laha.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Har Ram Name Jap Laha.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Har Rasak Rasaye.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Har Simri Din Sabh Raen 2.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Har Simri Din Sabh Raen.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Harhaa Mastak Hovai Bhaag.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Ho Bhaal Vikuni Hoee.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Ho Bhaiee Oodenee Kanth ko Amaali.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Ik Khare Kare Teree Chakree.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Eik KhaRe Kareh Teree Chakree.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Ik Nach Nach Poore Taal.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Jaa Kai Keeaai Sram Karai.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Jaharpir Jagat Gur Baba-Half.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Japo Ta Eko Nama.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Jinee Gurmukh Khoj.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Jo Aap Japaa Avraa Naam Japavaa SDO.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Jo Jo Deesai So So Rogee.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Jo Jo Deesai So So Rogi.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Kabeer Soota Kiaa Kare.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Kaha Chalo Man Raho Ghare.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Kaho Benanti Ape Satgur Pahe.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Kantaa Too So Sejree.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Kanthaa.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Khin Mai Thhaap Authaapnharaa.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Kia Thud Karam Kamayiaa.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Kio Raheeaai Thir Jag Ko Kaddahu Aupaiaa.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Kirpa Kirpa Kar Guru Malaaey.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Kirtan+Rehras.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Koee Aavai Santho.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Kou Jagai Har Jan.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Kouoo Jaagai Har Jan.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Maaee Man Mero Bas Naeh.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Maaee Man Mero Bas Nahi.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Maaee Man Mero Matvaro.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Mai Man Tan Khoj Khojendia.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Man Mil Sant Jana Jas Gayio.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Man Re Thir Rahu.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Me Keeai Karam Aneka.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Meetee Pireh Kahani.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Meetee Pirhai Kahani.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Mera Man Laga Hai Raam Piaare 2.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Mera Man Laga Hai Raam Piaare.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Mere Man Sadh Sharan.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Mere Raam Ham Paapi.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Mere Ram Ham Papee Sharan Pare Har Duaar.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Mere Satgura.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Mere Tthakur Poorai Takhat Adol.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Meri Jindareeai Mukh Har Har.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Mil Har Keertan Suneeai Raam.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Mil Mere Preetma Jeeo 2.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Mil Mere Preetma Jeeo.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Mil Mere Preetma Jio.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Mil Raheeai Prabh Saadh Jana.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Mil Raheeai Prabh Saadh Janaa.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Milahu Pyare Jeeaa.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Mit Gey Bhaal.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Na Ko Dushman.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Naam Kahet Govind Ka.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Naam Niranjan Alaakh Hai.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Nain Rehe Rang Laaey.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Ooang Pria Preet Cheet Pehlariaa.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Ootath Betath Sovath Dhiaaeeai.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Paarbrahm Tin Ko Santusht Bheaa.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Panth Khalsa Khethi Meri.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Pardes Jhaag Saudhe Ko Aaiaa.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Pardes Jhaag Sode Ko Aiaa.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Piare Har Bin Prem Na Khelsa 2.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Piare Har Bin Prem Na Khelsa 2.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Pyaare Har Bin Prem Na Khelsa 2.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Pyaare Har Bin Prem Na Khelsa.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Pyaare Har Bin Prem Na Khelsaa.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Piare Har Bin Prem Na Khelsa.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Pishle Gunha Bakshae Jio.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Pootha Matha Ki Asees.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Pothi Parmeshar Ka Thhaan.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Prabh Milne Ki Eh Nishani.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Pria Rang Dekhe.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Raam Naam Jap Ekankaar.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Raam Ras Pia Re.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Re Man Mere Too Har Sio Jor.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Re Man Moor Simar Sukh Data.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Rehraas Sahib.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/SDO Rehras.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Saad Sangat Kai Aasrai.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Saange Andar Saabta Jis Guroo Sahai.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Sab Ko Tere Was.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Sabh Aakho Satgur Vaho Vaho 2.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Sabh Aakho Satgur Vaho Vaho.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Sabh Akho Satgur Vaho Vaho.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Sabh Dhiavo Aad State Jugaad State.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Sabh Kich Poora Hirdai Naam.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Sabna Upava Sir Upao Hai.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Sada Rang Rathey.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Sadhsangat Asthaan Jagmag.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Saee Naam Amol.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Sahib Nithania Ka Thaan.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Sajan Mere Preetmo.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Sakhe Sahelee Bhe Ananda.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Santhan Kai Suneeath Prabh Ki Baat.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Satgur Aagai Sees Bhet Deho.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Satgur Mere Sada Sada Na Aavai Na Jaaey.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Satgur Purakh Milaaey.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Satigur Ki Seva Gakri.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Satsangat Satgur Dhan Dhan Dhano.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Se Sanjog Karo Mere Pyaare.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Sees Deeaa Par See Na Ucharee.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/So Guru Gobind Har Ka Roopna.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/So Kichh Kar Jit.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/So Kichh Kar Jith Chhutai Pranee.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/So Sahu Chit Aaiya.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Sun Yaar Hamaare Sajan Ik Karo Benanteeaa.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Suniye Baaje Baaj Suhaavi.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Tesra Karee Giaan Ve Laalo.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Tegh Bahadar Sat Saroopna.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Thoo Sada Sach Samaley.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Tum Takhur Ham Sangi.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Vah Vah Gobind Singh Aape Gur Chelaa.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Vaho Khasam Thoo Vaho.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/sdo/aisa_keertan/Virle Hee Sanmukh.mp3',
+      ]
 
-  <!-- Footer scripts-->
-  <script> audioPlayer(); </script>
+      const gurmukhiTitle = [
+        ' ਆਏਸੰਤਪਰਾਹੁਣੇਕੀਰਤਨੁਹੋਆਰੈਣਿਸਬਾਈ ॥ ',
+        ' ਐਸੀਕਿਰਪਾਮੋਹਿਕਰਹੁ ॥ ',
+        ' ਆਵਹੁਸੰਤਮਿਲਹੁਮੇਰੇਭਾਈਮਿਲਿਹਰਿਹਰਿਕਥਾਕਰਹੁ ॥ ',
+        ' ਆਇਮਿਲੁਗੁਰਸਿਖਆਇਮਿਲੁਤੂਮੇਰੇਗੁਰੂਕੇਪਿਆਰੇ ॥ ਰਹਾਉ ॥ ',
+        ' ਐਸਾਜਗੁਦੇਖਿਆਜੂਆਰੀ ॥ ',
+        ' ਐਸਾਗਿਆਨੁਬੀਚਾਰੈਕੋਈ ॥ ',
+        ' ਐਸੇਗੁਰਕਉਬਲਿਬਲਿਜਾਈਐਆਪਿਮੁਕਤੁਮੋਹਿਤਾਰੈ ॥੧॥ ਰਹਾਉ ॥ ',
+        ' ਆਸਾ ਦੀ ਵਾਰ ',
+        ' ਆਸਾ ਦੀ ਵਾਰ ',
+        ' ਆਸਾ ਦੀ ਵਾਰ ',
+        ' ਅੰਮ੍ਰਿਤਬਚਨਸਤਿਗੁਰਕੀਬਾਣੀਜੋਬੋਲੈਸੋਮੁਖਿਅੰਮ੍ਰਿਤੁਪਾਵੈ ॥੨॥ ',
+        ' ਅੰਮ੍ਰਿਤੁਹਰਿਕਾਨਾਮੁਤਿਨੑੀਜਨੀਜਪਿਲਇਆ ॥੬॥ ',
+        ' ਅੰਮ੍ਰਿਤਨਾਮੁਸੁਆਮੀਤੇਰਾਜੋਪੀਵੈਤਿਸਹੀਤ੍ਰਿਪਤਾਸ ॥ ',
+        ' ਅੰਮ੍ਰਿਤਨਾਮੁਸੁਆਮੀਤੇਰਾਜੋਪੀਵੈਤਿਸਹੀਤ੍ਰਿਪਤਾਸ ॥ ',
+        ' ਅੰਮ੍ਰਿਤੁਰਸੁਪੀਆਗੁਰਸਬਦੀਹਮਨਾਮਵਿਟਹੁਕੁਰਬਾਨ ॥੧॥ ',
+        ' ਆਨੰਦੁਆਨੰਦੁਸਭੁਕੋਕਹੈਆਨੰਦੁਗੁਰੂਤੇਜਾਣਿਆ ॥ ',
+        ' ਆਨੰਦੁਆਨੰਦੁਸਭੁਕੋਕਹੈਆਨੰਦੁਗੁਰੂਤੇਜਾਣਿਆ ॥ ',
+        ' ਅਪਨੇਕਾਜਕਉਕਿਉਅਲਕਾਈਐ ॥ ',
+        ' ਅਪਨੇਪ੍ਰਭਸਿਉਹੋਹੁਸਾਵਧਾਨੁ ॥ ',
+        ' ਅਪਨੇਪ੍ਰਭਸਿਉਹੋਹੁਸਾਵਧਾਨੁ ॥ ',
+        ' ਅਪਨੇਸਤਿਗੁਰਕੀਵਡਿਆਈ ॥ ',
+        ' ਭਗਤਾਕਾਸਹਾਈਜੁਗਿਜੁਗਿਜਾਣਿਆ॥੩॥ ',
+        ' ਭਜੁਮਨਮੇਰੇਏਕੋਨਾਮ ॥ ',
+        ' ਭਿੰਨੀਰੈਨੜੀਐਚਾਮਕਨਿਤਾਰੇ ॥ ',
+        ' ਭਿੰਨੀਰੈਨੜੀਐਚਾਮਕਨਿਤਾਰੇ ॥ ',
+        ' ਭਿੰਨੀਰੈਨੜੀਐਚਾਮਕਨਿਤਾਰੇ ॥ ',
+        ' ਭਿੰਨੀਰੈਨੜੀਐਚਾਮਕਨਿਤਾਰੇ ॥ ',
+        ' ਭਿੰਨੀਰੈਨੜੀਐਚਾਮਕਨਿਤਾਰੇ ॥ ',
+        ' ਬਿਖੁਤੇਅੰਮ੍ਰਿਤੁਹੁਯਉਨਾਮੁਸਤਿਗੁਰਮੁਖਿਭਣਿਅਉ ॥ ',
+        ' ਬਿਖਮੋਬਿਖਮੁਅਖਾੜਾਮੈਗੁਰਮਿਲਿਜੀਤਾਰਾਮ ॥ ',
+        ' ਬਿਨੁਏਕਨਾਮੁਇਕਚਿੱਤਲੀਨ ॥ ',
+        ' ਚਰਨਕਮਲਜਾਕੈਰਿਦੈਬਸਹਿਸੋਜਨੁਕਿਉਡੋਲੈਦੇਵ ॥ ',
+        ' ਚੌਪਈ ॥ ',
+        ' ਚਿੜੀਚੁਹਕੀਪਹੁਫੁਟੀਵਗਨਿਬਹੁਤੁਤਰੰਗ ॥ ',
+        ' ਦੇਹਿਅਸੀਸਕਹੈਂਜਗਦੀਸਇਹਜੋਰੀਜਿਯੋਜੁਗਚਾਰਿਤਿਹਾਰੀ ॥੧੧॥ ',
+        ' ਦੇਹੁਸਜਣਅਸੀਸੜੀਆਜਿਉਹੋਵੈਸਾਹਿਬਸਿਉਮੇਲੁ ॥੩॥ ',
+        ' ਧੰਨੁਸੁਵੇਲਾਜਿਤੁਮੈਸਤਿਗੁਰੁਮਿਲਿਆ ॥ ',
+        ' ਦੁਖੀਦੁਨੀਸਹੇੜੀਐਜਾਇਤਲਗਹਿਦੁਖ ॥ ',
+        ' ਦੂਜੀਕਾਰੈਲਗਿਜਨਮੁਗਵਾਈਐ ॥ ',
+        ' ਦੂਜੀਕਾਰੈਲਗਿਜਨਮੁਗਵਾਈਐ ॥ ',
+        ' ਏਮਨਮੇਰਿਆਤੂਸਮਝੁਅਚੇਤਇਆਣਿਆਰਾਮ ॥ ',
+        ' ਗੋਬਿੰਦਮਿਲਣਕੀਇਹਤੇਰੀਬਰੀਆ ॥ ',
+        ' ਇਹੁਮਨੁਹਰਿਕੈਨਾਮਿਉਧਾਰਨਾ ॥੧॥ ਰਹਾਉ ॥ ',
+        ' ਇਉਂਉਠਭਬਕੇਬਲਬੀਰਸਿੰਘਸ਼ਸਤਰਝਮਕਾਏ ॥ ',
+        ' ਏਕਾਏਕੰਕਾਰੁਲਿਖਿਦੇਖਾਲਿਆ । ',
+        ' ਏਕਾਏਕੰਕਾਰੁਲਿਖਿਦੇਖਾਲਿਆ । ',
+        ' ਏਕਾਏਕੰਕਾਰੁਲਿਖਿਦੇਖਾਲਿਆ । ',
+        ' ਗੋਬਿੰਦਜੀਉਮੇਰੇਮਨਤਨਨਾਮਹਰਿਬੀਧੇ ॥ ',
+        ' ਗੋਬਿੰਦਗੁਣਗਾਵਣਲਾਗੇ ॥ ',
+        ' ਗੁਰੁਮੰਤ੍ਰੁਦ੍ਰਿੜਾਏਹਰਿਰਸਕਿਰਸਾਏਹਰਿਅੰਮ੍ਰਿਤੁਹਰਿਮੁਖਿਚੋਇਜੀਉ ॥ ',
+        ' ਗੁਰਸਤਿਗੁਰਕਾਜੋਸਿਖੁਅਖਾਏਸੁਭਲਕੇਉਠਿਹਰਿਨਾਮੁਧਿਆਵੈ ॥ ',
+        ' ਗੁਰਸਤਿਗੁਰਕਾਜੋਸਿਖੁਅਖਾਏਸੁਭਲਕੇਉਠਿਹਰਿਨਾਮੁਧਿਆਵੈ ॥ ',
+        ' ਗੁਰਸਤਿਗੁਰਵਿਚਿਨਾਵੈਕੀਵਡੀਵਡਿਆਈਹਰਿਕਰਤੈਆਪਿਵਧਾਈ ॥ ',
+        ' ਗੁਰਬਾਣੀਸੁਣਿਮੈਲੁਗਵਾਏ ॥ ',
+        ' ਗੁਰਬਾਣੀਸੁਣਿਮੈਲੁਗਵਾਏ ॥ ',
+        ' ਗੁਰਬਾਣੀਸੁਣਿਮੈਲੁਗਵਾਏ ॥ ',
+        ' ਗੁਰਦੇਵਮਾਤਾਗੁਰਦੇਵਪਿਤਾਗੁਰਦੇਵਸੁਆਮੀਪਰਮੇਸੁਰਾ ॥ ',
+        ' ਗੁਰਮੁਖਿਚਾਲਚਲਾਇਹਾਲਪੁਜਾਇਆ । ',
+        ' ਗੁਰਮੁਖਿਨਾਮੁਸੁਨਹੁਮੇਰੀਭੈਨਾ ॥  ',
+        ' ਗੁਰਸਿਖੀਬਾਰੀਕਹੈਖੰਡੇਧਾਰਗਲੀਅਤਿਭੀੜੀ । ',
+        ' ਗੁਰਸਿਖੀਬਾਰੀਕਹੈਸਿਲਚਟਣੁਫਿਕੀ । ',
+        ' ਹੈਕੋਈਰਾਮਪਿਆਰੋਗਾਵੈ ॥ ',
+        ' ਹਮਧਨਵੰਤਭਾਗਠਸਚਨਾਇ ॥ ',
+        ' ਹਮਧਨਵੰਤਭਾਗਠਸਚਨਾਇ ॥ ',
+        ' ਹਮਇਹਕਾਜਜਗਤਮੋਆਏ ॥ ',
+        ' ਹਰਿਹਰਿਨਾਮੁਅੰਤਰਿਉਰਿਧਾਰਿ ॥ ',
+        ' ਹਰਿਹਰਿਨਾਮੁਨਿਧਾਨੁਹੈਗੁਰਮੁਖਿਪਾਇਆਜਾਇ ॥ ',
+        ' ਹਰਿਜਨਦੇਖਹੁਸਤਿਗੁਰੁਨੈਨੀ ॥ ',
+        ' ਹਰਿਜਨਕਉਇਹੀਸੁਹਾਵੈ ॥ ',
+        ' ਹਰਿਕੇਨਾਮਬਿਨੁਝੂਠੇਸਗਲਪਾਸਾਰੇ ॥੧॥ ਰਹਾਉ ॥ ',
+        ' ਹਰਿਕੇਨਾਮਕੀਵਡਿਆਈ ॥ ',
+        ' ਹਰਿਕੇਨਾਮਕੀਵਡਿਆਈ ॥ ',
+        ' ਹਰਿਕੀਰਤਨੁਗਾਵਹੁਦਿਨੁਰਾਤੀਸਫਲਏਹਾਹੈਕਾਰੀਜੀਉ ॥੩॥ ',
+        ' ਹਰਿਲਬਧੋਮਿਤ੍ਰਸੁਮਿਤੋ ॥ ',
+        ' ਹਰਿਮੇਰੀਪ੍ਰੀਤਿਰੀਤਿਹੈਹਰਿਮੇਰੀਹਰਿਮੇਰੀਕਥਾਕਹਾਨੀਜੀ ॥ ',
+        ' ਹਰਿਮੇਰੀਪ੍ਰੀਤਿਰੀਤਿਹੈਹਰਿਮੇਰੀਹਰਿਮੇਰੀਕਥਾਕਹਾਨੀਜੀ ॥ ',
+        ' ਹਰਿਰਾਮਨਾਮੁਜਪਿਲਾਹਾ ॥ ',
+        ' ਹਰਿਰਾਮਨਾਮੁਜਪਿਲਾਹਾ ॥ ',
+        ' ਹਰਿਰਾਮਨਾਮੁਜਪਿਲਾਹਾ ॥ ',
+        ' ਕਿਉਰਹੀਐਥਿਰੁਜਗਿਕੋਕਢਹੁਉਪਾਇਆ ॥ ',
+        ' ਸੇਵੀਸਤਿਗੁਰੁਆਪਣਾਹਰਿਸਿਮਰੀਦਿਨਸਭਿਰੈਣ ॥ ',
+        ' ਸੇਵੀਸਤਿਗੁਰੁਆਪਣਾਹਰਿਸਿਮਰੀਦਿਨਸਭਿਰੈਣ ॥ ',
+        ' ਹਰਿਹਾਂਮਸਤਕਿਹੋਵੈਭਾਗੁਤਸਾਜਨੁਪਾਈਐ ॥੨॥ ',
+        ' ਹਉਭਾਲਿਵਿਕੁੰਨੀਹੋਈ ॥ ',
+        ' ਹਉਭਈਉਡੀਣੀਕੰਤਕਉਅੰਮਾਲੀਸੋਪਿਰੁਕਦਿਨੈਣੀਦੇਖਾ ॥ ',
+        ' ਇਕਿਖੜੇਕਰਹਿਤੇਰੀਚਾਕਰੀਵਿਣੁਨਾਵੈਹੋਰੁਨਭਾਇਆ ॥ ',
+        ' ਇਕਿਖੜੇਕਰਹਿਤੇਰੀਚਾਕਰੀਵਿਣੁਨਾਵੈਹੋਰੁਨਭਾਇਆ ॥ ',
+        ' ਇਕਿਨਚਿਨਚਿਪੂਰਹਿਤਾਲਭਗਤਿਨਕੀਜਈ ॥ ',
+        ' ਜਾਕੈਕੀਐਸ੍ਰਮੁਕਰੈਤੇਬੈਰਬਿਰੋਧੀ ॥ ',
+        ' ਜਾਹਰਪੀਰਜਗਤੁਗੁਰੁਬਾਬਾ ॥੩॥ ',
+        ' ਜਪਹੁਤਏਕੋਨਾਮਾ ॥ ',
+        ' ਜਿਨਗੁਰਮੁਖਿਖੋਜਿਢੰਢੋਲਿਆਤਿਨਅੰਦਰਹੁਹੀਸਚੁਲਾਧਿਆ ॥ ',
+        ' ਜਨੁਨਾਨਕੁਧੂੜਿਮੰਗੈਤਿਸੁਗੁਰਸਿਖਕੀਜੋਆਪਿਜਪੈਅਵਰਹਨਾਮੁਜਪਾਵੈ ॥੨॥ ',
+        ' ਜੋਜੋਦੀਸੈਸੋਸੋਰੋਗੀ ॥ ',
+        ' ਜੋਜੋਦੀਸੈਸੋਸੋਰੋਗੀ ॥ ',
+        ' ਕਬੀਰਸੂਤਾਕਿਆਕਰਹਿਉਠਿਕਿਨਜਪਹਿਮੁਰਾਰਿ ॥ ',
+        ' ਕਹਾਚਲਹੁਮਨਰਹਹੁਘਰੇ ॥ ',
+        ' ਕਹੁਬੇਨੰਤੀਅਪੁਨੇਸਤਿਗੁਰਪਾਹਿ ॥ ',
+        ' ਕੰਤਾਤੂਸਉਸੇਜੜੀਮੈਡਾਹਭੋਦੁਖੁਉਲਾਹਿ ॥੨॥ ',
+        ' ਕੰਤਾਤੂਸਉਸੇਜੜੀਮੈਡਾਹਭੋਦੁਖੁਉਲਾਹਿ ॥੨॥ ',
+        ' ਖਿਨਮਹਿਥਾਪਿਉਥਾਪਨਹਾਰਾ ॥ ',
+        ' ਏਸਰੀਰਾਮੇਰਿਆਇਸੁਜਗਮਹਿਆਇਕੈਕਿਆਤੁਧੁਕਰਮਕਮਾਇਆ ॥ ',
+        ' ਕਿਉਰਹੀਐਥਿਰੁਜਗਿਕੋਕਢਹੁਉਪਾਇਆ ॥ ',
+        ' ਕ੍ਰਿਪਾਕ੍ਰਿਪਾਕਰਿਗੁਰੂਮਿਲਾਏਹਮਪਾਹਨਸਬਦਿਗੁਰਤਾਰੇ ॥੧॥ ਰਹਾਉ ॥ ',
+        ' Kirtan + Rehras ',
+        ' ਕੋਈਆਵੈਸੰਤੋਹਰਿਕਾਜਨੁਸੰਤੋਮੇਰਾਪ੍ਰੀਤਮਜਨੁਸੰਤੋਮੋਹਿਮਾਰਗੁਦਿਖਲਾਵੈ ॥ ',
+        ' ਕੋਊਜਾਗੈਹਰਿਜਨੁ ॥੧॥ ',
+        ' ਕੋਊਜਾਗੈਹਰਿਜਨੁ ॥੧॥ ',
+        ' ਮਾਈਮਨੁਮੇਰੋਬਸਿਨਾਹਿ ॥ ',
+        ' ਮਾਈਮਨੁਮੇਰੋਬਸਿਨਾਹਿ ॥ ',
+        ' ਮਾਈਰੀਮਨੁਮੇਰੋਮਤਵਾਰੋ ॥ ',
+        ' ਮੈਮਨੁਤਨੁਖੋਜਿਖੋਜੇਦਿਆਸੋਪ੍ਰਭੁਲਧਾਲੋੜਿ ॥ ',
+        ' ਮਨਮਿਲਿਸੰਤਜਨਾਜਸੁਗਾਇਓ ॥ ',
+        ' ਮਨਰੇਥਿਰੁਰਹੁਮਤੁਕਤਜਾਹੀਜੀਉ ॥ ',
+        ' ਪਿਆਰੇਇਨਬਿਧਿਮਿਲਣੁਨਜਾਈਮੈਕੀਏਕਰਮਅਨੇਕਾ ॥ ',
+        ' ਮੀਠੀਪਿਰਹਿਕਹਾਨੀ ॥ ',
+        ' ਮੀਠੀਪਿਰਹਿਕਹਾਨੀ ॥ ',
+        ' ਮੇਰਾਮਨੁਲਾਗਾਹੈਰਾਮਪਿਆਰੇ ॥ ',
+        ' ਮੇਰਾਮਨੁਲਾਗਾਹੈਰਾਮਪਿਆਰੇ ॥ ',
+        ' ਮੇਰੇਮਨਸਾਧਸਰਣਿਛੁਟਕਾਰਾ ॥ ',
+        ' ਮੇਰੇਰਾਮਹਮਪਾਪੀਸਰਣਿਪਰੇਹਰਿਦੁਆਰਿ ॥ ',
+        ' ਮੇਰੇਰਾਮਹਮਪਾਪੀਸਰਣਿਪਰੇਹਰਿਦੁਆਰਿ ॥ ',
+        ' ਮੇਰੇਪ੍ਰੀਤਮਾਹਉਜੀਵਾਨਾਮੁਧਿਆਇ ॥ ',
+        ' ਮੇਰੇਠਾਕੁਰਪੂਰੈਤਖਤਿਅਡੋਲੁ ॥ ',
+        ' ਵਣੁਤ੍ਰਿਣੁਸਭੁਆਕਾਰੁਹੈਮੇਰੀਜਿੰਦੁੜੀਏਮੁਖਿਹਰਿਹਰਿਨਾਮੁਧਿਆਵੈਰਾਮ ॥ ',
+        ' ਮਿਲਿਰਹੀਐਪ੍ਰਭਸਾਧਜਨਾਮਿਲਿਹਰਿਕੀਰਤਨੁਸੁਨੀਐਰਾਮ ॥ ',
+        ' ਮਿਲੁਮੇਰੇਪ੍ਰੀਤਮਾਜੀਉਤੁਧੁਬਿਨੁਖਰੀਨਿਮਾਣੀ ॥ ',
+        ' ਮਿਲੁਮੇਰੇਪ੍ਰੀਤਮਾਜੀਉਤੁਧੁਬਿਨੁਖਰੀਨਿਮਾਣੀ ॥ ',
+        ' ਮਿਲੁਮੇਰੇਪ੍ਰੀਤਮਾਜੀਉਤੁਧੁਬਿਨੁਖਰੀਨਿਮਾਣੀ ॥ ',
+        ' ਮਿਲਿਰਹੀਐਪ੍ਰਭਸਾਧਜਨਾਮਿਲਿਹਰਿਕੀਰਤਨੁਸੁਨੀਐਰਾਮ ॥ ',
+        ' ਮਿਲਿਰਹੀਐਪ੍ਰਭਸਾਧਜਨਾਮਿਲਿਹਰਿਕੀਰਤਨੁਸੁਨੀਐਰਾਮ ॥ ',
+        ' ਮਿਲਹੁਪਿਆਰੇਜੀਆ ॥ ',
+        ' ਮਿਟਿਗਈਭਾਲਮਨੁਸਹਜਿਸਮਾਨਾ ॥ ',
+        ' ਨਾਕੋਦੁਸਮਨੁਦੋਖੀਆਨਾਹੀਕੋਮੰਦਾ ॥ ',
+        ' ਨਾਮੁਕਹਤਗੋਵਿੰਦਕਾਸੂਚੀਭਈਰਸਨਾ ॥ ',
+        ' ਨਾਮੁਨਿਰੰਜਨਅਲਖੁਹੈਕਿਉਲਖਿਆਜਾਈ ॥ ',
+        ' ਨੈਨਰਹੇਰੰਗੁਲਾਈ ॥ ',
+        ' ਓਅੰਪ੍ਰਿਅਪ੍ਰੀਤਿਚੀਤਿਪਹਿਲਰੀਆ ॥ ',
+        ' ਊਠਤਬੈਠਤਸੋਵਤਧਿਆਈਐ ॥ ',
+        ' ਪਾਰਬ੍ਰਹਮੁਤਿਨਕੰਉਸੰਤੁਸਟੁਭਇਆਜੋਗੁਰਚਰਨੀਜਨਪਾਹਿ ॥ ',
+        ' Panth Khalsa Khethi Meri ',
+        ' ਪਰਦੇਸੁਝਾਗਿਸਉਦੇਕਉਆਇਆ ॥ ',
+        ' ਪਰਦੇਸੁਝਾਗਿਸਉਦੇਕਉਆਇਆ ॥ ',
+        ' ਪਿਆਰੇਹਰਿਬਿਨੁਪ੍ਰੇਮੁਨਖੇਲਸਾ ॥ ',
+        ' ਪਿਆਰੇਹਰਿਬਿਨੁਪ੍ਰੇਮੁਨਖੇਲਸਾ ॥ ',
+        ' ਪਿਆਰੇਹਰਿਬਿਨੁਪ੍ਰੇਮੁਨਖੇਲਸਾ ॥ ',
+        ' ਪਿਆਰੇਹਰਿਬਿਨੁਪ੍ਰੇਮੁਨਖੇਲਸਾ ॥ ',
+        ' ਪਿਆਰੇਹਰਿਬਿਨੁਪ੍ਰੇਮੁਨਖੇਲਸਾ ॥ ',
+        ' ਪਿਆਰੇਹਰਿਬਿਨੁਪ੍ਰੇਮੁਨਖੇਲਸਾ ॥ ',
+        ' ਪਿਛਲੇਗੁਨਹਬਖਸਾਇਜੀਉਅਬਤੂਮਾਰਗਿਪਾਇ ॥ ',
+        ' ਪੂਤਾਮਾਤਾਕੀਆਸੀਸ ॥ ',
+        ' ਪੋਥੀਪਰਮੇਸਰਕਾਥਾਨੁ ॥ ',
+        ' ਪ੍ਰਭਮਿਲਣੈਕੀਏਹਨੀਸਾਣੀ ॥ ',
+        ' ਪ੍ਰਿਅਰੰਗਦੇਖੈਜਪਤੀਨਾਮੁਨਿਧਾਨੀ ॥ ਰਹਾਉ ॥ ',
+        ' ਰਾਮਨਾਮਜਪਿਏਕੰਕਾਰੁ ॥ ',
+        ' ਰਾਮਰਸੁਪੀਆਰੇ ॥ ',
+        ' ਰੇਮਨਮੇਰੇਤੂੰਹਰਿਸਿਉਜੋਰੁ ॥ ',
+        ' ਰੇਮਨਮੂੜਸਿਮਰਿਸੁਖਦਾਤਾਨਾਨਕਦਾਸਤੁਝਹਿਸਮਝਾਵਤ ॥੭॥ ',
+        ' Rehraas Sahib ',
+        ' Rehraas Sahib ',
+        ' ਸਾਧਸੰਗਤਿਕੈਆਸਰੈਪ੍ਰਭਸਿਉਰੰਗੁਲਾਏ ॥ ',
+        ' ਸਾਂਗੈਅੰਦਰਿਸਾਬਤਾਜਿਸੁਗੁਰੂਸਹਾਏ ॥ ',
+        ' ਸਭੁਕੋਤੇਰੈਵਸਿਅਗਮਅਗੋਚਰਾ ॥ ',
+        ' ਸਭਿਆਖਹੁਸਤਿਗੁਰੁਵਾਹੁਵਾਹੁਜਿਨਿਦਾਨੁਹਰਿਨਾਮੁਮੁਖਿਦੀਆ ॥੧॥ ',
+        ' ਸਭਿਆਖਹੁਸਤਿਗੁਰੁਵਾਹੁਵਾਹੁਜਿਨਿਦਾਨੁਹਰਿਨਾਮੁਮੁਖਿਦੀਆ ॥੧॥ ',
+        ' ਸਭਿਆਖਹੁਸਤਿਗੁਰੁਵਾਹੁਵਾਹੁਜਿਨਿਦਾਨੁਹਰਿਨਾਮੁਮੁਖਿਦੀਆ ॥੧॥ ',
+        ' ਸਭਿਧਿਆਵਹੁਆਦਿਸਤੇਜੁਗਾਦਿਸਤੇਪਰਤਖਿਸਤੇਸਦਾਸਦਾਸਤੇਜਨੁਨਾਨਕੁਦਾਸੁਦਸੋਨਾ ॥੫॥ ',
+        ' ਸਭੁਕਿਛੁਪੂਰਾਹਿਰਦੈਨਾਮੁ ॥੧॥ ',
+        ' ਸਭਨਾਉਪਾਵਾਸਿਰਿਉਪਾਉਹੈਹਰਿਨਾਮੁਪਰਾਪਤਿਹੋਇ ॥ ',
+        ' ਸਦਾਰੰਗਿਰਾਤੇਤੇਰਚਾਏ ॥ ',
+        ' ਸਾਧਸੰਗਤਿਅਸਥਾਨੁਜਗਮਗਨੂਰਹੈ । ',
+        ' ਸਾਈਨਾਮੁਅਮੋਲੁਕੀਮਨਕੋਈਜਾਣਦੋ ॥ ',
+        ' ਸਾਹਿਬੁਨਿਤਾਣਿਆਕਾਤਾਣੁ ॥ ',
+        ' ਸਾਜਨਮੇਰੇਪ੍ਰੀਤਮਹੁਤੁਮਸਹਕੀਭਗਤਿਕਰੇਹੋ ॥ ',
+        ' ਸਖੀਸਹੇਲੀਭਏਅਨੰਦਾਗੁਰਿਕਾਰਜਹਮਰੇਪੂਰੇ ॥ ',
+        ' ਸੰਤਨਕੈਸੁਨੀਅਤਪ੍ਰਭਕੀਬਾਤ ॥ ',
+        ' ਸਤਿਗੁਰਆਗੈਸੀਸੁਭੇਟਦੇਉਜੇਸਤਿਗੁਰਸਾਚੇਭਾਵੈ ॥ ',
+        ' ਸਤਿਗੁਰੁਮੇਰਾਸਦਾਸਦਾਨਾਆਵੈਨਜਾਇ ॥ ',
+        ' ਸਤਿਗੁਰੁਪੁਰਖੁਮਿਲਾਇਅਵਗਣਵਿਕਣਾਗੁਣਰਵਾਬਲਿਰਾਮਜੀਉ ॥ ',
+        ' ਸਤਿਗੁਰਕੀਸੇਵਾਗਾਖੜੀਸਿਰੁਦੀਜੈਆਪੁਗਵਾਇ ॥ ',
+        ' ਸਤਸੰਗਤਿਸਤਿਗੁਰਧੰਨੁਧਨੋੁਧੰਨਧੰਨਧਨੋਜਿਤੁਮਿਲਿਹਰਿਬੁਲਗਬੁਲੋਗੀਆ ॥ ',
+        ' ਸੇਸੰਜੋਗਕਰਹੁਮੇਰੇਪਿਆਰੇ ॥ ',
+        ' ਸੀਸੁਦੀਆਪਰੁਸੀਨਉਚਰੀ ॥੧੩॥ ',
+        ' So Guru Gobind Har Ka Roopna ',
+        ' ਸੋਕਿਛੁਕਰਿਜਿਤੁਛੁਟਹਿਪਰਾਨੀ ॥ ',
+        ' ਸੋਕਿਛੁਕਰਿਜਿਤੁਛੁਟਹਿਪਰਾਨੀ ॥ ',
+        ' ਧੰਨੁਸੁਵੇਲਾਜਿਤੁਮੈਸਤਿਗੁਰੁਮਿਲਿਆਸੋਸਹੁਚਿਤਿਆਇਆ ॥ ',
+        ' ਸੁਣਿਯਾਰਹਮਾਰੇਸਜਣਇਕਕਰਉਬੇਨੰਤੀਆ ॥ ',
+        ' ਸੁਨੀਐਬਾਜੈਬਾਜਸੁਹਾਵੀ ॥ ',
+        ' ਸੁਨੀਐਬਾਜੈਬਾਜਸੁਹਾਵੀ ॥ ',
+        ' Tegh Bahadar Sat Saroopna ',
+        ' ਏਮਨਪਿਆਰਿਆਤੂਸਦਾਸਚੁਸਮਾਲੇ ॥ ',
+        ' ਸੰਤਜਨਾਕੀਜਾਤਿਹਰਿਸੁਆਮੀਤੁਮੑਠਾਕੁਰਹਮਸਾਂਗੀ ॥ ',
+        ' ਵਾਹਵਾਹਗੋਬਿੰਦਸਿੰਘਆਪੇਗੁਰੁਚੇਲਾ ॥੧॥ ',
+        ' ਵਾਹੁਖਸਮਤੂਵਾਹੁਜਿਨਿਰਚਿਰਚਨਾਹਮਕੀਏ ॥ ',
+        ' ਵਿਰਲੇਹੀਸਨਮੁਖਭਾਣਾਭਾਇਆ ॥੮॥ ',
+      ]
 
+      const englishTitle = [
+        ' Aae Sant Paraahunai ',
+        ' Aaisee Kirpa Mohi Kirpa ',
+        ' Aavo Sant Milahu Mere Bhaiee ',
+        ' Aaye Mil Gursikh Aaye Mil',
+        ' Aisa Jag Dekhia Jooaree',
+        ' Aisaa Giaan Beecharai Koee ',
+        ' Aise Gur Ko Bal Bal Jaeeai ',
+        ' Asa Di Vaar ',
+        " Aasa Di Vaar 80's ",
+        ' Asa Di Vaar SDO Ji, Chaani Ji, Bh Jiwan Singh Ji ',
+        ' Amrit Bachan Satgur Kee Baani ',
+        ' Amrit Har Kaa Naam Tinee Janee Jap Leiaa ',
+        ' Amrit Naam Swami Tera ',
+        ' Amrit Naam Swami Tera ',
+        ' Amrit Ras Peea Gurshabadee ',
+        ' Anand Anand Sabh Ko Kahai ',
+        ' Anand Anand Sabh Ko Kahai ',
+        ' Apne Kaaj Ko Kio Alkaieeai ',
+        ' Apne Prabh Sio Hoh Saavdhaan ',
+        ' Apne Prabh Sio Hoh Saavdhaan ',
+        ' Apne Satgur Ki Vadaee ',
+        ' Bhagta Kaa Sahaee Jug Jug Jaania ',
+        ' Bhaj Man Mere Eko Naam ',
+        ' Bhinee Rainarheeai Chaamkan Taarai ',
+        ' Bhinee Rainarheeai Chaamkan Taarai ',
+        ' Bhinee Rainarheeai Chaamkan Taarai ',
+        ' Bhinee Rainarheeai Chaamkan Taarai ',
+        ' Bhinee Rainarheeai Chaamkan Taarai ',
+        ' Bikh Te Amrit Hoio Naam Satgur Mukh Bhanio ',
+        ' Bikhmo Bikham Akhaaraa ',
+        ' Bin Ek Naam Ik Chit Leen ',
+        ' Charan Kamal Ja Kai Ridai Basai ',
+        ' Chaupai Sahib ',
+        ' Chiri Chauki ',
+        ' Deh Asees Kahai Jagdeesh ',
+        ' Deho Sajan Aaseesaria ',
+        ' Dhan So Vela Jit Mai Satgur Miliaa ',
+        ' Dhukhee Dhunee SaheReeaai Jai Ta Lageh Dhukh ',
+        ' Doojee Kare Lag Janam Gavaeeai ',
+        ' Doojee Kare Lag Janam Gavaeeai ',
+        ' Eh Man Meria Thoo Samajh ',
+        ' Gobind Miln Kee Eh Teri Baria ',
+        ' Eih Man Har Ke Naam Audhaarnaa ',
+        ' Eiu Ut Bhabhke Balbir Singh ',
+        ' Eka Ekankaar Likh Dekhalia ',
+        ' Eka Ekankaar Likh Dekhalia ',
+        ' Eka Ekankaar Likh Dekhalia ',
+        ' Gobind Jeeo Mere Man Tan Naam ',
+        ' Govind Gun Gaavan Laagey ',
+        ' Gur Manthr Driraaey ',
+        ' Gur Satgur Ka Jo Sikh Akhaai ',
+        ' Gur Satgur Kaa Jo Sikh Akhaai ',
+        ' Gur Satgur Vich ',
+        ' Gurbani Sun Mael Gavaae ',
+        ' Gurbani Sun Mael Gavaae ',
+        ' Gurbani Sun Mael Gavaae ',
+        ' Gurdev Mata Gurdev Pita ',
+        ' Gurmukh Chaal Chale ',
+        ' Gurmukh Naam Suno Meri Bhena ',
+        ' Gursikhi Bareekh Hai ',
+        ' Gursikhi Baareekh Hai ',
+        ' Hai Koiee Raam Pyaro Gaavai ',
+        ' Ham Dhanvant Bhaagat Sach Nahi ',
+        ' Ham Dhanvant Bhaagat Sach Nahi ',
+        ' Ham Eh Kaaj Jagat Mo Aae ',
+        ' Har Har Naam Antar Urdhaar ',
+        ' Har Har Naam Nidhaan Hai Gurmukh Paiaa Jai ',
+        ' Har Jan Dekho ',
+        ' Har Jan Ko Ehee Suhaavai ',
+        ' Har Ke Naam Bin Jhoote Sagal Pasaare ',
+        ' Har Ke Naam Ki Vadiyaaee ',
+        ' Har Ke Naam Ki Vadiyaaee ',
+        ' Har Keertan Gaavo Din Ratee ',
+        ' Har Labdo Mithr Sumitho ',
+        ' Har Meree Preet Reet Hai Har Meree ',
+        ' Har Meree Preet Reet Hai Har Meree ',
+        ' Har Raam Naam Jap Laha ',
+        ' Har Raam Naam Jap Laha ',
+        ' Har Raam Naam Jap Laha ',
+        ' Kio Rahiai Thhir Jag ',
+        ' Har Simri Din Sabh Raen ',
+        ' Har Simri Din Sabh Raen ',
+        ' Harhaa Mastak Hovai Bhaag ',
+        ' Ho Bhaal Vikuni Hoee ',
+        ' Ho Bhaiee Oodenee Kanth ko Amaali ',
+        ' Ik KhaRe Kareh Teree Chakree ',
+        ' Ik KhaRe Kareh Teree Chakree ',
+        ' Ik Nach Nach Poore Taal ',
+        ' Jaa Kai Keeaai Sram Karai ',
+        ' Jaharpir Jagat Gur Baba ',
+        ' Japo Ta Eko Nama ',
+        ' Jinee Gurmukh Khoj ',
+        ' Jo Aap Japai Avraa Naam Japavai ',
+        ' Jo Jo Deesai So So Rogee ',
+        ' Jo Jo Deesai So So Rogee ',
+        ' Kabeer Soota Kiaa Kare ',
+        ' Kaha Chalo Man Raho Ghare ',
+        ' Kaho Benanti Apne Satgur Pahe ',
+        ' Kantaa Too So Sejree ',
+        ' Kantaa Too So Sejree ',
+        ' Khin Mai Thhaap Authaapnharaa ',
+        ' Kia Thud Karam Kamayiaa ',
+        ' Kio Raheeaai Thir Jag Ko Kaddahu Aupaiaa ',
+        ' Kirpa Kirpa Kar Guru Malaaey ',
+        ' ',
+        ' Koee Aavai Santho ',
+        ' Kou Jagai Har Jan ',
+        ' Kou Jagai Har Jan ',
+        ' Maaee Man Mero Bas Naeh ',
+        ' Maaee Man Mero Bas Naeh ',
+        ' Maaee Ree Man Mero Matvaro ',
+        ' Mai Man Tan Khoj Khojendia ',
+        ' Man Mil Sant Jana Jas Gayio ',
+        ' Man Re Thir Rahu ',
+        ' Me Keeai Karam Aneka ',
+        ' Meetee Pireh Kahani ',
+        ' Meetee Pireh Kahani ',
+        ' Mera Man Laga Hai Raam Piaare ',
+        ' Mera Man Laga Hai Raam Piaare ',
+        ' Mere Man Sadh Sharan Chhutkara ',
+        ' Mere Ram Ham Papee Sharan Pare Har Duaar ',
+        ' Mere Ram Ham Papee Sharan Pare Har Duaar ',
+        ' Mere Preetma Ho Jeeva Naam Dhiaae ',
+        ' Mere Tthakur Poorai Takhat Adol ',
+        ' Mukh Har Har Naam Dhiaave Raam ',
+        ' Mil Har Keertan Suneeai Raam ',
+        ' Mil Mere Preetma Jeeo ',
+        ' Mil Mere Preetma Jeeo ',
+        ' Mil Mere Preetma Jeeo ',
+        ' Mil Raheeai Prabh Saadh Jana ',
+        ' Mil Raheeai Prabh Saadh Jana ',
+        ' Milahu Pyare Jeeaa ',
+        ' Mit Gey Bhaal ',
+        ' Na Ko Dushman ',
+        ' Naam Kahet Govind Ka ',
+        ' Naam Niranjan Alaakh Hai ',
+        ' Nain Rehe Rang Laaey ',
+        ' Ooang Pria Preet Cheet Pehlariaa ',
+        ' Ootath Betath Sovath Dhiaaeeai ',
+        ' Paarbrahm Tin Ko Santusht Bheaa ',
+        ' ',
+        ' Pardes Jhaag Saudhe Ko Aaiaa ',
+        ' Pardes Jhaag Saudhe Ko Aaiaa ',
+        ' Piare Har Bin Prem Na Khelsa ',
+        ' Piare Har Bin Prem Na Khelsa ',
+        ' Piare Har Bin Prem Na Khelsa ',
+        ' Piare Har Bin Prem Na Khelsa ',
+        ' Piare Har Bin Prem Na Khelsa ',
+        ' Piare Har Bin Prem Na Khelsa ',
+        ' Pishle Gunha Bakshae Jio ',
+        ' Pootha Matha Ki Asees ',
+        ' Pothi Parmeshar Ka Thhaan ',
+        ' Prabh Milne Ki Eh Nishani ',
+        ' Pria Rang Dekhe ',
+        ' Raam Naam Jap Ekankaar ',
+        ' Raam Ras Pia Re ',
+        ' Re Man Mere Too Har Sio Jor ',
+        ' Re Man Moor Simar Sukh Data ',
+        ' ',
+        ' ',
+        ' Saad Sangat Kai Aasrai ',
+        ' Saange Andar Saabta Jis Guroo Sahai ',
+        ' Sab Ko Tere Was ',
+        ' Sabh Aakho Satgur Vaho Vaho ',
+        ' Sabh Aakho Satgur Vaho Vaho ',
+        ' Sabh Aakho Satgur Vaho Vaho ',
+        ' Sabh Dhiavo Aad State Jugaad State ',
+        ' Sabh Kich Poora Hirdai Naam ',
+        ' Sabna Upava Sir Upao Hai ',
+        ' Sada Rang Raate ',
+        ' Sadhsangat Asthaan Jagmag Noor Hai ',
+        ' Saee Naam Amol ',
+        ' Sahib Nithania Ka Thaan ',
+        ' Saajan Mere Preetmo ',
+        ' Sakhe Sahelee Bhe Ananda ',
+        ' Santhan Kai Suneeath Prabh Ki Baat ',
+        ' Satgur Aagai Sees Bhet Deho ',
+        ' Satgur Mere Sada Sada Na Aavai Na Jaaey ',
+        ' Satgur Purakh Milaaey ',
+        ' Satigur Ki Seva Gakri ',
+        ' Satsangat Satgur Dhan Dhan Dhano ',
+        ' Se Sanjog Karo Mere Pyaare ',
+        ' Sees Deeaa Par See Na Ucharee ',
+        ' ',
+        ' So Kichh Kar Jith Chhutai Pranee ',
+        ' So Kichh Kar Jith Chhutai Pranee ',
+        ' So Shahu Chit Aaiya ',
+        ' Sun Yaar Hamaare Sajan Ik Karo Benanteeaa ',
+        ' Suniye Baaje Baaj Suhaavi ',
+        ' Suniye Baaje Baaj Suhaavi ',
+        ' ',
+        ' Thoo Sada Sach Samaley ',
+        ' Tum Takhur Ham Sangi ',
+        ' Vah Vah Gobind Singh Aape Gur Chelaa ',
+        ' Vaho Khasam Thoo Vaho ',
+        ' Virle Hee Sanmukh ',
+      ]
 
-      
-
+      add_links_to_screen(trackLinks, gurmukhiTitle, englishTitle) // coming from ./src/audioPlayer.js
+      audioPlayer()
+    </script>
   </body>
 </html>
