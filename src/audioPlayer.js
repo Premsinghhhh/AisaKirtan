@@ -1,4 +1,5 @@
 let currentTrackInd = 0
+let larivaar = false
 
 function audioPlayer() {
   playCurrentTrack()
@@ -16,6 +17,11 @@ function audioPlayer() {
 function getTitleOfTrack(trackNum) {
   const ulElement = document.getElementById('playlist')
   return ulElement.getElementsByTagName('li')[trackNum].innerText
+}
+
+function getNameOfTrackFromLink(link) {
+  const title = link.split('/').slice(-1)[0]
+  return decodeURIComponent(decodeURIComponent(title))
 }
 
 function showTitleOfTrack() {
@@ -114,12 +120,19 @@ function changeNavigator() {
 
 function add_links_to_screen(trackLinks, gurmukhiTitle, englishTitle) {
   const ul = document.getElementById('playlist')
+  ul.innerHTML = ''
   for (let i = 0; i < trackLinks.length; i++) {
     const li = document.createElement('li')
     li.classList.add('m-3')
 
-    const trackTitle = `<h4>${gurmukhiTitle[i]}<br>${englishTitle[i]}</h4>`
+    let gm = gurmukhiTitle[i]
+    if (larivaar) {
+      gm = gm.replaceAll(' ', '')
+    }
     const link = trackLinks[i]
+    // const eng = getNameOfTrackFromLink(link)
+    const eng = englishTitle[i]
+    const trackTitle = `<h4>${gm}<br>${eng}</h4>`
     li.innerHTML = `<a href="${link}">${trackTitle}</a>`
     ul.appendChild(li)
     // <li class="m-3"><a href="https://docs.google.com/uc?export=download&id=19kZPdii658ZJRhjlFHlF2H6yMS1bqRYy"><h4> ਅੰਮ੍ਰਿਤਬਾਣੀਹਰਿਹਰਿਤੇਰੀ॥Amrit Baani Har Har </h4> </a></li>
@@ -139,4 +152,9 @@ function add_links_to_screen_for_smgs(tracks) {
       ul.appendChild(li)
     }
   }
+}
+
+function toggleLarivaar(){
+  larivaar = !larivaar
+  add_links_to_screen(trackLinks, gurmukhiTitle, englishTitle)
 }
