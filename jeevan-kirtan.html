@@ -1,105 +1,170 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" dir="ltr">
-
   <head>
-    <link rel="icon" href="images/logo.jpg">
-    <meta charset="utf-8">
-    <meta name="viewpoint:" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo.jpg" />
+    <meta charset="utf-8" />
+    <meta name="viewpoint:" content="width=device-width, initial-scale=1.0" />
     <title>AisaKirtan</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="src/bootstrap.min.css">
-    <link rel="stylesheet" href="kirtan.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/bootstrap.min.css" />
+    <link rel="stylesheet" href="kirtan.css" />
     <script src="src/jquery.min.js"></script>
     <script src="src/audioPlayer.js"></script>
   </head>
 
   <body>
-    <!--Nav bar start-->
-      <nav class="navbar navbar-dark navbar-expand-lg fixed-top">
-        <div class="container">
-          <a href="#"><img src="images/logo.jpg" alt="" width="70px" height="70px"></a>
-          <div class="" id="navbarnav">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item"><a class="nav-link" href="index.html" class="active">Back</a></li>
-            </ul>
-          </div>
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top">
+      <div class="container">
+        <a href="/"><img src="images/logo.jpg" width="70px" height="70px" /></a>
+        <div class="" id="navbarnav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html" class="active">Back</a>
+            </li>
+          </ul>
         </div>
-      </nav>
+      </div>
+    </nav>
 
-      <section id="jeevan" class="text-center">
-        <div class="container justify-content-center">
+    <section id="jeevan" class="text-center">
+      <div class="container justify-content-center">
+        <div class="main-image-wrapper" id="box">
+          <!--main image-->
+          <img
+            src="images/JEEVAN_W2.jpg"
+            class="main-image"
+            width="400px"
+            height="400px"
+          />
+        </div>
+        <div class="main-title m-5">
+          <h1>BHAI JEEVAN SINGH</h1>
+        </div>
 
-   
-          <div class="main-image-wrapper" id="box">
-            <!--main image-->
-            <img src="images/JEEVAN_W2.jpg" class="main-image" width="400px" height="400px">
-          </div>
-          <div class="main-title m-5">
-            <h1>BHAI JEEVAN SINGH</h1>
-          </div>
-   
-          <!--audio player start-->
-          <div class="row">
-            <div class="col">
-              <div class="m-3">
-                <audio src="" preload="none" controls="" id="audioPlayer" controlsList="">
-                  Sorry, your browser doesn't support html5!
-                </audio>
-              </div>
+        <!--audio player start-->
+        <div class="row">
+          <div class="col">
+            <div class="m-3">
+              <audio
+                src=""
+                preload="none"
+                controls=""
+                id="audioPlayer"
+                controlsList=""
+              >
+                Sorry, your browser doesn't support html5!
+              </audio>
             </div>
           </div>
-          <!--audio player end-->
-          
-          <button onclick="playPreviousTrack()">Previous</button>
-          <button onclick="playNextTrack()">Next</button>
+        </div>
+        <!--audio player end-->
 
-          <!--main body start-->
-          <div class="row">
-            <div class="col">
-              <div class="kirtan-list">
-                <!--kirtan list start-->
-                    <ul class="table ml-auto " id="playlist">
-                      <li class="m-3"><a href="https://docs.google.com/uc?export=download&id=1nrAinREe8kAZLA1ESkuhV89R0Cbeu_b5"><h4> ਆਇਪਇਆਤੇਰੀਸਰਣਾਈ॥<br>Aai Peiaa Theree Sharnaiee </h4> </a></li>
-                      <li class="m-3"><a href="https://docs.google.com/uc?export=download&id=1KxyA7gTPN1L8xdpcF2d0Hl2JQ7ZePCqd"><h4> ਧੰਨਜੀਓਤਿਹਕੋਜਗਮੈਮੁਖਤੇਹਰਿਚਿੱਤਮੈਜੁਧੁਬਿਚਾਰੈ॥<br>Dhan Jeeo Tai Ko Jag Mai </h4> </a></li>
-                      <li class="m-3"><a href="https://docs.google.com/uc?export=download&id=1JvldiBO1oAQNlRdWCovNUPJvwygMSMv_"><h4> ਅਬਪੂਛੇਕਿਆਕਹਾ॥<br>Ab Poochhe Kia Kahaa </h4> </a></li>
-                      <li class="m-3"><a href="https://docs.google.com/uc?export=download&id=1J2OgdXv8LlT4n7Rgi8k5i-rws9O6_wJM"><h4> ਬਾਬਾਮਨੁਮਤਵਾਰੋਨਾਮਰਸੁਪੀਵੈਸਹਜਰੰਗਰਚਿਰਹਿਆ॥<br>Baba Man Matvaro Naam Ras Peevai </h4> </a></li>
-                      <li class="m-3"><a href="https://docs.google.com/uc?export=download&id=19ksTKF-T0rtO-tFYLXBqfenbJpibNnFd"><h4> UK Kirtan </h4> </a></li>
-                      <li class="m-3"><a href="https://docs.google.com/uc?export=download&id=1APFEeY_1ttfiLtRCDcXKuaz92lt0v9rR"><h4> ਧੰਨਜੀਓਤਿਹਕੋਜਗਮੈਮੁਖਤੇਹਰਿਚਿੱਤਮੈਜੁਧੁਬਿਚਾਰੈ॥<br>Dhan Jeeo Teh Ko Jag Mai </h4> </a></li>
-                      <li class="m-3"><a href="https://docs.google.com/uc?export=download&id=1hHDaN772bH-9vgL7ehgOarhVW69Vv4jE"><h4> ਗੁਰਪੂਰੇਕੀਬੇਅੰਤਵਡਾਈ॥੨॥<br>Gur Poore Kee Beant Vadaie </h4> </a></li>
-                      <li class="m-3"><a href="https://docs.google.com/uc?export=download&id=1xmTBVoeen3w0d9nfRghivqhp7bqbbrbt"><h4> ਹਰਿਹਰਿਹਰਿਗੁਨਗਾਵਹੁ॥<br>Har Har Har Gun Gaavo </h4> </a></li>
-                      <li class="m-3"><a href="https://docs.google.com/uc?export=download&id=1jsCQaF0ND3dXOGqedcAJhS_ubGPNPx-V"><h4> ਹਰਿਹਰਿਨਾਮੁਚਰਾਵਹੁਰੰਗਨਿਆਪੇਹੀਪ੍ਰਭਰੰਗਿ॥੧॥<br>Har Har Naam Chraavo Rangan </h4> </a></li>
-                      <li class="m-3"><a href="https://docs.google.com/uc?export=download&id=1pwa9IPUu0c7EbLsTWHKfpPFKg04jAdUd"><h4> ਹਰਿਨਾਮੁਮਿਲਿਆਸੋਹਾਗਣੀਮੇਰੇਗੋਵਿੰਦਾਮਨਿਅਨਦਿਨੁਅਨਦੁਰਹਸੁਜੀਉ॥<br>Har Naam Milia Sohagnee </h4> </a></li>
-                      <li class="m-3"><a href="https://docs.google.com/uc?export=download&id=1sDvEaxIi0SNSqdoLoxvckoWQfZs4VFwo"><h4> ਹਉਵਾਰਿਵਾਰਿਜਾਉਗੁਰਗੋਪਾਲ॥੧॥ਰਹਾਉ॥<br>Ho Var Var Jaao Gur Gopal </h4> </a></li>
-                      <li class="m-3"><a href="https://docs.google.com/uc?export=download&id=1SjybzjBz6MhYMz7DAl4vALhYFKW1_YBa"><h4> ਜਰਾਮਰਾਨਹਵਿਆਪਈਫਿਰਿਦੂਖੁਨਪਾਇਆ॥<br>Jra Mra Na Viaapiee </h4> </a></li>
-                      <li class="m-3"><a href="https://docs.google.com/uc?export=download&id=1lPtqi4K-YWaj6G0MdmKQ6OWNmoHsbxq9"><h4> ਜਪਹੁਤਏਕੋਨਾਮਾ॥<br>Japo Ta Eko Nama </h4> </a></li>
-                      <li class="m-3"><a href="https://docs.google.com/uc?export=download&id=1GhCzm8HlN4Lqw0y7mkdMU9oE9tJmlAVc"><h4> ਜਪ੍ਯਉਜਿਨ੍ਹ੍ਹਅਰਜੁਨਦੇਵਗੁਰੂਫਿਰਿਸੰਕਟਜੋਨਿਗਰਭਨਆਯਉ॥੬॥<br>Japio Jin Arjun Dev Guru </h4> </a></li>
-                      <li class="m-3"><a href="https://docs.google.com/uc?export=download&id=1putYcm3LfnR5Mx5Oa318Okb24m8kXo0B"><h4> ਜੀਵੰਦਿਆਹਰਿਚੇਤਿਆਮਰੰਦਿਆਹਰਿਰੰਗਿ॥<br>Jevandhiaa Har Chetiaa </h4> </a></li>
-                      <li class="m-3"><a href="https://docs.google.com/uc?export=download&id=1ReJWV68lGeVOdaBrW2yhq8h3TagXSTN3"><h4> ਜੋਦੀਸੈਗੁਰਸਿਖੜਾਤਿਸੁਨਿਵਿਨਿਵਿਲਾਗਉਪਾਇਜੀਉ॥<br>Jo Deesai GursikhRaa </h4> </a></li>
-                      <li class="m-3"><a href="https://docs.google.com/uc?export=download&id=1De7qX6lx_5NYHk0zo0Fo8xd5syZT79j2"><h4> ਕਰਿਕਿਰਪਾਕਰਹੁਪ੍ਰਭਦਾਤਿ॥<br>Kar Kirpa Karuh Prabh Dhaat </h4> </a></li>
-                      <li class="m-3"><a href="https://docs.google.com/uc?export=download&id=1lewunW__ihpjrSZ96UiXRS-yePqtbhpb"><h4> ਕਰਹੁਕ੍ਰਿਪਾਜਗਜੀਵਨਦਾਤੇਮੇਰਾਮਨੁਹਰਿਸੇਤੀਰਾਚੇ॥<br>Karuh Kirpa Jagjeevan Date Mera Man Har Seti Rache </h4> </a></li>
-                      <li class="m-3"><a href="https://docs.google.com/uc?export=download&id=1rAI-mE01NkqjQjCpnbkJXH7L1pkCSi2Y"><h4> ਸਭਿਰਾਤੀਸੋਹਾਗਣੀਮੈਡੋਹਾਗਣਿਕਾਈਰਾਤਿਜੀਉ॥੧॥<br>Mai Ddohagan Kaiee Raat Jeeo </h4> </a></li>
-                      <li class="m-3"><a href="https://docs.google.com/uc?export=download&id=1BWVr2kk5VnGdrqNSwizuVuV0ocnEuFLk"><h4> ਮੈਮਨਿਵਡੀਆਸਹਰੇਕਿਉਕਰਿਹਰਿਦਰਸਨੁਪਾਵਾ॥<br>Mai Man Vadee Aas Harai </h4> </a></li>
-                      <li class="m-3"><a href="https://docs.google.com/uc?export=download&id=16asS3xJIEwDyB9Q6HPh4W1x1wcYVROfa"><h4> ਮਿਤ੍ਰਘਣੇਰੇਕਰਿਥਕੀਮੇਰਾਦੁਖੁਕਾਟੈਕੋਇ॥<br>Mitr Ghanere Kar Thhakee </h4> </a></li>
-                      <li class="m-3"><a href="https://docs.google.com/uc?export=download&id=1ndmIxaBFtkOQgnr7DmyvBAweb4D87q6p"><h4> ਮਿਤ੍ਰਘਣੇਰੇਕਰਿਥਕੀਮੇਰਾਦੁਖੁਕਾਟੈਕੋਇ॥<br>Mitr Ghanere Kar Thhakee </h4> </a></li>
-                      <li class="m-3"><a href="https://docs.google.com/uc?export=download&id=1lANTb3DAsGizWhegs86Fzs5KGSL5nAzA"><h4> ਢਾਢੀਦਰਿਪ੍ਰਭਮੰਗਣਾਦਰੁਕਦੇਨਛੋੜੇ॥<br>Tadee Dhar Prabh Mangna Dhar Kadhe Na Chhore </h4> </a></li>
-                      <li class="m-3"><a href="https://docs.google.com/uc?export=download&id=1z34Ep_Lm3SLjwiCX1Zms5JCRv1OPkW1i"><h4> ਤੇਰਾਭਰੋਸਾਪਿਆਰੇ॥<br>Tera Bharosaa Piare </h4> </a></li>
-                    </ul>
-                    <!--kirtan list end-->
-                </div>
+        <button onclick="playPreviousTrack()">Previous</button>
+        <button onclick="toggleLarivaar()">Toggle Larivaar</button>
+        <button onclick="playNextTrack()">Next</button>
+
+        <!--main body start-->
+        <div class="row">
+          <div class="col">
+            <div class="kirtan-list">
+              <!--kirtan list start-->
+              <ul class="table ml-auto" id="playlist"></ul>
+              <!--kirtan list end-->
             </div>
           </div>
-          <!--main body end-->
-
         </div>
-      </section>
+        <!--main body end-->
+      </div>
+    </section>
 
+    <script>
+      const trackLinks = [
+        'https://docs.google.com/uc?export=download&id=1nrAinREe8kAZLA1ESkuhV89R0Cbeu_b5',
+        'https://docs.google.com/uc?export=download&id=1KxyA7gTPN1L8xdpcF2d0Hl2JQ7ZePCqd',
+        'https://docs.google.com/uc?export=download&id=1JvldiBO1oAQNlRdWCovNUPJvwygMSMv_',
+        'https://docs.google.com/uc?export=download&id=1J2OgdXv8LlT4n7Rgi8k5i-rws9O6_wJM',
+        'https://docs.google.com/uc?export=download&id=19ksTKF-T0rtO-tFYLXBqfenbJpibNnFd',
+        'https://docs.google.com/uc?export=download&id=1APFEeY_1ttfiLtRCDcXKuaz92lt0v9rR',
+        'https://docs.google.com/uc?export=download&id=1hHDaN772bH-9vgL7ehgOarhVW69Vv4jE',
+        'https://docs.google.com/uc?export=download&id=1xmTBVoeen3w0d9nfRghivqhp7bqbbrbt',
+        'https://docs.google.com/uc?export=download&id=1jsCQaF0ND3dXOGqedcAJhS_ubGPNPx-V',
+        'https://docs.google.com/uc?export=download&id=1pwa9IPUu0c7EbLsTWHKfpPFKg04jAdUd',
+        'https://docs.google.com/uc?export=download&id=1sDvEaxIi0SNSqdoLoxvckoWQfZs4VFwo',
+        'https://docs.google.com/uc?export=download&id=1SjybzjBz6MhYMz7DAl4vALhYFKW1_YBa',
+        'https://docs.google.com/uc?export=download&id=1lPtqi4K-YWaj6G0MdmKQ6OWNmoHsbxq9',
+        'https://docs.google.com/uc?export=download&id=1GhCzm8HlN4Lqw0y7mkdMU9oE9tJmlAVc',
+        'https://docs.google.com/uc?export=download&id=1putYcm3LfnR5Mx5Oa318Okb24m8kXo0B',
+        'https://docs.google.com/uc?export=download&id=1ReJWV68lGeVOdaBrW2yhq8h3TagXSTN3',
+        'https://docs.google.com/uc?export=download&id=1De7qX6lx_5NYHk0zo0Fo8xd5syZT79j2',
+        'https://docs.google.com/uc?export=download&id=1lewunW__ihpjrSZ96UiXRS-yePqtbhpb',
+        'https://docs.google.com/uc?export=download&id=1rAI-mE01NkqjQjCpnbkJXH7L1pkCSi2Y',
+        'https://docs.google.com/uc?export=download&id=1BWVr2kk5VnGdrqNSwizuVuV0ocnEuFLk',
+        'https://docs.google.com/uc?export=download&id=16asS3xJIEwDyB9Q6HPh4W1x1wcYVROfa',
+        'https://docs.google.com/uc?export=download&id=1ndmIxaBFtkOQgnr7DmyvBAweb4D87q6p',
+        'https://docs.google.com/uc?export=download&id=1lANTb3DAsGizWhegs86Fzs5KGSL5nAzA',
+        'https://docs.google.com/uc?export=download&id=1z34Ep_Lm3SLjwiCX1Zms5JCRv1OPkW1i',
+      ]
 
-    <!-- Footer scripts-->
-    <script> audioPlayer(); </script>
+      const gurmukhiTitle = [
+        'ਆਇ ਪਇਆ ਤੇਰੀ ਸਰਣਾਈ ॥',
+        'ਧੰਨ ਜੀਓ ਤਿਹ ਕੋ ਜਗ ਮੈ ਮੁਖ ਤੇ ਹਰਿ ਚਿੱਤ ਮੈ ਜੁਧੁ ਬਿਚਾਰੈ॥',
+        'ਅਬ ਪੂਛੇ ਕਿਆ ਕਹਾ ॥',
+        'ਬਾਬਾ ਮਨੁ ਮਤਵਾਰੋ ਨਾਮ ਰਸੁ ਪੀਵੈ ਸਹਜ ਰੰਗ ਰਚਿ ਰਹਿਆ ॥',
+        '',
+        'ਧੰਨ ਜੀਓ ਤਿਹ ਕੋ ਜਗ ਮੈ ਮੁਖ ਤੇ ਹਰਿ ਚਿੱਤ ਮੈ ਜੁਧੁ ਬਿਚਾਰੈ॥',
+        'ਗੁਰ ਪੂਰੇ ਕੀ ਬੇਅੰਤ ਵਡਾਈ ॥੨॥',
+        'ਹਰਿ ਹਰਿ ਹਰਿ ਗੁਨ ਗਾਵਹੁ ॥',
+        'ਹਰਿ ਹਰਿ ਨਾਮੁ ਚਰਾਵਹੁ ਰੰਗਨਿ ਆਪੇ ਹੀ ਪ੍ਰਭ ਰੰਗਿ ॥੧॥',
+        'ਹਰਿ ਨਾਮੁ ਮਿਲਿਆ ਸੋਹਾਗਣੀ ਮੇਰੇ ਗੋਵਿੰਦਾ ਮਨਿ ਅਨਦਿਨੁ ਅਨਦੁ ਰਹਸੁ ਜੀਉ ॥',
+        'ਹਉ ਵਾਰਿ ਵਾਰਿ ਜਾਉ ਗੁਰ ਗੋਪਾਲ ॥੧॥ ਰਹਾਉ ॥',
+        'ਜਰਾ ਮਰਾ ਨਹ ਵਿਆਪਈ ਫਿਰਿ ਦੂਖੁ ਨ ਪਾਇਆ ॥',
+        'ਜਪਹੁ ਤ ਏਕੋ ਨਾਮਾ ॥',
+        'ਜਪੵਉ ਜਿਨੑ ਅਰਜੁਨ ਦੇਵ ਗੁਰੂ ਫਿਰਿ ਸੰਕਟ ਜੋਨਿ ਗਰਭ ਨ ਆਯਉ ॥੬॥',
+        'ਜੀਵੰਦਿਆ ਹਰਿ ਚੇਤਿਆ ਮਰੰਦਿਆ ਹਰਿ ਰੰਗਿ ॥',
+        'ਜੋ ਦੀਸੈ ਗੁਰਸਿਖੜਾ ਤਿਸੁ ਨਿਵਿ ਨਿਵਿ ਲਾਗਉ ਪਾਇ ਜੀਉ ॥',
+        'ਕਰਿ ਕਿਰਪਾ ਕਰਹੁ ਪ੍ਰਭ ਦਾਤਿ ॥',
+        'ਕਰਹੁ ਕ੍ਰਿਪਾ ਜਗਜੀਵਨ ਦਾਤੇ ਮੇਰਾ ਮਨੁ ਹਰਿ ਸੇਤੀ ਰਾਚੇ ॥',
+        'ਸਭਿ ਰਾਤੀ ਸੋਹਾਗਣੀ ਮੈ ਡੋਹਾਗਣਿ ਕਾਈ ਰਾਤਿ ਜੀਉ ॥੧॥',
+        'ਮੈ ਮਨਿ ਵਡੀ ਆਸ ਹਰੇ ਕਿਉ ਕਰਿ ਹਰਿ ਦਰਸਨੁ ਪਾਵਾ ॥',
+        'ਮਿਤ੍ਰ ਘਣੇਰੇ ਕਰਿ ਥਕੀ ਮੇਰਾ ਦੁਖੁ ਕਾਟੈ ਕੋਇ ॥',
+        'ਮਿਤ੍ਰ ਘਣੇਰੇ ਕਰਿ ਥਕੀ ਮੇਰਾ ਦੁਖੁ ਕਾਟੈ ਕੋਇ ॥',
+        'ਢਾਢੀ ਦਰਿ ਪ੍ਰਭ ਮੰਗਣਾ ਦਰੁ ਕਦੇ ਨ ਛੋੜੇ ॥',
+        'ਤੇਰਾ ਭਰੋਸਾ ਪਿਆਰੇ ॥',
+      ]
 
+      const englishTitle = [
+        'Aai Peiaa Theree Sharnaiee ',
+        'Dhan Jeeo Tai Ko Jag Mai ',
+        'Ab Poochhe Kia Kahaa ',
+        'Baba Man Matvaro Naam Ras Peevai ',
+        'UK Kirtan',
+        'Dhan Jeeo The Ko Jag Mai ',
+        'Gur Poore Kee Beant Vadaie ',
+        'Har Har Har Gun Gaavo ',
+        'Har Har Naam Chraavo Rangan ',
+        'Har Naam Milia Sohagnee ',
+        'Ho Var Var Jaao Gur Gopal ',
+        'Jra Mra Na Viaapiee ',
+        'Japo Ta Eko Nama ',
+        'Japio Jin Arjun Dev Guru ',
+        'Jevandhiaa Har Chetiaa ',
+        'Jo Deesai GursikhRaa ',
+        'Kar Kirpa Karuh Prabh Dhaat ',
+        'Karuh Kirpa Jagjeevan Date Mera Man Har Seti Rache ',
+        'Mai Ddohagan Kaiee Raat Jeeo ',
+        'Mai Man Vadee Aas Harai ',
+        'Mitr Ghanere Kar Thhakee ',
+        'Mitr Ghanere Kar Thhakee ',
+        'Tadee Dhar Prabh Mangna Dhar Kadhe Na Chhore ',
+        'Tera Bharosaa Piare ',
+      ]
 
-      
-
+      add_links_to_screen(trackLinks, gurmukhiTitle, englishTitle) // coming from ./src/audioPlayer.js
+      audioPlayer()
+    </script>
   </body>
 </html>

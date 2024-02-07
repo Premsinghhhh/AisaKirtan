@@ -1,82 +1,110 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" dir="ltr">
-
   <head>
-    <link rel="icon" href="images/logo.jpg">
-    <meta charset="utf-8">
-    <meta name="viewpoint:" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo.jpg" />
+    <meta charset="utf-8" />
+    <meta name="viewpoint:" content="width=device-width, initial-scale=1.0" />
     <title>AisaKirtan</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="src/bootstrap.min.css">
-    <link rel="stylesheet" href="kirtan.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/bootstrap.min.css" />
+    <link rel="stylesheet" href="kirtan.css" />
     <script src="src/jquery.min.js"></script>
     <script src="src/audioPlayer.js"></script>
   </head>
 
   <body>
     <!--Nav bar start-->
-      <nav class="navbar navbar-dark navbar-expand-lg fixed-top">
-        <div class="container">
-          <a href="#"><img src="images/logo.jpg" alt="" width="70px" height="70px"></a>
-          <div class="" id="navbarnav">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item"><a class="nav-link" href="index.html" class="active">Back</a></li>
-            </ul>
-          </div>
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top">
+      <div class="container">
+        <a href="/"
+          ><img src="images/logo.jpg" alt="" width="70px" height="70px"
+        /></a>
+        <div class="" id="navbarnav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html" class="active">Back</a>
+            </li>
+          </ul>
         </div>
-      </nav>
+      </div>
+    </nav>
 
-      <section id="jasbir" class="text-center">
-        <div class="container justify-content-center">
-   
-          <div class="main-image-wrapper" id="box">
-            <!--main image-->
-            <img src="images/JASBIR_W1.jpg" class="main-image" width="400px" height="400px">
-          </div>
-          <div class="main-title m-5">
-            <!--Main Title-->
-            <h1>BHAI JASBIR SINGH</h1>
-          </div>
-          <!-- Audio player start -->
-          <div class="row">
-            <div class="col">
-              <div class="m-3">
-                <audio src="" preload="none" controls="" id="audioPlayer" controlsList="">
-                  Sorry, your browser doesn't support html5!
-                </audio>
-              </div>
+    <section id="jasbir" class="text-center">
+      <div class="container justify-content-center">
+        <div class="main-image-wrapper" id="box">
+          <!--main image-->
+          <img
+            src="images/JASBIR_W1.jpg"
+            class="main-image"
+            width="400px"
+            height="400px"
+          />
+        </div>
+        <div class="main-title m-5">
+          <h1>BHAI JASBIR SINGH</h1>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="m-3">
+              <audio
+                src=""
+                preload="none"
+                controls=""
+                id="audioPlayer"
+                controlsList=""
+              >
+                Sorry, your browser doesn't support html5!
+              </audio>
             </div>
           </div>
-          <!-- Audio player end -->
-          
-          <button onclick="playPreviousTrack()">Previous</button>
-          <button onclick="playNextTrack()">Next</button>
-          
-
-          <!-- Main body start -->
-          <div class="row">
-            <div class="col">
-              <div class="kirtan-list">
-                <!-- Kirtan list start -->
-                    <ul class="table ml-auto " id="playlist">
-                      <li class="m-3"><a href="https://docs.google.com/uc?export=download&id=1YY7sYiFQgZ-_GcLWeLhApt6ZU_4rYQuJ"><h4> ਜੈਤੇਗੰ<br> Je Tegan </h4> </a></li>
-                      <li class="m-3"><a href="https://docs.google.com/uc?export=download&id=1QT0pSoKHLzk_eg_VAOSP-Hk5fc21S1mh"><h4> ਰਤੇਇਸਕਖੁਦਾਇਰੰਗਿਦੀਦਾਰਕੇ॥<br> Rathe Ishk Kudaaye </h4> </a></li>
-                      <li class="m-3"><a href="https://docs.google.com/uc?export=download&id=1_ycp2qJIriViB3NUefMT3XpOG-iCT8Wg"><h4> ਸਭੁਤਨੁਮਨੁਹਰਿਆਹੋਇਆਮਨੁਖਿੜਿਆਹਰਿਆਬਾਗੁ॥<br>Sabh Tan Man Haria Hoiaa </h4> </a></li>
-                      <li class="m-3"><a href="https://docs.google.com/uc?export=download&id=1UY0UuGliyInKfgJB1fORpt7QyxjswqN7"><h4> ਤਹੀਪ੍ਰਕਾਸਹਮਾਰਾਭਯੋ॥<br>Thehee Parkaash Hamara Bheyo </h4> </a></li>
-                      
-                    </ul>
-                    <!--Kirtan list end-->
-                </div>
-              </div>
-            </div>
-            <!--main body end-->
-
         </div>
-        </section>
 
- <!-- Footer scripts-->
- <script> audioPlayer(); </script>
+        <button onclick="playPreviousTrack()">Previous</button>
+        <button onclick="toggleLarivaar()">Toggle Larivaar</button>
+        <button onclick="playNextTrack()">Next</button>
 
+        <!-- Main body start -->
+        <div class="row">
+          <div class="col">
+            <div class="kirtan-list">
+              <!-- Kirtan list start -->
+              <ul class="table ml-auto" id="playlist"></ul>
+              <!--Kirtan list end-->
+            </div>
+          </div>
+        </div>
+        <!--main body end-->
+      </div>
+    </section>
+
+    <script>
+      const trackLinks = [
+        'https://docs.google.com/uc?export=download&id=1YY7sYiFQgZ-_GcLWeLhApt6ZU_4rYQuJ',
+        'https://docs.google.com/uc?export=download&id=1QT0pSoKHLzk_eg_VAOSP-Hk5fc21S1mh',
+        'https://docs.google.com/uc?export=download&id=1_ycp2qJIriViB3NUefMT3XpOG-iCT8Wg',
+        'https://docs.google.com/uc?export=download&id=1UY0UuGliyInKfgJB1fORpt7QyxjswqN7',
+      ]
+
+      const gurmukhiTitle = [
+        'ਜੈ ਤੇਗੰ',
+        'ਰਤੇ ਇਸਕ ਖੁਦਾਇ ਰੰਗਿ ਦੀਦਾਰ ਕੇ ॥',
+        'ਸਭੁ ਤਨੁ ਮਨੁ ਹਰਿਆ ਹੋਇਆ ਮਨੁ ਖਿੜਿਆ ਹਰਿਆ ਬਾਗੁ ॥',
+        'ਤਹੀ ਪ੍ਰਕਾਸ ਹਮਾਰਾ ਭਯੋ॥',
+      ]
+
+      const englishTitle = [
+        'Je Tegan',
+        'Rathe Ishk Kudaaye',
+        'Sabh Tan Man Haria Hoiaa',
+        'Thehee Parkaash Hamara Bheyo',
+      ]
+
+      add_links_to_screen(trackLinks, gurmukhiTitle, englishTitle) // coming from ./src/audioPlayer.js
+      audioPlayer()
+    </script>
   </body>
 </html>
