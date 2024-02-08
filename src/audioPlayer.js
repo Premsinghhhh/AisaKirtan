@@ -1,6 +1,6 @@
 let currentTrackInd = 0
 let current_title = ''
-let larivaar = true
+let larivaar = !true
 
 function playTrack(link) {
   document.getElementById('audioPlayer').src = link
