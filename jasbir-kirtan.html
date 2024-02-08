@@ -83,10 +83,10 @@
 
     <script>
       const trackLinks = [
-        'https://docs.google.com/uc?export=download&id=1YY7sYiFQgZ-_GcLWeLhApt6ZU_4rYQuJ',
-        'https://docs.google.com/uc?export=download&id=1QT0pSoKHLzk_eg_VAOSP-Hk5fc21S1mh',
-        'https://docs.google.com/uc?export=download&id=1_ycp2qJIriViB3NUefMT3XpOG-iCT8Wg',
-        'https://docs.google.com/uc?export=download&id=1UY0UuGliyInKfgJB1fORpt7QyxjswqN7',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/bh_jasbir_s/aisa_keertan/Je Tegan.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/bh_jasbir_s/aisa_keertan/Rateh Ishk Kudaaye.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/bh_jasbir_s/aisa_keertan/Sabh Tan Man Hariaa Hoiaa.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/bh_jasbir_s/aisa_keertan/Thahee Parkaash Hamara Bheyo.mp3',
       ]
 
       const gurmukhiTitle = [
@@ -96,15 +96,8 @@
         'ਤਹੀ ਪ੍ਰਕਾਸ ਹਮਾਰਾ ਭਯੋ॥',
       ]
 
-      const englishTitle = [
-        'Je Tegan',
-        'Rathe Ishk Kudaaye',
-        'Sabh Tan Man Haria Hoiaa',
-        'Thehee Parkaash Hamara Bheyo',
-      ]
-
-      add_links_to_screen(trackLinks, gurmukhiTitle, englishTitle) // coming from ./src/audioPlayer.js
-      audioPlayer()
+      add_links_to_screen(trackLinks, gurmukhiTitle) // coming from ./src/audioPlayer.js
+      playTrack(trackLinks[0])
     </script>
   </body>
 </html>

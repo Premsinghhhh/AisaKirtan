@@ -74,13 +74,13 @@
             <div class="kirtan-list">
               <!-- Kirtan list start -->
               <h3>Akhand Kirtan:</h3>
-              <ul class="table ml-auto" id="playlist1"></ul>
+              <ul class="table ml-auto" id="playlist"></ul>
 
               <h3>Asa Ki Vaar:</h3>
-              <ul class="table ml-auto" id="playlist2"></ul>
+              <ul class="table ml-auto" id="playlist1"></ul>
 
               <h3>Reinsbhai:</h3>
-              <ul class="table ml-auto" id="playlist3"></ul>
+              <ul class="table ml-auto" id="playlist2"></ul>
               <!--Kirtan list end-->
             </div>
           </div>
@@ -91,92 +91,53 @@
 
     <script>
       const akLinks = [
-        'https://docs.google.com/uc?export=download&id=1cIvSY1XRQ-nhRsWVsdBKTZ0U6Lls5hMd',
-        'https://docs.google.com/uc?export=download&id=15wV4lF_UP06H8VVt7ybyv84AQKHYxX2R',
-        'https://docs.google.com/uc?export=download&id=1Up5JDBgd27aGj5Sc_WAAVMxKafIm8u2d',
-        'https://docs.google.com/uc?export=download&id=1SCbXcmQFkuAzUZAA_5RCbCtaWyPfT-ev',
-        'https://docs.google.com/uc?export=download&id=1wPO0pEXewoJoAHAvERK72ZCC1EkB_vCN',
-        'https://docs.google.com/uc?export=download&id=1qIrpQJn-cNsdWY9DWXKZgGo7U6i8X9ig',
-        'https://docs.google.com/uc?export=download&id=1hf9hK_LSdqWTcTrAYWWXl28iBCCscsEH',
-        'https://docs.google.com/uc?export=download&id=19Xgeg31SUjCM9l7qLWtRokfC077COZ0R',
-        'https://docs.google.com/uc?export=download&id=1MHeSeQB0q9GLT-_2VdWK9F_bqopMyynn',
-        'https://docs.google.com/uc?export=download&id=14dPZ2cJiZVXoILCFh7tw0GpEBlfYOQub',
-        'https://docs.google.com/uc?export=download&id=1ut9ZHyUpzNId1mgehrPHkH5VItoNdT9X',
-        'https://docs.google.com/uc?export=download&id=15G2oLFOsjUOaq2lvLBMpfSaJlK1hP_ET',
-        'https://docs.google.com/uc?export=download&id=1k-MMjoOsQZ0WsofOV1PzMaZyJquGV5pA',
-        'https://docs.google.com/uc?export=download&id=1JNrgPX8YDBnpl2ilXtq3lSHvO28kDruF',
-        'https://docs.google.com/uc?export=download&id=1dDGJbfGxB6f4D4UqqtQoTfUm4S94SKZo',
-        'https://docs.google.com/uc?export=download&id=19CRJMCBF-CJKSgKy1rRvMw7JKCbuvghO',
-        'https://docs.google.com/uc?export=download&id=1QRqB6-rg8se61S3Cu_L_094p270KEdm5',
-        'https://docs.google.com/uc?export=download&id=1AZFgHsWQejxbkTowcwVm2Xm8raO-fceR',
-        'https://docs.google.com/uc?export=download&id=1P6HGx5UPuLJ-jvtNH-Jjci6F3nHifqzn',
-        'https://docs.google.com/uc?export=download&id=1dLtxOCyaMooenRHoJMEd2taoNhLXgGrq',
-        'https://docs.google.com/uc?export=download&id=1eyh5Ft3RjVTBWfAeosZUOjyzQ5YMaALU',
-        'https://docs.google.com/uc?export=download&id=1DBmg2qRHperkrBnEGNYEU4-V9Aah0vih',
-      ]
-      const akKeertanis = [
-        'Bibi Gurleen Kaur Ji',
-        'Bhai Harpreet Singh Ji',
-        'Bhai Harpreet Singh Ji',
-        'Bhai Harpreet Singh Ji',
-        'Bhai Harpreet Singh Ji',
-        'Bhai Harpreet Singh Ji',
-        'Bhai Harpreet Singh Ji',
-        'Bhai Harpreet Singh Ji',
-        'Bhai Harpreet Singh Ji',
-        'Bhai Jeevan Singh Ji',
-        'Bhai Jeevan Singh Ji',
-        'Bhai Jeevan Singh Ji',
-        'Bhai Manjit Singh Ji',
-        'Bhai Manjit Singh Ji',
-        'Bhai Manjit Singh Ji',
-        'Bhai Manjit Singh Ji',
-        'Bhai Manjit Singh Ji',
-        'Bhai Manjit Singh Ji',
-        'Bhai Pritam Singh Chani Ji',
-        'Bhai Pritam Singh Chani Ji',
-        'Bhai Pritam Singh Chani Ji',
-        'Bhai Pritam Singh Chani Ji',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/aisa_keertan/bham_smg_1996/Bhai Harpreet Singh Ji (1).mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/aisa_keertan/bham_smg_1996/Bhai Harpreet Singh Ji (2).mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/aisa_keertan/bham_smg_1996/Bhai Harpreet Singh Ji (3).mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/aisa_keertan/bham_smg_1996/Bhai Harpreet Singh Ji (4).mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/aisa_keertan/bham_smg_1996/Bhai Harpreet Singh Ji (5).mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/aisa_keertan/bham_smg_1996/Bhai Harpreet Singh Ji (6).mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/aisa_keertan/bham_smg_1996/Bhai Harpreet Singh Ji (7).mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/aisa_keertan/bham_smg_1996/Bhai Harpreet Singh Ji (8).mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/aisa_keertan/bham_smg_1996/Bhai Jeevan Singh Ji (1).mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/aisa_keertan/bham_smg_1996/Bhai Jeevan Singh JI (2).mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/aisa_keertan/bham_smg_1996/Bhai Jeevan Singh Ji (3).mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/aisa_keertan/bham_smg_1996/Bhai Manjit Singh Ji (1).mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/aisa_keertan/bham_smg_1996/Bhai Manjit Singh Ji (2).mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/aisa_keertan/bham_smg_1996/Bhai Manjit Singh Ji (3).mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/aisa_keertan/bham_smg_1996/Bhai Manjit Singh Ji (4).mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/aisa_keertan/bham_smg_1996/Bhai Manjit Singh Ji (5).mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/aisa_keertan/bham_smg_1996/Bhai Manjit Singh Ji (6).mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/aisa_keertan/bham_smg_1996/Bhai Pritam Singh Chani Ji (1).mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/aisa_keertan/bham_smg_1996/Bhai Pritam Singh Chani Ji (2).mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/aisa_keertan/bham_smg_1996/Bhai Pritam Singh Chani Ji (3).mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/aisa_keertan/bham_smg_1996/Bhai Pritam Singh Chani Ji (4).mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/aisa_keertan/bham_smg_1996/Bibi Gurleen Kaur Ji.mp3',
       ]
 
       const akvLinks = [
-        'https://docs.google.com/uc?export=download&id=13iU_6nUufJeEhV2GAOvj8SvJrZ1Qyqdw',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/aisa_keertan/bham_smg_1996/Bhai Pritam Singh Chani Ji (AKV).mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/aisa_keertan/bham_smg_1996/Asa Ki Vaar Birmingham Smagam 2-11-1996.mp3',
       ]
-      const akvKeertanis = ['Asa Ki Vaar Bimringham Smagam 1996 ']
 
       const rskLinks = [
-        'https://docs.google.com/uc?export=download&id=1lAi6EV35rIRD39eKQxyM4cgHmPdEzTI-',
-        'https://docs.google.com/uc?export=download&id=1_jFFqpQ19rAyfR_LEBVU-jFZLEKrlByD',
-        'https://docs.google.com/uc?export=download&id=1Nb6Ox3Ub0V-wyGR5dktByjnhFaAzzo7o',
-        'https://docs.google.com/uc?export=download&id=1EgjHQgOC08OY1mlPPfr3FEPMlTvO1XsB',
-        'https://docs.google.com/uc?export=download&id=1Cis-kOIQqm6FBIl-1DWdXYZ5w2lB4MWn',
-        'https://docs.google.com/uc?export=download&id=1n7_ri-O51wGBBEH6TJ6RYjVpTDW8rAHX',
-      ]
-      const rskKeertanis = [
-        'Bhai Harpreet Singh Ji',
-        'Bhai Jeevan Singh Ji',
-        'Bhai Malkiat Singh Ji',
-        'Bhai Manjit Singh Ji',
-        'Bhai Mehar Singh Ji',
-        'Bhai Pritam Singh Chani Ji',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/aisa_keertan/bham_smg_1996/Bhai Pritam Singh Chani Ji.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/aisa_keertan/bham_smg_1996/Bhai Harpreet Singh Ji.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/aisa_keertan/bham_smg_1996/Bhai Jeevan Singh Ji.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/aisa_keertan/bham_smg_1996/Bhai Malkiat Singh Ji.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/aisa_keertan/bham_smg_1996/Bhai Manjit Singh Ji.mp3',
+        'https://daasstorage13.blob.core.windows.net/ds1/audios/keertan/aisa_keertan/bham_smg_1996/Bhai Mehar Singh Ji.mp3',
       ]
 
-      const tracks = [
-        {
-          links: akLinks,
-          keertanis: akKeertanis,
-        },
-        {
-          links: akvLinks,
-          keertanis: akvKeertanis,
-        },
-        {
-          links: rskLinks,
-          keertanis: rskKeertanis,
-        },
+      const trackLinks = [
+        ...akLinks, 
+        ...akvLinks, 
+        ...rskLinks
       ]
+
+      const tracks = [akLinks, akvLinks, rskLinks]
       add_links_to_screen_for_smgs(tracks) // coming from ./src/audioPlayer.js
-      audioPlayer()
+      playTrack(trackLinks[0])
     </script>
   </body>
 </html>
