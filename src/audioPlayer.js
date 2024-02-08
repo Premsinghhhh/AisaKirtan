@@ -1,75 +1,68 @@
 let currentTrackInd = 0
-let larivaar = false
+let current_title = ''
+let larivaar = !true
 
-function audioPlayer() {
-  playCurrentTrack()
-  $('#playlist li a').click(function(e) {
-    e.preventDefault()
-    currentTrackInd = $(this).parent().index()
-    playCurrentTrack()
-  })
+function playTrack(link) {
+  document.getElementById('audioPlayer').src = link
+  document.getElementById('audioPlayer').play()
 
-  $('#audioPlayer')[0].addEventListener('ended', playNextTrack)
-  const audio = document.querySelector('#audioPlayer')
-  audio.controls = true
-}
-
-function getTitleOfTrack(trackNum) {
-  const ulElement = document.getElementById('playlist')
-  return ulElement.getElementsByTagName('li')[trackNum].innerText
+  currentTrackInd = trackLinks.indexOf(link)
+  current_title = getNameOfTrackFromLink(link)
+  showTitleOfTrack()
+  changeNavigator()
 }
 
 function getNameOfTrackFromLink(link) {
-  const title = link.split('/').slice(-1)[0]
+  let title = link.split('/').slice(-1)[0]
+  title = title.replaceAll('.mp3', '')
   return decodeURIComponent(decodeURIComponent(title))
 }
 
 function showTitleOfTrack() {
-  const theTrackPlaying = getTitleOfTrack(currentTrackInd)
   const header = document.getElementsByClassName('main-title m-5')[0]
   const h2 = header.getElementsByTagName('h2') //there should only be 1 h2 in Header. No More //there should only be 1 h2 in Header. No More
+
   if (h2.length === 0) {
     const h2ForTrackName = document.createElement('h2')
-    h2ForTrackName.innerText = theTrackPlaying
+    h2ForTrackName.innerText = current_title
     header.appendChild(h2ForTrackName)
   } else {
-    h2[0].innerText = theTrackPlaying
+    h2[0].innerText = ''
+    if (typeof gurmukhiTitle !== 'undefined') {
+      const gurmukhiTxt = gurmukhiTitle[currentTrackInd]
+        ? gurmukhiTitle[currentTrackInd]
+        : ''
+      h2[0].innerHTML = `${gurmukhiTxt}<br>`
+    }
+    h2[0].innerText += current_title
   }
 }
 
 function playNextTrack() {
   currentTrackInd++
-  if (currentTrackInd == $('#playlist li a').length) {
+  if (currentTrackInd == trackLinks.length) {
     currentTrackInd = 0
   }
-  playCurrentTrack()
+
+  playTrack(trackLinks[currentTrackInd])
 }
 
 function playPreviousTrack() {
   currentTrackInd--
   if (currentTrackInd === -1) {
-    currentTrackInd = $('#playlist li a').length - 1
+    currentTrackInd = trackLinks.length - 1
   }
-  playCurrentTrack()
-}
 
-function playCurrentTrack() {
-  $('#playlist li').removeClass('current-song')
-  $('#playlist li:eq(' + currentTrackInd + ')').addClass('current-song')
-  $('#audioPlayer')[0].src = $('#playlist li a')[currentTrackInd].href
-  $('#audioPlayer')[0].play()
-  showTitleOfTrack()
-  changeNavigator()
+  playTrack(trackLinks[currentTrackInd])
 }
 
 function changeNavigator() {
   console.log('Changed Navigator')
   if ('mediaSession' in navigator) {
     navigator.mediaSession.metadata = new MediaMetadata({
-      title: getTitleOfTrack(currentTrackInd),
+      title: current_title,
       artist: document.getElementsByTagName('h1')[0].innertext,
-      album: 'vaheguru jio',
-      /* artwork: [{src: document.getElementsByClassName('main-image')[0].src}] */
+      album: 'Aisa Kirtan',
       artwork: [
         {
           src: document.getElementsByClassName('main-image')[0].src,
@@ -108,53 +101,55 @@ function changeNavigator() {
     )
     navigator.mediaSession.setActionHandler('nexttrack', () => playNextTrack())
     navigator.mediaSession.setActionHandler('play', () =>
-      $('#audioPlayer')[0].play(),
+      document.getElementById('audioPlayer').play(),
     )
     navigator.mediaSession.setActionHandler('pause', () =>
-      $('#audioPlayer')[0].pause(),
+      document.getElementById('audioPlayer').pause(),
     )
   } else {
     console.log('mediaSession Not Found')
   }
 }
 
-function add_links_to_screen(trackLinks, gurmukhiTitle, englishTitle) {
+function add_links_to_screen(trackLinks, gurmukhiTitle) {
   const ul = document.getElementById('playlist')
   ul.innerHTML = ''
   for (let i = 0; i < trackLinks.length; i++) {
     const li = document.createElement('li')
     li.classList.add('m-3')
 
-    let gm = gurmukhiTitle[i]
-    if (larivaar) {
+    let gm = gurmukhiTitle[i] ? gurmukhiTitle[i] : ''
+    if (larivaar && gm) {
       gm = gm.replaceAll(' ', '')
     }
+
     const link = trackLinks[i]
-    // const eng = getNameOfTrackFromLink(link)
-    const eng = englishTitle[i]
+    const eng = getNameOfTrackFromLink(link)
+
     const trackTitle = `<h4>${gm}<br>${eng}</h4>`
-    li.innerHTML = `<a href="${link}">${trackTitle}</a>`
+    li.innerHTML = `<button class="trackBtn" onclick="playTrack('${link}')" >${trackTitle}</button>`
     ul.appendChild(li)
-    // <li class="m-3"><a href="https://docs.google.com/uc?export=download&id=19kZPdii658ZJRhjlFHlF2H6yMS1bqRYy"><h4> ਅੰਮ੍ਰਿਤਬਾਣੀਹਰਿਹਰਿਤੇਰੀ॥Amrit Baani Har Har </h4> </a></li>
   }
 }
 
 function add_links_to_screen_for_smgs(tracks) {
   for (let i = 0; i < tracks.length; i++) {
-    const ul = document.getElementById(`playlist${i + 1}`)
-    for (let j = 0; j < tracks[i].links.length; j++) {
+    const ind = i ? i : '' //if i is 0, then playlistInd should be empty string
+    const ul = document.getElementById(`playlist${ind}`)
+    for (let j = 0; j < tracks[i].length; j++) {
       const li = document.createElement('li')
       li.classList.add('m-3')
 
-      const trackTitle = `<h4>${tracks[i].keertanis[j]}</h4>`
-      const link = tracks[i].links[j]
-      li.innerHTML = `<a href="${link}">${trackTitle}</a>`
+      const link = tracks[i][j]
+      const trackTitle = `<h4>${getNameOfTrackFromLink(link)}</h4>`
+
+      li.innerHTML = `<button class="trackBtn" onclick="playTrack('${link}')" >${trackTitle}</button>`
       ul.appendChild(li)
     }
   }
 }
 
-function toggleLarivaar(){
+function toggleLarivaar() {
   larivaar = !larivaar
-  add_links_to_screen(trackLinks, gurmukhiTitle, englishTitle)
+  add_links_to_screen(trackLinks, gurmukhiTitle)
 }

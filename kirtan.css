@@ -70,7 +70,7 @@ h1 em {
 /* list styling */
 
 
-.kirtan-list ul {
+.kirtan-list {
     counter-reset: li;
     list-style: none;
     padding: 1cm;
@@ -78,7 +78,7 @@ h1 em {
 }
 
 
-.kirtan-list ul a {
+.trackBtn {
     position: relative;
     display: block;
     padding: .4em .4em .4em .4em;
@@ -89,10 +89,11 @@ h1 em {
     border-radius: .3em;
     transition: .3s ease-out;
 
+    width: 100%;
 }
 
-.kirtan-list ul a:hover { background: #E9E4E0; }
-.kirtan-list ul a:focus {background:#c4aa96; }
+.trackBtn:hover { background: #E9E4E0; }
+.trackBtn:focus {background:#c4aa96; }
 
 
 
